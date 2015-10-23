@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de843d6086e357c6d29a425e7f4dad30",
-    "content-hash": "ad6eb5ef96ace0d046eed932f63703bb",
+    "hash": "5acbb47590f06dac6a58ac560f09ee04",
+    "content-hash": "1fd3156572ce8a98a1ef567e14d2d523",
     "packages": [
         {
             "name": "composer/installers",
@@ -162,6 +162,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/ml-slider",
+            "version": "3.3.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/ml-slider/",
+                "reference": "tags/3.3.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ml-slider.3.3.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ml-slider/"
         },
         {
             "name": "wpackagist-plugin/the-events-calendar",

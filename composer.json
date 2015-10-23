@@ -21,6 +21,7 @@
         "wpackagist-plugin/captcha":">=3.9",
         "wpackagist-plugin/contact-form-7":"4.3",
         "wpackagist-plugin/wordpress-seo":"2.3.5",
-        "wpackagist-plugin/the-events-calendar": "3.12.3"        
+        "wpackagist-plugin/the-events-calendar": "3.12.3",
+        "wpackagist-plugin/ml-slider": "3.3.5"        
     }
 }
