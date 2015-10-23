@@ -4,14 +4,36 @@ PLACEHOLDER TEXT, JUST HERE SO I COULD CREATE THE CSS FILE ON GITHUB
 
 Theme Name: TheWishingWellWA
 Theme URI: 
-Author: the WordPress team
-Author URI: http://wordpress.org/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Author: 
+Author URI: 
+Description:
 Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: twentythirteen
+License: 
+License URI: 
+Tags: 
+Text Domain:
+Plugins Used: 
+
+Akismet - (http://akismet.com/wordpress/)
+	Used to block spam bots and phony form submissions
+	Use the Akismet tab to implement spam blocking
+
+Contact Form 7 - (http://contactform7.com/)
+	Used to create secure contact forms
+	Use the Contact Form 7 tab to create and use forms
+
+The Events Calendar - (https://theeventscalendar.com/)
+	Used to create and manage and events page and calendar
+	Use the "Calendar" tab to add and manage events
+
+Meta Slider - (https://www.metaslider.com/)
+	Used to add photos and create photo galleries
+	Use the "Meta Slider" tab to upload photos and create and manage photo galleries
+
+Yoast - (https://yoast.com/)
+	Used to enhance the website's search engine optimization
+	Use the "Yoast" tab to set up meta descriptions and other seo settings
+	
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
