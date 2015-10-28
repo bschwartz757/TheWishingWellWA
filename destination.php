@@ -1,3 +1,12 @@
+<?php
+/**
+ * Template Name: Destination Page
+ *
+ * @package WordPress
+ * @subpackage TheWishingWellWA
+ * @since TheWishingWellWA 1.0
+ */
+?>
 <?php get_header(); ?>
 
 <?php get_sidebar(); ?>
