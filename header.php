@@ -26,10 +26,23 @@
 
 <div id="wrapper">
 
+<header> 
+    <div class="logo">
+        <a href="#"><img src="#"/>Logo!</a>
+    </div>
+    <div class="social-icons">
+        <ul>
+            <li><a href="#"><img src="#"/>Facebook</a></li>
+            <li><a href="#"><img src="#"/>Twitter</a></li>
+        </ul>    
+    </div>  
+    <div class="donate-button">
+        <button type="submit" class="btn-success">Donate</button>
+    </div>    
+    
 <!-- Begin new Navigation -->
 <?php wp_nav_menu(array('theme_location' => 'main-menu','container' => 'nav','container_id' => 'nav-main')); ?>
-
 <!-- End new Navigation -->
-
-<header>
-
+</header>
+    
+<div class="content">    

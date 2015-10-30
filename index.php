@@ -7,8 +7,6 @@ get_sidebar();
 
 ?>
 
-    <div id="main">
-    	<div id="content">
         <?php if(have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
         	<article class="post-excerpt">
         		<h2><a href="<?php the_permalink(); ?>"<?php the_title(); ?>></a></h2>
@@ -27,6 +25,5 @@ get_sidebar();
         		<p>Excepturi, voluptatibus, tempore, eius qui reiciendis quidem quod suscipit quae impedit quas eum maxime ex hic ut rerum alias earum culpa sunt reprehenderit obcaecati ratione quibusdam eaque voluptatum asperiores facere.</p>
         	</div>
         </aside>
-    </div><!--Close main-->
     
 <?php get_footer(); ?>    
