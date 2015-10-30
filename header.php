@@ -44,5 +44,5 @@
 <?php wp_nav_menu(array('theme_location' => 'main-menu','container' => 'nav','container_id' => 'nav-main')); ?>
 <!-- End new Navigation -->
 </header>
-    
+    <small>header.php</small>    
 <div class="content">    

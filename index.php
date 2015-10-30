@@ -25,5 +25,5 @@ get_sidebar();
         		<p>Excepturi, voluptatibus, tempore, eius qui reiciendis quidem quod suscipit quae impedit quas eum maxime ex hic ut rerum alias earum culpa sunt reprehenderit obcaecati ratione quibusdam eaque voluptatum asperiores facere.</p>
         	</div>
         </aside>
-    
+      <small>index.php</small>  
 <?php get_footer(); ?>    
