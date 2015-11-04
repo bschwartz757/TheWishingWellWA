@@ -22,9 +22,9 @@
 <!-- End WP Head -->
   
 </head>
-<body <?php body_class(); ?> id="home">
+<body <?php body_class(); ?> class="home">
 
-<div id="wrapper">
+<div class="wrapper">
 
 <header> 
     <div class="logo">
