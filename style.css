@@ -90,6 +90,7 @@ table {
 
 body {
 	width:980px;
+	
 }
 .wrapper {
 	width:940px;
@@ -116,7 +117,12 @@ header .menu li{
 /******************** END NAV ***************/
 
 /******************** START BODY ***************/
+.slider {
+	width: 940px;
+	height: 300px;
+	background-color: gray;
 
+}
 
 
 /******************** END BODY ***************/
