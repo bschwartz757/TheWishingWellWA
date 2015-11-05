@@ -60,6 +60,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing:border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -124,6 +125,49 @@ header .menu li{
 
 }
 
+/******************** DESTINATION.PHP ***************/
+
+.page-title {
+	width:940px;
+	height:300px;
+	background-color:gray;	
+	margin-top:20px;
+	padding:20px;
+}
+
+.thumbnail-med {
+	background:url(imgs/placeimg_260_260_grayscale_animals.jpg);
+	width:260px;
+	height:260px;
+	border:thin solid white;
+	float:left;	
+	margin:auto;
+}
+
+.title-text {
+	width:600px;
+	height:auto;
+	float:right;
+	margin:0 auto;	
+}
+
+.title {
+	text-align:left;
+	font-size:48px;
+	font-weight:700;
+	line-height:50px;
+	margin-bottom:10px;	
+}
+
+.destination-content {
+	width:600px;
+	height:300px;
+	background-color:gray;	
+	margin-top:20px;
+	padding:20px;		
+}
+
+/******************** END DESTINATION.PHP ***************/
 
 /******************** END BODY ***************/
 

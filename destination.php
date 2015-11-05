@@ -10,20 +10,18 @@
 <?php get_header(); ?>
     
 <div class="page-title">
-    <div class="thumbnail-2">
-        <img src="#"/>
+    <div class="thumbnail-med">
+        <img src="#" />
     </div>
-    <div class="page-text">
+    <div class="title-text">
         <h1 class="title">Page Title</h1>
-        <p>Bacon ipsum dolor amet venison prosciutto hamburger, alcatra biltong tail drumstick porchetta flank shoulder. Andouille porchetta kielbasa cupim. Tongue biltong meatloaf, kielbasa pork venison pork belly pastrami corned beef t-bone pork chop landjaeger short ribs chuck.</p>
-        <p>Pork prosciutto leberkas doner tongue meatball salami pork chop ham strip steak tenderloin beef drumstick chuck. Pork chop corned beef bresaola sausage tri-tip short ribs boudin pork belly biltong hamburger ball tip.</p>
+        <p>Plaid you probably haven't heard of them cardigan, irony tote bag yuccie cronut XOXO gastropub pop-up. Flexitarian williamsburg mixtape single-origin coffee, kickstarter 3 wolf moon plaid jean shorts. YOLO brunch cray four dollar toast. Vice helvetica celiac neutra. Celiac cliche biodiesel, gastropub fashion axe mustache direct trade. 3 wolf moon humblebrag chicharrones scenester hoodie truffaut, actually marfa tattooed single-origin coffee. Selfies migas lomo hammock single-origin coffee.</p>
     </div>  
 </div>    
 <article class="destination-content">
-    <h3>Title</h3>
-    <p>Bacon ipsum dolor amet venison prosciutto hamburger, alcatra biltong tail drumstick porchetta flank shoulder. Andouille porchetta kielbasa cupim.</p>
-    <p>Bacon ipsum dolor amet venison prosciutto hamburger, alcatra biltong tail drumstick porchetta flank shoulder. Andouille porchetta kielbasa cupim.</p>
-    <p>Bacon ipsum dolor amet venison prosciutto hamburger, alcatra biltong tail drumstick porchetta flank shoulder. Andouille porchetta kielbasa cupim.</p>
+    <p>Plaid you probably haven't heard of them cardigan, irony tote bag yuccie cronut XOXO gastropub pop-up. Flexitarian williamsburg mixtape single-origin coffee, kickstarter 3 wolf moon plaid jean shorts. YOLO brunch cray four dollar toast. Vice helvetica celiac neutra. Celiac cliche biodiesel, gastropub fashion axe mustache direct trade.</p>
+    
+    <p>Art party roof party four dollar toast, food truck cray cronut banh mi pitchfork. Butcher 3 wolf moon bitters aesthetic tattooed. Pour-over shabby chic try-hard, tofu retro jean shorts ethical crucifix yr farm-to-table neutra lumbersexual drinking vinegar 90's distillery. Chartreuse put a bird on it swag plaid. Irony tote bag keytar single-origin coffee banjo master cleanse, kale chips mlkshk umami seitan waistcoat artisan typewriter.</p>
 </article>    
 
 <?php get_sidebar(); ?>
