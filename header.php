@@ -34,9 +34,9 @@
     <div class="social-icons">
         <ul class="social-icons-ul">
             <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
-            <li class="icon"><a href="flaticon-twitter"></a></li>
-            <li class="icon"><a href="flaticon-socialnetwork348"></a></li>
-            <li class="icon"><a href="flaticon-tumblr1"></a></li>
+            <li class="icon"><a class="flaticon-twitter" href="#"></a></li>
+            <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
+            <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
         </ul>    
     </div>  
     <div class="donate-button">
