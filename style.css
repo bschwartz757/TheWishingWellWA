@@ -206,16 +206,15 @@ margin-top:20px
 
 .destination-page-title {
 	width:940px;
-	height:300px;
+	height:340px;
 	background-color:gray;	
 	margin-top:20px;
 	padding:20px;
 }
 
-.thumbnail-med {
-	background:url(imgs/placeimg_260_260_grayscale_animals.jpg);
-	width:260px;
-	height:260px;
+.destination-title-img {
+	width:300px;
+	height:300px;
 	border:thin solid white;
 	float:left;	
 	margin:auto;
