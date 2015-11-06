@@ -48,6 +48,7 @@ if ($post->post_parent) {
 // Register menus:
 register_nav_menus(array(
 'main-menu' => __('Main'),
+'footer-menu' => __('Footer Menu')    
 ));
 
 // Enable Featured Images & Post Thumbnails:

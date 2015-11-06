@@ -1,13 +1,21 @@
 
-
+<!-- Start conventional footer -->
 <footer>
-</footer>
-<!-- close footer -->
+    
+<!-- Start footer menu -->
+<?php wp_nav_menu(array('theme_location' => 'footer_menu','container' => 'div','container_id' => 'links')); ?>   
+<!-- End footer menu -->
 
-<!-- Start WP Footer -->
+    <p>&copy;2015-<?php print("" . date('Y') . ""); ?>The Wishing Well</p>
+</footer>
+<!-- close conventional footer -->
+
+<!-- Start WP Footer - contains js scripts, etc. -->
 <?php wp_footer(); ?>
 
 <!-- End WP Footer -->
+
+</div><!--  close wrapper  -->
 
 <!-- begin validation buttons -->
  <a href="http://validator.w3.org/check?uri=referer">
@@ -19,8 +27,6 @@
    alt="Valid CSS3" height="31" width="88" />
  </a>
 <!-- end validation buttons -->
-
-</div><!--  close wrapper  -->
 
 </body>
 </html>

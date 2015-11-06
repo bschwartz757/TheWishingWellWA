@@ -250,7 +250,24 @@ margin-top:20px
 
 /******************** START FOOTER ***************/
 
+footer {
+    width:940px;
+    height:300px;
+    background-color:gray;
+}
 
+/******************** START FOOTER MENU ***************/
+
+#links {
+    width:940px;
+    height:32px;
+    margin:16px auto;
+    overflow:hidden;
+    display:inline-block;
+}
+
+
+/******************** END FOOTER MENU ***************/
 
 /******************** END FOOTER ***************/
 
