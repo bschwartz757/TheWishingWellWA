@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 
 <div class="spotlight">
-    <h1>Learn More</h1>
+    <?php the_post_thumbnail('gateway-spotlight'); ?>
 </div>
 
 <div class="gateway-main-tile">

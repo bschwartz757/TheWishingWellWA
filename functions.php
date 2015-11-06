@@ -83,6 +83,7 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 	. do_shortcode( $content ) . '<p class="wp-caption-text">' . $caption . '</p></div>';
 }
 //
-
+//Create Custom Image Sizes
+add_image_size('gateway-spotlight', 940, 450, array('top')); //Creates the 940x450 hard crop mode (from center)
 
 ?>
