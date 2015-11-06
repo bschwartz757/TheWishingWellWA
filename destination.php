@@ -9,7 +9,7 @@
 ?>
 <?php get_header(); ?>
     
-<div class="page-title">
+<div class="destination-page-title">
     <div class="thumbnail-med">
         <img src="#" />
     </div>
