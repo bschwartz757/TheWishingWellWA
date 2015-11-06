@@ -10,7 +10,8 @@
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
 <![endif]-->
 
-<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all" />  
+<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all" /> 
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/flaticon.css">  
 
 <!--Meta-->
 <meta name="description" content="<?php echo get_the_excerpt(); ?>" />
@@ -28,12 +29,14 @@
 
 <header> 
     <div class="logo">
-        <a href="#"><img src="#"/>Logo!</a>
+        <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/wwflogo.jpg" alt="Wishing Well logo" width="300px"/></a>
     </div>
     <div class="social-icons">
-        <ul>
-            <li><a href="#"><img src="#"/>Facebook</a></li>
-            <li><a href="#"><img src="#"/>Twitter</a></li>
+        <ul class="social-icons-ul">
+            <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
+            <li class="icon"><a href="flaticon-twitter"></a></li>
+            <li class="icon"><a href="flaticon-socialnetwork348"></a></li>
+            <li class="icon"><a href="flaticon-tumblr1"></a></li>
         </ul>    
     </div>  
     <div class="donate-button">
@@ -43,6 +46,5 @@
 <!-- Begin new Navigation -->
 <?php wp_nav_menu(array('theme_location' => 'main-menu','container' => 'nav','container_id' => 'nav-main')); ?>
 <!-- End new Navigation -->
-</header>
-    <small>header.php</small>    
+</header> 
 <div class="content">    
