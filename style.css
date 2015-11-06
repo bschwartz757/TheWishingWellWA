@@ -112,6 +112,10 @@ body {
 	background-color: gray;
 }
 
+p {
+	margin-bottom:8px;	
+}
+
 /******************** END GLOBAL ***************/
 
 /******************** START HEADER ***************/
