@@ -84,6 +84,6 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 }
 //
 //Create Custom Image Sizes
-add_image_size('gateway-spotlight', 940, 450, array('top')); //Creates the 940x450 hard crop mode (from center)
+add_image_size('gateway-spotlight', 940, 450, array('center', 'center')); //Creates the 940x450 hard crop mode (from center)
 
 ?>
