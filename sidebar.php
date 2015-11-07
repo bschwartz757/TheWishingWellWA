@@ -52,7 +52,7 @@
 
 <!--Begin dynamic sidebar-->
 
-<?php dynamic_sidebar(); ?>
+<!--<?php dynamic_sidebar(); ?>-->
 
 <!--End dynamic sidebar-->
 

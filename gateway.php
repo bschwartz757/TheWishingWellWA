@@ -11,6 +11,7 @@
 
 <div class="spotlight">
     <?php the_post_thumbnail('gateway-spotlight'); ?>
+
 </div>
 
 <div class="gateway-main-tile">
@@ -66,7 +67,6 @@
 <div class="clear"></div>
 </div> <!--close content-->    
     
-<p>This page uses the gateway template! (gateway.php)</p>
 <p class="top-link"><a href="#nav-main">Back to top</a></p>
 
 <?php get_footer(); ?>
