@@ -121,17 +121,16 @@ p {
 /******************** START HEADER ***************/
 
 .logo{
-
+	float:left;
 }
 .social-icons{
-	float:right;
-	position:relative;
-	top:-140px;
-	
+	float:right;	
 }
+
 .icon{
 	float:left;
 }
+
 .icon a{
 	color:#000;
 	text-decoration: none;
@@ -139,17 +138,102 @@ p {
 	margin-left:20px;
 }
 
-/******************** END HEADER ***************/
+.donate-button{
+	float:right;
+	position: relative;
+	top:-60px;
+	height: 50px;
+	width: 200px;
+}
+
+.btn-success{
+	height: 50px;
+	width:200px;
+	font-size:120%;
+}
+
 
 /******************** START NAV ***************/
-header .menu {
-	display:inline-block;
+#nav-main{
+
+}
+#menu-main{
+	width:940px;
+	margin-top:0px;
+	background-color: #ddd;
+
+}
+.menu a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#000;
 }
 
+.menu a:hover{
+
+}
+header .menu {
+  display: inline-block;
+  margin: 0 auto;
+  list-style: none;
+  width:100%;
+
+}
 header .menu li{
-	display: inline-block;
+  font: bold 15px/18px sans-serif;
+  display: inline-block;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom:15px;
+  background: #ddd;
+  cursor: pointer;
+  width:12.1%;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+header .menu li:hover {
+  background: #666;
+  color: #fff;
+}
+header .menu li ul{
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+header .menu  li ul li{ 
+  background: #666; 
+  display: block; 
+  text-align: left;
+  color: #fff;
+  width:100%;
+  
+}
+header .menu li ul li:hover { 
+	background: #ddd; }
+header .menu li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 /******************** END NAV ***************/
+/******************** END HEADER ***************/
 
 /******************** START BODY ***************/
 
@@ -208,8 +292,7 @@ margin-top:20px
 	width:940px;
 	height:340px;
 	background-color:gray;	
-	margin-top:20px;
-	padding:20px;
+	padding-top:20px;
 }
 
 .destination-title-img {

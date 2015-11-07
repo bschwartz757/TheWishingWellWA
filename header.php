@@ -29,7 +29,7 @@
 
 <header> 
     <div class="logo">
-        <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/wwflogo.jpg" alt="Wishing Well logo" width="300px"/></a>
+        <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/wwflogo.jpg" alt="Wishing Well logo" width="350px"/></a>
     </div>
     <div class="social-icons">
         <ul class="social-icons-ul">
@@ -37,11 +37,12 @@
             <li class="icon"><a class="flaticon-twitter" href="#"></a></li>
             <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
             <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
-        </ul>    
-    </div>  
+        </ul>  
+    </div> 
+<div class="clear"></div>
     <div class="donate-button">
         <button type="submit" class="btn-success">Donate</button>
-    </div>    
+    </div>   
     
 <!-- Begin new Navigation -->
 <?php wp_nav_menu(array('theme_location' => 'main-menu','container' => 'nav','container_id' => 'nav-main')); ?>
