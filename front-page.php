@@ -40,7 +40,7 @@
 
     <div class="blog-excerpts">
     <h1>latest from the blog</h1>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-blog-excerpts.png" alt="Recent Blog Posts"/>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-blog-excerpts.jpg" alt="Recent Blog Posts"/>
     <?php if(have_posts()) : while(have_posts()) : the_post(); // start the loop ?>
             <article class="post-excerpt">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  
@@ -52,10 +52,10 @@
             </article>
     <?php endwhile; endif; // end the loop ?>
     </div>
-    <div class="fb-post-excerpts">
+    <div class="fb-excerpts">
     <h1>latest from facebook</h1>
         <!--facebook posts go here-->
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-fb-excerpts.png" alt="Recent Blog Posts"/>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-fb-excerpts.jpg" alt="Recent Blog Posts"/>
     </div>
 </div>    <!--close front-page-excerpts-->
 

@@ -250,9 +250,17 @@ header .menu li:hover ul {
 .home-slider blockquote{
 	font-style: italic;
 	font-weight: bold;
-	width:48%;
+	width:38%;
 	font-size: 160%;
-	padding: 40px;
+	padding-top:40px;
+	padding-left: 25px;
+}
+.home-slider h1 {
+	position: relative;
+	left:780px;
+	top:110px;
+	color:#fff;
+	font-size: 150%;
 }
 .home-thumbnails{
 	display: inline-block;
@@ -273,22 +281,34 @@ header .menu li:hover ul {
 	float: left;
 	background-image: url(imgs/kitty_300_300);
 }
+.home-thmb-1 h1,
+.home-thmb-2 h1,
+.home-thmb-3 h1{
+
+}
 
 .front-page-excerpts{
 	width:100%;
-	height:600px;
+	height:680px;
 }
 .blog-excerpts,
-.fb-post-excerpts {
-	width:48.9%;
+.fb-excerpts {
+	width:49%;
+	float:left;
+
 }
 .blog-excerpts h1,
 .fb-excerpts h1{
 width:100%;
-height: 15%;
+padding:25px;
+background-color: #ccc;
+margin-top:20px;
+text-transform: uppercase;
+font-size: 30px;
+text-align: center;
 }
-.fb-post-excerpts{
-	margin-left: 2.2%
+.fb-excerpts{
+	margin-left: 2%
 }
 /******************** END FRONT-PAGE.PHP ***************/
 /******************** START GATEWAY.PHP ***************/
