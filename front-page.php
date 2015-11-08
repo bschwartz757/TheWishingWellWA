@@ -9,57 +9,38 @@
 ?>
 <?php get_header(); ?>
 
-<div class="slider">
-    <h1>Learn More</h1>
+<div class="home-slider">
+    <blockquote>We give foster care children confidence by providing for their basic material needs."</blockquote>
+    <h1>Learn More &gt;&gt;</h1>
 </div>
 
-<div class="section home-thumbnails">
-    <div class="row-1">
-        <div class="thumbnail-3">
-            <a href="#"><img src="#"/>Img 1</a>
+<div class="home-thumbnails">
+        <div class="home-thmb-1">
+            <a href="#"></a>
             <div class="caption">
-                <h4>Call to Action</h4>
+                <h4>Volunteer</h4>
             </div>
         </div>
-        <div class="thumbnail-3">
-            <a href="#"><img src="#"/>Img 2</a>  
+        <div class="home-thmb-2">
+            <a href="#"></a>  
             <div class="caption">
-                <h4>Call to Action</h4>
+                <h4>Donate</h4>
             </div>            
         </div>
-        <div class="thumbnail-3">
-            <a href="#"><img src="#"/>Img 3</a>
+        <div class="home-thmb-3">
+            <a href="#"></a>
             <div class="caption">
-                <h4>Call to Action</h4>
+                <h4>Events</h4>
             </div>            
-        </div>        
-    </div>
-    <div class="row-2">
-        <div class="thumbnail-3">
-            <a href="#"><img src="#"/>Img 1</a>
-            <div class="caption">
-                <h4>Call to Action</h4>
-            </div>            
-        </div>
-        <div class="thumbnail-3">
-            <a href="#"><img src="#"/>Img 2</a>
-            <div class="caption">
-                <h4>Call to Action</h4>
-            </div>            
-        </div>
-        <div class="thumbnail-3">
-            <a href="#"><img src="#"/>Img 3</a>
-            <div class="caption">
-                <h4>Call to Action</h4>
-            </div>            
-        </div>        
-    </div>
-</div> 
+        </div>       
+</div> <!-- end home-thumbnails-->
 
 <div class="front-page-excerpts">
 <!--This section will have two columns, blog posts on the left and facebook posts on the right. 3 of each will be shown-->
 
-    <div class="wp-post-excerpts">
+    <div class="blog-excerpts">
+    <h1>latest from the blog</h1>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-blog-excerpts.png" alt="Recent Blog Posts"/>
     <?php if(have_posts()) : while(have_posts()) : the_post(); // start the loop ?>
             <article class="post-excerpt">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  
@@ -72,11 +53,12 @@
     <?php endwhile; endif; // end the loop ?>
     </div>
     <div class="fb-post-excerpts">
+    <h1>latest from facebook</h1>
         <!--facebook posts go here-->
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-fb-excerpts.png" alt="Recent Blog Posts"/>
     </div>
-</div>    <!--close post-excerpts-->
+</div>    <!--close front-page-excerpts-->
 
-<small>front-page.php</small>
 </div> <!--close content-->
 <p class="top-link"><a href="#nav-main">Back to top</a></p>
 

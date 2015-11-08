@@ -231,9 +231,9 @@ header .menu  li ul li{
 header .menu li ul li:hover { 
 	background: #ddd; }
 header .menu li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
+	display: block;
+	opacity: 1;
+ 	visibility: visible;
 }
 /******************** END NAV ***************/
 /******************** END HEADER ***************/
@@ -241,6 +241,55 @@ header .menu li:hover ul {
 /******************** START BODY ***************/
 
 /******************** START FRONT-PAGE.PHP ***************/
+.home-slider{
+	width:940px;
+	height:300px;
+	background-image: url(imgs/placeimg_940_300_grayscale_animals);
+
+}
+.home-slider blockquote{
+	font-style: italic;
+	font-weight: bold;
+	width:48%;
+	font-size: 160%;
+	padding: 40px;
+}
+.home-thumbnails{
+	display: inline-block;
+	width:100%;
+	height:300px;
+	margin-top:20px;
+}
+.home-thmb-2,
+.home-thmb-3{
+	margin-left: 2.1%;
+}
+
+.home-thmb-1,
+.home-thmb-2,
+.home-thmb-3{
+	width: 31.9%;
+	height: 100%;
+	float: left;
+	background-image: url(imgs/kitty_300_300);
+}
+
+.front-page-excerpts{
+	width:100%;
+	height:600px;
+}
+.blog-excerpts,
+.fb-post-excerpts {
+	width:48.9%;
+}
+.blog-excerpts h1,
+.fb-excerpts h1{
+width:100%;
+height: 15%;
+}
+.fb-post-excerpts{
+	margin-left: 2.2%
+}
 /******************** END FRONT-PAGE.PHP ***************/
 /******************** START GATEWAY.PHP ***************/
 .spotlight {
