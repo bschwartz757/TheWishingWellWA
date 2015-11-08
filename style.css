@@ -280,11 +280,17 @@ header .menu li:hover ul {
 	height: 100%;
 	float: left;
 	background-image: url(imgs/kitty_300_300);
+	font-size: 130%;
+	padding:40px;
+	color: #fff;
 }
-.home-thmb-1 h1,
-.home-thmb-2 h1,
-.home-thmb-3 h1{
-
+.home-thmb-1 a,
+.home-thmb-2 a,
+.home-thmb-3 a{
+	position: relative;
+	top:160px;
+	float: right;
+	color: #000;
 }
 
 .front-page-excerpts{

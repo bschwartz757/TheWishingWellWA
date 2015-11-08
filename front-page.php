@@ -15,22 +15,22 @@
 </div>
 
 <div class="home-thumbnails">
-        <div class="home-thmb-1">
-            <a href="#"></a>
+        <div class="home-thmb-1">            
             <div class="caption">
-                <h4>Volunteer</h4>
+                <h4>Making a lasting difference in the life of a foster child</h4>
+                <a href="#"><h1>Volunteer &gt;&gt;</h1></a>
             </div>
         </div>
-        <div class="home-thmb-2">
-            <a href="#"></a>  
+        <div class="home-thmb-2">             
             <div class="caption">
-                <h4>Donate</h4>
+                <h4>Provide hope by donating new or gently used clothing and supplies</h4>
+                <a href="#"><h1>Donate &gt;&gt;</h1></a> 
             </div>            
         </div>
-        <div class="home-thmb-3">
-            <a href="#"></a>
+        <div class="home-thmb-3">            
             <div class="caption">
-                <h4>Events</h4>
+                <h4>Connect through our family-oriented experiences</h4>
+                <a href="#"><h1>Events &gt;&gt;</h1></a>
             </div>            
         </div>       
 </div> <!-- end home-thumbnails-->
@@ -41,6 +41,8 @@
     <div class="blog-excerpts">
     <h1>latest from the blog</h1>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-blog-excerpts.jpg" alt="Recent Blog Posts"/>
+    <!-- COMMENTED OUT THE LOOP FOR WIREFRAME 
+
     <?php if(have_posts()) : while(have_posts()) : the_post(); // start the loop ?>
             <article class="post-excerpt">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  
@@ -51,6 +53,8 @@
             <p class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></p>        
             </article>
     <?php endwhile; endif; // end the loop ?>
+    
+    -->
     </div>
     <div class="fb-excerpts">
     <h1>latest from facebook</h1>
