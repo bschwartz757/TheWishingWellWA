@@ -28,7 +28,7 @@
 </div>    
     
 <!-- Start footer menu -->
-<?php/* wp_nav_menu(array('theme_location' => 'footer_menu','container' => 'div','container_id' => 'links')); */?>   
+  
 <!-- End footer menu -->
 
     <p>&copy; The Wishing Well 2015 - <?php print("" . date('Y') . ""); ?></p>
