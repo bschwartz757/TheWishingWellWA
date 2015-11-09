@@ -98,6 +98,7 @@ html{
 body {
 	width:980px;
 	margin: 0 auto;
+	font-family: sans-serif;    
 }
 .wrapper {
 	width:940px;
@@ -109,7 +110,7 @@ body {
 	width:300px;
 	height:300px;
 	margin: 20px 0 20px 20px;
-	background-color: gray;
+	background-color: #ddd;
 }
 
 p {
@@ -186,7 +187,7 @@ header .menu li{
   position: relative;
   padding-top: 15px;
   padding-bottom:15px;
-  background: #ddd;
+  background: gray;
   cursor: pointer;
   margin-right:-4px;
   width:12.5%;
@@ -416,37 +417,38 @@ margin-top:20px
 .destination-page-title {
 	width:940px;
 	height:340px;
-	background-color:gray;	
-	padding-top:20px;
+	background-color:#ddd;	
+	padding:20px;
 }
 
 .destination-title-img {
 	width:300px;
 	height:300px;
-	border:thin solid white;
+	border:2px solid white;
 	float:left;	
 	margin:auto;
 }
 
+.title {    
+	font-size:2.5em;
+	font-weight:700;
+    line-height: 1.5em;
+	text-align:left;    	
+}
+
 .title-text {
-	width:600px;
+	width:580px;
+    font-size: 1.25em;
+    line-height: 1.25em;
 	height:auto;
 	float:right;
 	margin:0 auto;	
 }
 
-.title {
-	text-align:left;
-	font-size:48px;
-	font-weight:700;
-	line-height:50px;
-	margin-bottom:10px;	
-}
-
 .destination-content {
 	width:620px;
 	height:300px;
-	background-color:gray;	
+	background-color:#ddd;	
 	margin-top:20px;
 	padding:20px;
 	float:left;		
@@ -493,9 +495,11 @@ margin-top:20px
 
 footer {
     width:100%;
+    clear: both;
     height:240px;
-    background-color:gray;
+    background-color:#ddd;
     padding:20px;
+    margin-top: 20px;
 }
 
 footer .donate-button {
@@ -544,7 +548,7 @@ footer .footer-nav a {
     display: block;
     border-right: 1px solid;
     color: black;
-    background-color: gray;
+    background-color: #ddd;
     text-decoration: none;
 }
 

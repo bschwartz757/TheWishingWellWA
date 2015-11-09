@@ -11,7 +11,7 @@
     
 <div class="destination-page-title">
     <div class="destination-title-img">
-            <?php the_post_thumbnail('medium'); ?>
+            <?php// the_post_thumbnail('medium'); ?>
     </div>
     <div class="title-text">
         <h1 class="title"><?php the_title(); ?></h1>
@@ -24,9 +24,8 @@
 
 <?php get_sidebar(); ?>
 
-</div>		<!--close content-->
+<!--<p class="top-link"><a href="#nav-main">Back to top</a></p>-->
 
-<p>This page uses the destination template! (destination.php)</p>
-<p class="top-link"><a href="#nav-main">Back to top</a></p>
+</div>		<!--close content-->
 
 <?php get_footer(); ?>
