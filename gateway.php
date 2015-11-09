@@ -10,8 +10,8 @@
 <?php get_header(); ?>
 
 <div class="spotlight">
-    <?php the_post_thumbnail('gateway-spotlight'); ?>
-
+    
+<a href="<?php echo home_url(); ?>/?page_id=64"><h1>Our Mission &gt;&gt;</h1></a>
 </div>
 
 <div class="gateway-main-tile">
@@ -24,42 +24,37 @@
 <div class="section-tiles">
     <div class="gateway-row-1">
         <div class="tile-1">
-            <a href="#"></a>
+            
             <div class="caption">
-                <h4>Mission</h4>
+              <a href="<?php echo home_url(); ?>/?page_id=64"><h1>Mission &gt;&gt;</h1></a>
             </div>
         </div>
-        <div class="tile-2">
-            <a href="#"></a>  
+        <div class="tile-2"> 
             <div class="caption">
-                <h4>History</h4>
+                <a href="<?php echo home_url(); ?>/?page_id=66"><h1>History &gt;&gt;</h1></a>
             </div>            
         </div>
         <div class="tile-3">
-            <a href="#"></a>
             <div class="caption">
-                <h4>Staff</h4>
+                <a href="<?php echo home_url(); ?>/?page_id=68"><h1>Staff &gt;&gt;</h1></a>
             </div>            
         </div>        
     </div> <!-- end gateway-row-1-->
     <div class="clear"></div>
     <div class="gateway-row-2">
         <div class="tile-4">
-            <a href="#"></a>
             <div class="caption">
-                <h4>Testimonials</h4>
+                <a href="<?php echo home_url(); ?>/?page_id=20"><h1>Testimonials &gt;&gt;</h1></a>
             </div>            
         </div>
         <div class="tile-5">
-            <a href="#"></a>
             <div class="caption">
-                <h4>Funding</h4>
+                <a href="<?php echo home_url(); ?>/?page_id=22"><h1>Funding &gt;&gt;</h1></a>
             </div>            
         </div>
         <div class="tile-6">
-            <a href="#"></a>
             <div class="caption">
-                <h4>Partners</h4>
+                <a href="<?php echo home_url(); ?>/?page_id=24"><h1>Partners &gt;&gt;</h1></a>
             </div>            
         </div>        
     </div> <!-- end gateway-row-2 -->

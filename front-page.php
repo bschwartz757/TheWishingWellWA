@@ -11,26 +11,26 @@
 
 <div class="home-slider">
     <blockquote>We give foster care children confidence by providing for their basic material needs."</blockquote>
-    <h1>Learn More &gt;&gt;</h1>
+    <a href="<?php echo home_url(); ?>/?page_id=6"><h1>Learn More &gt;&gt;</h1></a>
 </div>
 
 <div class="home-thumbnails">
         <div class="home-thmb-1">            
             <div class="caption">
                 <h4>Making a lasting difference in the life of a foster child</h4>
-                <a href="#"><h1>Volunteer &gt;&gt;</h1></a>
+                <a href="<?php echo home_url(); ?>/?page_id=10"><h1>Volunteer &gt;&gt;</h1></a>
             </div>
         </div>
         <div class="home-thmb-2">             
             <div class="caption">
                 <h4>Provide hope by donating new or gently used clothing and supplies</h4>
-                <a href="#"><h1>Donate &gt;&gt;</h1></a> 
+                <a href="<?php echo home_url(); ?>/?page_id=12"><h1>Donate &gt;&gt;</h1></a> 
             </div>            
         </div>
         <div class="home-thmb-3">            
             <div class="caption">
                 <h4>Connect through our family-oriented experiences</h4>
-                <a href="#"><h1>Events &gt;&gt;</h1></a>
+                <a href="<?php echo home_url(); ?>/?page_id=14"><h1>Events &gt;&gt;</h1></a>
             </div>            
         </div>       
 </div> <!-- end home-thumbnails-->
