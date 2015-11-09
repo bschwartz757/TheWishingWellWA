@@ -244,6 +244,11 @@ header .menu li:hover ul {
 	padding: 20px;
 	font-size: 130%;
 }
+#sidebar h1{
+	font-size: 150%;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
 
 /******************** END SIDEBAR *********/
 
@@ -449,6 +454,39 @@ margin-top:20px
 
 /******************** END DESTINATION.PHP ***************/
 
+/******************** START BLOG.PHP ********************/
+
+.blog-content{
+	width: 620px;
+	height:300px;
+	float: left;
+	background-color: #ddd;
+	margin-top:20px;
+	padding:20px;
+}
+.blog-content h3{
+	font-size: 120%;
+}
+.blog-content img,
+.blog-content p{
+	float: left;
+}
+/******************** END BLOG.PHP ***************/
+/******************** START PLUGIN.PHP ********************/
+
+.plugin-content{
+	width: 620px;
+	height:300px;
+	float: left;
+	background-color: #ddd;
+	margin-top:20px;
+}
+.plugin-content h3{
+	font-size: 130%;
+	padding:20px;
+	text-align: center;
+}
+/******************** END PLUGIN.PHP ***************/
 /******************** END BODY ***************/
 
 /******************** START FOOTER ***************/

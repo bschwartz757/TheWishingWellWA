@@ -3,7 +3,7 @@
 <!-- Begin Sidebar -->
 
 <div id="sidebar">
-
+<h1>Sidebar</h1>
 <nav id="nav-sub" class="one-third right">
 
 		<?php if (is_page()) : ;?>
