@@ -1,12 +1,37 @@
 
 <!-- Start conventional footer -->
 <footer>
+ 
+<div class="social-icons">
+    <ul class="social-icons-ul">
+        <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
+        <li class="icon"><a class="flaticon-twitter" href="#"></a></li>
+        <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
+        <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
+    </ul>  
+</div> 
+<div class="donate-button">
+    <button type="submit" class="btn-success">Donate</button>
+</div>  
+<div class="clear"></div>
+<div class="footer-nav">
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Volunteer</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Resources</a></li>        
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>        
+    </ul>
+</div>    
     
 <!-- Start footer menu -->
-<?php wp_nav_menu(array('theme_location' => 'footer_menu','container' => 'div','container_id' => 'links')); ?>   
+<?php// wp_nav_menu(array('theme_location' => 'footer_menu','container' => 'div','container_id' => 'links')); ?>   
 <!-- End footer menu -->
 
-    <p>&copy;2015-<?php print("" . date('Y') . ""); ?>The Wishing Well</p>
+    <p>&copy; The Wishing Well 2015 - <?php print("" . date('Y') . ""); ?></p>
 </footer>
 <!-- close conventional footer -->
 
