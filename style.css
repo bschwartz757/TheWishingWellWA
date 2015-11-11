@@ -517,7 +517,7 @@ footer .donate-button {
     display:inline-block;
 }*/
 
-footer .footer-nav {
+#nav-footer {
     display:inline-block;
     width:90%;
     margin-top: 100px;
@@ -526,7 +526,7 @@ footer .footer-nav {
     padding: 0;
 }
 
-footer .footer-nav li {
+#nav-footer li {
     font-size: .9em;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -543,7 +543,7 @@ footer .footer-nav li {
     transition: all 0.2s;    
 }
 
-footer .footer-nav a {
+#nav-footer a {
     display: block;
     border-right: 1px solid;
     color: black;
@@ -551,11 +551,11 @@ footer .footer-nav a {
     text-decoration: none;
 }
 
-footer .footer-nav li:last-of-type a {
+#nav-footer li:last-of-type a {
     border-right: none;
 }
 
-footer .footer-nav a:hover {
+#nav-footer a:hover {
     background: #666;
     color:#fff;
 }
