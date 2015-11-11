@@ -19,6 +19,7 @@
     </div>  
 </div>    
 <article class="destination-content">
+    <!-- <?php var_dump($post) ?> -->
     <?php the_content(); ?>
 </article>    
 

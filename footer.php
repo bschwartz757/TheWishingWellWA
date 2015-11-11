@@ -14,7 +14,7 @@
     <button type="submit" class="btn-success">Donate</button>
 </div>  
 <div class="clear"></div>
-<div class="footer-nav">
+<!--<div class="footer-nav">
     <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Volunteer</a></li>
@@ -25,11 +25,12 @@
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>        
     </ul>
-</div>    
+</div> -->   
     
-<!-- Start footer menu -->
-  
-<!-- End footer menu -->
+<!-- Start wp Footer Menu -->
+        <!-- <?php var_dump($post) ?> -->
+<?php wp_nav_menu( array('theme_location' => 'footer-menu','container' => 'div','container_id' => 'links')); ?>
+<!-- End wp Footer Menu -->
 
     <p>&copy; The Wishing Well 2015 - <?php print("" . date('Y') . ""); ?></p>
 </footer>
@@ -41,17 +42,6 @@
 <!-- End WP Footer -->
 
 </div><!--  close wrapper  -->
-
-<!-- begin validation buttons -->
- <a href="http://validator.w3.org/check?uri=referer">
-  <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" 
-  width="31" height="32" alt="valid HTML5" />
- </a>
- <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
-  <img src="http://jigsaw.w3.org/css-validator/images/vcss" 
-   alt="Valid CSS3" height="31" width="88" />
- </a>
-<!-- end validation buttons -->
 
 </body>
 </html>
