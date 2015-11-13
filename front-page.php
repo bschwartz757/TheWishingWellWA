@@ -40,7 +40,27 @@
 
     <div class="blog-excerpts">
     <h1>latest from the blog</h1>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-blog-excerpts.jpg" alt="Recent Blog Posts"/>
+    
+<div class="fp-blog-content">
+<div class="blog-exerpt-1">
+    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <h2>Blog Post Title</h2>
+    <p>Normcore next level mumblecore, portland biodiesel selvage fingerstache brunch lumbersexual poutine squid readymade. Vinyl blue bottle marfa cred, bicycle.<a href="#"> Read More &gt;&gt;</a></p>
+</div>
+<div class="clear"></div>
+<div class="blog-exerpt-2">
+    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <h2>Blog Post Title</h2>
+    <p>8-bit sustainable photo booth, microdosing hella cornhole wolf master cleanse kitsch chambray retro. Mlkshk small batch squid microdosing. Echo park sartorial.<a href="#"> Read More &gt;&gt;</a></p>
+</div>
+<div class="clear"></div>
+<div class="blog-exerpt-3">
+    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <h2>Blog Post Title</h2>
+    <p>Chicharrones jean shorts yuccie, banjo etsy disrupt craft beer street art. Pabst tilde put a bird on it, chartreuse offal four dollar toast pitchfork.<a href="#"> Read More &gt;&gt;</a></p>
+</div>
+</div>
+
     <!-- COMMENTED OUT THE LOOP FOR WIREFRAME 
 
     <?php if(have_posts()) : while(have_posts()) : the_post(); // start the loop ?>
@@ -55,11 +75,11 @@
     <?php endwhile; endif; // end the loop ?>
     
     -->
-    </div>
+    </div> <!-- END blog-excerpts-->
     <div class="fb-excerpts">
     <h1>latest from facebook</h1>
         <!--facebook posts go here-->
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/home-fb-excerpts.jpg" alt="Recent Blog Posts"/>
+        
     </div>
 </div>    <!--close front-page-excerpts-->
 
