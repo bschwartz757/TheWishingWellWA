@@ -13,12 +13,12 @@
     <div class="thumbnail-2">
     </div>
     <div class="page-text">
-        <h1 class="title">Plugins</h1>
+        <h1 class="title"><?php the_title(); ?></h1>
         
     </div>  
 </div>    
 <article class="plugin-content">
-    <h3>Plugin Template</h3>
+    <h3><?php the_title(); ?> Template</h3>
 </article>    
 
 <?php get_sidebar(); ?>
