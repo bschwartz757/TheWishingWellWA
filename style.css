@@ -342,20 +342,25 @@ header .menu li:hover ul {
 .fb-excerpt-1,
 .fb-excerpt-2{
 	margin:20px 20px 0 20px;
+	height:200px;
 }
 .blog-excerpt-3,
 .fb-excerpt-3{
-	margin:0 0 0 20px;
+	margin:20px 20px 0 20px;
+	height:200px;
 }
 .front-page-excerpts img{
 	float:left;
 	margin:0 20px 0 0;
 	padding-bottom:20px;
 }
+.front-page-excerpts h2{
+	font-size:120%;
+}
 .front-page-excerpts h2,
 .front-page-excerpts p,
 .front-page-excerpts a{
-	float:left;
+	
 }
 
 /******************** END FRONT-PAGE.PHP ***************/
@@ -393,7 +398,7 @@ header .menu li:hover ul {
 	line-height: 22px;
 }
 .section-tiles a{
-position: relative;
+	position: relative;
 	top:240px;
 	padding:15px;
 	float: right;
@@ -425,11 +430,10 @@ position: relative;
 .tile-6{
 	margin-left:20px;
 }
-.gateway-row-1{
-
-}
-.gateway-row-2{
-margin-top:20px
+.tile-1,
+.tile-2,
+.tile-3{
+	margin-bottom: 20px;
 }
 
 
@@ -633,7 +637,9 @@ body{
 #menu-main{
 	display: none;
 }
-
+#sidebar{
+	display: none;
+}
 /************* END NAVIGATION ************/
 /************* START FRONT-PAGE ************/
 
@@ -651,32 +657,37 @@ body{
 	font-size: 160%;
 	padding-top:40px;
 	padding-left: 25px;
+	background-color: #ddd;
+	opacity: .7;
 }
 .home-slider h1 {
 	
 	background-color:#ddd;
+	padding:15px;
+	right:25%;
+	top:75px;
+	color:#000;
+	opacity:.7;
 }
 .home-thumbnails{
-	display: inline-block;
-	width:100%;
-	height:300px;
-	margin-top:20px;
-}
-.home-thmb-2,
-.home-thmb-3{
-	margin-left: 2.1%;
+	width:540px;
+	height:920px;
+	margin-bottom: 20px;
 }
 
 .home-thmb-1,
 .home-thmb-2,
 .home-thmb-3{
-	width: 31.9%;
-	height: 100%;
-	float: left;
+	float:none;
+	width: 300px;
+	height: 300px;
 	background-image: url(imgs/kitty_300_300.jpg);
 	font-size: 130%;
 	padding:30px;
 	color: #fff;
+	margin:0 auto;
+	margin-bottom:20px;
+	
 }
 .home-thmb-1 a,
 .home-thmb-2 a,
@@ -686,32 +697,139 @@ body{
 	float: right;
 	color: #000;
 }
-
-.front-page-excerpts{
-	width:100%;
-	height:680px;
-}
 .blog-excerpts,
 .fb-excerpts {
-	width:49%;
-	float:left;
+	float:none;
+	width:100%;
+	background-color: #fff;
 
 }
 .blog-excerpts h1,
 .fb-excerpts h1{
-width:100%;
-padding:25px;
-background-color: #ccc;
-margin-top:20px;
-text-transform: uppercase;
-font-size: 30px;
-text-align: center;
+	width:100%;
+	padding:15px;
+	background-color: #fff;
+	text-transform: uppercase;
+	font-size: 120%;
+	text-align: center;
+	border-top:solid 1px #000;
 }
 .fb-excerpts{
-	margin-left: 2%
+	margin-left: 0;
+	
 }
+
+.blog-excerpt-1,
+.blog-excerpt-2,
+.fb-excerpt-1,
+.fb-excerpt-2{
+	border:solid 1px #000;
+	width:540px;
+	height:150px;
+	margin:0;
+	margin-bottom: 20px;
+	border-collapse: separate;
+	background-color: #ddd;
+}
+.blog-excerpt-3,
+.fb-excerpt-3{
+	border:solid 1px #000;
+	width:540px;
+	height:150px;
+	margin:0;
+	margin-bottom:20px;
+	border-collapse: separate;
+	background-color: #ddd;
+}
+.front-page-excerpts hr{
+	width:500px;
+	clear:both;
+}
+.front-page-excerpts img{
+	display:none;
+}
+.front-page-excerpts h2{
+	float: none;
+	padding:20px 0 0 20px;
+}
+.front-page-excerpts p{
+	float:left;
+	padding:20px;
+}
+.front-page-excerpts a{
+	float:right;
+}
+
+
+
 /************* END FRONT-PAGE ************/
 /************* START GATEWAY ************/
+.spotlight {
+	width: 100%;
+	height: 300px;
+	background-image:url(imgs/placeimg_940_300_grayscale_animals.jpg);
+
+}
+.spotlight h1 {
+	
+	background-color:#ddd;
+	padding:15px;
+	left:0;
+	top:60%;
+	color:#000;
+	opacity:.7;
+}
+.gateway-main-tile{
+	width:100%;
+	height:300px;
+	background-color:gray;
+	float:left;
+	margin: 20px 0;
+	padding:30px;
+}
+
+.gateway-main-tile h2{
+	font-size: 250%;
+	text-transform: uppercase;
+}
+.gateway-main-tile p{
+	font-size: 115%;
+	padding-top: 15px;
+	line-height: 22px;
+}
+.section-tiles a{
+	position: relative;
+	top:200px;
+	padding:15px;
+	float: right;
+	font-size: 130%;
+	background-color: #ddd;
+	color:#000;
+}
+.tile-1,
+.tile-2,
+.tile-3,
+.tile-4,
+.tile-5,
+.tile-6{
+	width: 260px;
+	height: 260px;
+	background-image: url(imgs/placeimg_260_260_grayscale_animals);
+	float:left;
+}
+.tile-1,
+.tile-3,
+.tile-5{
+	margin-right: 20px;
+}
+
+.tile-2,
+.tile-3,
+.tile-5,
+.tile-6{
+	margin-left:0;
+}
+
 
 /************* END GATEWAY ************/
 /************* START DESTINATION ************/

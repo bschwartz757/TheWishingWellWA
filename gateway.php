@@ -22,7 +22,7 @@
 <?php get_sidebar(); ?>
 <div class="clear"></div>
 <div class="section-tiles">
-    <div class="gateway-row-1">
+    
         <div class="tile-1">
             
             <div class="caption">
@@ -39,9 +39,6 @@
                 <a href="<?php echo home_url(); ?>/?page_id=68"><h1>Staff &gt;&gt;</h1></a>
             </div>            
         </div>        
-    </div> <!-- end gateway-row-1-->
-    <div class="clear"></div>
-    <div class="gateway-row-2">
         <div class="tile-4">
             <div class="caption">
                 <a href="<?php echo home_url(); ?>/?page_id=20"><h1>Testimonials &gt;&gt;</h1></a>
@@ -57,7 +54,7 @@
                 <a href="<?php echo home_url(); ?>/?page_id=24"><h1>Partners &gt;&gt;</h1></a>
             </div>            
         </div>        
-    </div> <!-- end gateway-row-2 -->
+ 
 </div> <!--end section-tiles-->
 <div class="clear"></div>
 </div> <!--close content-->    

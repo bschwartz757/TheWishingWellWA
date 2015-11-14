@@ -32,9 +32,10 @@
                 <h4>Connect through our family-oriented experiences</h4>
                 <a href="<?php echo home_url(); ?>/?page_id=14"><h1>Events &gt;&gt;</h1></a>
             </div>            
-        </div>       
+        </div>   
+        
 </div> <!-- end home-thumbnails-->
-
+<div class="clear"></div>
 <div class="front-page-excerpts">
 <!--This section will have two columns, blog posts on the left and facebook posts on the right. 3 of each will be shown-->
 
@@ -43,20 +44,20 @@
     
 <div class="blog-excerpt-1">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>Blog Post Title</h2>
-    <p>Post meta<br/><a href="#"> Read More &gt;&gt;</a></p>
+    <h2>Blog Post Title</h2><hr width="0">
+    <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
 
 <div class="blog-excerpt-2">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>Blog Post Title</h2>
-    <p>Post meta<br/><a href="#"> Read More &gt;&gt;</a></p>
+    <h2>Blog Post Title</h2><hr width="0">
+    <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
 
 <div class="blog-excerpt-3">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>Blog Post Title</h2>
-    <p>Post meta<br/><a href="#"> Read More &gt;&gt;</a></p>
+    <h2>Blog Post Title</h2><hr width="0">
+    <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
 
 
@@ -80,20 +81,20 @@
 
 <div class="fb-excerpt-1">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>FB Post Title</h2>
-    <p>Post meta <br/><a href="#">Read More &gt;&gt;</a></p>
+    <h2>FB Post Title</h2><hr width="0">
+    <p>Post meta description<br/><a href="#">Read More &gt;&gt;</a></p>
 </div>
 
 <div class="fb-excerpt-2">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>FB Post Title</h2>
-    <p>Post meta <br/><a href="#">Read More &gt;&gt;</a></p>
+    <h2>FB Post Title</h2><hr width="0">
+    <p>Post meta description<br/><a href="#">Read More &gt;&gt;</a></p>
 </div>
 
 <div class="fb-excerpt-3">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>FB Post Title</h2>
-    <p>Post meta <br/><a href="#">Read More &gt;&gt;</a></p>
+    <h2>FB Post Title</h2><hr width="0">
+    <p>Post meta description<br/><a href="#">Read More &gt;&gt;</a></p>
 </div>
        
         
