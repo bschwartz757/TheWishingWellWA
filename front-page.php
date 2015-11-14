@@ -41,25 +41,24 @@
     <div class="blog-excerpts">
     <h1>latest from the blog</h1>
     
-<div class="fp-blog-content">
-<div class="blog-exerpt-1">
+<div class="blog-excerpt-1">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
     <h2>Blog Post Title</h2>
-    <p>Normcore next level mumblecore, portland biodiesel selvage fingerstache brunch lumbersexual poutine squid readymade. Vinyl blue bottle marfa cred, bicycle.<a href="#"> Read More &gt;&gt;</a></p>
+    <p>Post meta<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
-<div class="clear"></div>
-<div class="blog-exerpt-2">
+
+<div class="blog-excerpt-2">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
     <h2>Blog Post Title</h2>
-    <p>8-bit sustainable photo booth, microdosing hella cornhole wolf master cleanse kitsch chambray retro. Mlkshk small batch squid microdosing. Echo park sartorial.<a href="#"> Read More &gt;&gt;</a></p>
+    <p>Post meta<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
-<div class="clear"></div>
-<div class="blog-exerpt-3">
+
+<div class="blog-excerpt-3">
     <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
     <h2>Blog Post Title</h2>
-    <p>Chicharrones jean shorts yuccie, banjo etsy disrupt craft beer street art. Pabst tilde put a bird on it, chartreuse offal four dollar toast pitchfork.<a href="#"> Read More &gt;&gt;</a></p>
+    <p>Post meta<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
-</div>
+
 
     <!-- COMMENTED OUT THE LOOP FOR WIREFRAME 
 
@@ -76,12 +75,30 @@
     
     -->
     </div> <!-- END blog-excerpts-->
-    <div class="fb-excerpts">
+    <div class="fb-excerpts"><!--facebook posts go here-->
     <h1>latest from facebook</h1>
-        <!--facebook posts go here-->
+
+<div class="fb-excerpt-1">
+    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <h2>FB Post Title</h2>
+    <p>Post meta <br/><a href="#">Read More &gt;&gt;</a></p>
+</div>
+
+<div class="fb-excerpt-2">
+    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <h2>FB Post Title</h2>
+    <p>Post meta <br/><a href="#">Read More &gt;&gt;</a></p>
+</div>
+
+<div class="fb-excerpt-3">
+    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <h2>FB Post Title</h2>
+    <p>Post meta <br/><a href="#">Read More &gt;&gt;</a></p>
+</div>
+       
         
-    </div>
-</div>    <!--close front-page-excerpts-->
+    </div><!-- end fb-excerpts -->
+</div>    <!--end front-page-excerpts-->
 
 </div> <!--close content-->
 <p class="top-link"><a href="#nav-main">Back to top</a></p>

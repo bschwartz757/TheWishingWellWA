@@ -313,40 +313,51 @@ header .menu li:hover ul {
 
 .front-page-excerpts{
 	width:100%;
-	height:680px;
+	margin-top: 20px;
+
 }
-.fp-blog-content{
-	background-color: #ddd;
-}
-.fp-blog-content img,
-.fp-blog-content h2{
-	float: left;
-}
+
 .blog-excerpts,
 .fb-excerpts {
 	width:49%;
 	float:left;
+	background-color: #ddd;
+
 }
 .blog-excerpts h1,
 .fb-excerpts h1{
 	width:100%;
 	padding:25px;
 	background-color: #ccc;
-	margin-top:20px;
 	text-transform: uppercase;
 	font-size: 30px;
 	text-align: center;
 }
-.blog-excerpt-1 p,
-.blog-excerpt-2 p,
-.blog-excerpt-3 p{
-	float:left;
-	padding:20px;
-}
-
 .fb-excerpts{
 	margin-left: 2%
 }
+
+.blog-excerpt-1,
+.blog-excerpt-2,
+.fb-excerpt-1,
+.fb-excerpt-2{
+	margin:20px 20px 0 20px;
+}
+.blog-excerpt-3,
+.fb-excerpt-3{
+	margin:0 0 0 20px;
+}
+.front-page-excerpts img{
+	float:left;
+	margin:0 20px 0 0;
+	padding-bottom:20px;
+}
+.front-page-excerpts h2,
+.front-page-excerpts p,
+.front-page-excerpts a{
+	float:left;
+}
+
 /******************** END FRONT-PAGE.PHP ***************/
 /******************** START GATEWAY.PHP ***************/
 .spotlight {
