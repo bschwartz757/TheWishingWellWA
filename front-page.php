@@ -76,7 +76,18 @@
     
     -->
     </div> <!-- END blog-excerpts-->
-    <div class="fb-excerpts"><!--facebook posts go here-->
+    
+<!-- Experimental FB plugin code, requires JS script -->    
+<div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="400" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+    <div class="fb-xfbml-parse-ignore">
+        <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a>
+        </blockquote>
+    </div>
+</div>
+<!-- End Experimental FB plugin code, requires JS script -->    
+   
+<!--facebook posts go here    
+    <div class="fb-excerpts">
     <h1>latest from facebook</h1>
 
 <div class="fb-excerpt-1">
@@ -86,19 +97,19 @@
 </div>
 
 <div class="fb-excerpt-2">
-    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <img class="excerpt-image" src="<?php// echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
     <h2>FB Post Title</h2><hr width="0">
     <p>Post meta description<br/><a href="#">Read More &gt;&gt;</a></p>
 </div>
 
 <div class="fb-excerpt-3">
-    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <img class="excerpt-image" src="<?php// echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
     <h2>FB Post Title</h2><hr width="0">
     <p>Post meta description<br/><a href="#">Read More &gt;&gt;</a></p>
 </div>
        
         
-    </div><!-- end fb-excerpts -->
+    </div> end fb-excerpts -->
 </div>    <!--end front-page-excerpts-->
 
 </div> <!--close content-->
