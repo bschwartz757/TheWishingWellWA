@@ -334,6 +334,7 @@ header .menu li:hover ul {
 	text-align: center;
 }
 .fb-excerpts{
+    height:auto;
 	margin-left: 2%
 }
 

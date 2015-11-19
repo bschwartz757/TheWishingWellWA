@@ -76,14 +76,16 @@
     
     -->
     </div> <!-- END blog-excerpts-->
-    
+ 
+<div class="fb-excerpts">    
 <!-- Experimental FB plugin code, requires JS script -->    
-<div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="400" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+<div class="fb-page" data-href="https://www.facebook.com/The-Wishing-Well-Foundation-WA-272971612747453/" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
     <div class="fb-xfbml-parse-ignore">
         <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a>
         </blockquote>
     </div>
 </div>
+</div> <!-- end fb-excerpts -->   
 <!-- End Experimental FB plugin code, requires JS script -->    
    
 <!--facebook posts go here    
