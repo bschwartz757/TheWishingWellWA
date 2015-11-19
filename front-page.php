@@ -39,44 +39,49 @@
 <div class="front-page-excerpts">
 <!--This section will have two columns, blog posts on the left and facebook posts on the right. 3 of each will be shown-->
 
-    <div class="blog-excerpts">
+<div class="blog-excerpts">
+        
+    <!-- COMMENTED OUT THE LOOP FOR WIREFRAME -->
+    
+    <article class="blog-excerpt">
+    <?php if(have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
+    <h2><a href="<?php the_permalink();// links to the post ?>"><?php the_title();// gets the post title ?></a></h2>
+    <p><?php the_excerpt();// gets the post excerpt ?></p>
+    <?php the_post_thumbnail('thumbnail');// gets the post thumbnail ?>
+    <small>Posted on <?php the_time('F j, Y');// gets the time ?> by <?php the_author();// gets the author ?> in <?php the_category(', ');// gets the category - comma separates if multiple ?></small>                         
+    <p class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></p>
+    <?php endwhile; else : ?>
+    <p><?= ('Sorry, no posts matched your criteria.'); ?></p>
+    <?php endif; ?>
+</article>
+       
+</div> <!-- END blog-excerpts-->    
+   
+
+<!-- COMMENTED OUT FOR DEV    
+<div class="blog-excerpts">    
     <h1>latest from the blog</h1>
     
 <div class="blog-excerpt-1">
-    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <img class="excerpt-image" src="<?php// echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
     <h2>Blog Post Title</h2><hr width="0">
     <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
 
 <div class="blog-excerpt-2">
-    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <img class="excerpt-image" src="<?php// echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
     <h2>Blog Post Title</h2><hr width="0">
     <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
 
 <div class="blog-excerpt-3">
-    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
+    <img class="excerpt-image" src="<?php// echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
     <h2>Blog Post Title</h2><hr width="0">
     <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
 </div>
-
-
-    <!-- COMMENTED OUT THE LOOP FOR WIREFRAME 
-
-    <?php if(have_posts()) : while(have_posts()) : the_post(); // start the loop ?>
-            <article class="post-excerpt">
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  
-            <small>Posted on <?php the_time('F j, Y'); ?> by <?php the_author(); ?> in <?php the_category(', '); ?></small>
-            <a href="<?php the_permalink(); ?>">
-            <?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?></a>           
-            <?php the_excerpt(); ?>
-            <p class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></p>        
-            </article>
-    <?php endwhile; endif; // end the loop ?>
+    </div> <!-- END blog-excerpts, END DEV -->
     
-    -->
-    </div> <!-- END blog-excerpts-->
- 
+    
 <div class="fb-excerpts">    
 <!-- Experimental FB plugin code, requires JS script -->    
 <div class="fb-page" data-href="https://www.facebook.com/The-Wishing-Well-Foundation-WA-272971612747453/" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
