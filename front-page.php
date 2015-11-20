@@ -39,28 +39,25 @@
 
     <div class="social-excerpts blog">
     <h1>latest from the blog</h1>
-    
+        
+<?php
+    $query = new WP_Query( array( "posts_per_page" => 3 ) );
+    while ($query->have_posts()) : $query->the_post();
+?>
+        
 <div class="social-excerpt blog first">
-    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>Blog Post Title</h2><hr width="0"/>
-    <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
+    <div class="excerpt-image"><?php the_post_thumbnail('thumbnail'); ?>
+    </div>    
+    <h2><?php the_title() ?></h2><hr width="0"/>
+    <p><?= the_excerpt(); ?><br/><a href="<?= the_permalink(); ?>"> Read More &gt;&gt;</a></p>
 </div>
-
-<div class="social-excerpt blog second">
-    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>Blog Post Title</h2><hr width="0"/>
-    <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
+<?php 
+    endwhile;
+    wp_reset_postdata();
+?>
 </div>
-
-<div class="social-excerpt blog third">
-    <img class="excerpt-image" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>Blog Post Title</h2><hr width="0"/>
-    <p>Post meta description<br/><a href="#"> Read More &gt;&gt;</a></p>
-
-</div>
-
-<!--COMMENTED OUT THE LOOP FOR WIREFRAME
-    
+        
+<!--    
     <article class="blog-excerpt">
     <?php if(have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
     <h2><a href="<?php the_permalink();// links to the post ?>"><?php the_title();// gets the post title ?></a></h2>
@@ -71,12 +68,10 @@
     <?php endwhile; else : ?>
     <p><?= ('Sorry, no posts matched your criteria.'); ?></p>
     <?php endif; ?>
-</article>
+</article> -->
        
 </div> <!-- END blog-excerpts-->    
-   
-
-<!-- COMMENTED OUT FOR DEV    
+      
 
     </div> <!-- END blog-excerpts, END DEV -->
 
