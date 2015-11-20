@@ -18,9 +18,11 @@
         <?php endwhile; else : ?>
         	<p><?= ('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
+        
+        <?php get_sidebar(); ?> 
     	</div><!--Close content-->
 
-<?php get_sidebar(); ?>                
+               
 
       <small>index.php</small>  
 <?php get_footer(); ?>    

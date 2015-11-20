@@ -41,7 +41,7 @@
     </div> 
 <div class="clear"></div>
     <div class="donate-button">
-        <button type="submit" class="btn-success">Donate</button>
+        <a href="#">Donate</a>
     </div>   
     
 <!-- Begin new Navigation -->
