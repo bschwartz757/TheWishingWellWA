@@ -113,12 +113,13 @@ p {
 
 /******************** START HEADER ***************/
 header{
-	position: relative;
+
 }
 .logo{
 	float:left;
 }
 .social-icons{
+	position: relative;
 	float:right;	
 }
 
@@ -133,10 +134,9 @@ header{
 	margin-left:20px;
 }
 
-.donate-button{
-	position: absolute;
-	bottom:10%;
-	right:5%;
+.donate-button.header{
+	float:right;
+	margin-top:40%;
 	padding:15px;
 	background-color:#aaa;
 	text-decoration: none;
@@ -233,11 +233,12 @@ header .menu li:hover ul {
 	margin-bottom: 20px;
 }
 #sidebar{
-	float:left;
-	margin: 20px 0 20px 20px;
+	float:right;
 	background-color: #ddd;
-	padding: 20px;
 	font-size: 130%;
+	width:32%;
+	margin-top:20px;
+	padding:20px;
 }
 
 
@@ -252,6 +253,7 @@ header .menu li:hover ul {
 .home-slider{
 	width:100%;
 	position: relative;
+	z-index: -1;
 	}
 
 .home-slider blockquote{
@@ -341,23 +343,18 @@ header .menu li:hover ul {
 
 /******************** END FRONT-PAGE.PHP ***************/
 /******************** START GATEWAY.PHP ***************/
-.spotlight {
-	
-	height: 300px;
-	background-image:url(imgs/placeimg_940_300_grayscale_animals.jpg);
-
+.spotlight{
+	position: relative;
 }
 .spotlight h1{
 	font-size: 200%;
-	position: relative;
-	float: right;
-	padding-right: 40px;
-	top:230px;
+	position: absolute;
 	color: #fff;
+	bottom:5%;
+	right:10%;
 }
 .gateway-main-tile{
-	
-	height:300px;
+	width:66%;
 	background-color:gray;
 	float:left;
 	margin: 20px 0;
@@ -373,44 +370,26 @@ header .menu li:hover ul {
 	padding-top: 15px;
 	line-height: 22px;
 }
-.section-tiles a{
+.tile{
+	float:left;
 	position: relative;
-	top:240px;
-	padding:15px;
-	float: right;
-	margin-right: 20px;
+}
+.tile a{
+	position: absolute;
+	bottom:5%;
+	right:8%;
 	font-size: 130%;
 	background-color: #ddd;
 	color:#000;
-}
-.tile-1,
-.tile-3,
-.tile-5{
-	width: 300px;
-	height: 300px;
-	background-image: url(imgs/kitty_300_300.jpg);
-	float:left;
+	text-decoration: none;
+	padding:10px;
 }
 
-.tile-2,
-.tile-4,
-.tile-6 {
-	width: 300px;
-	height: 300px;
-	background-image: url(imgs/puppy_300_300.jpg);
-	float:left;
+.tile.second{
+	margin:0 2.1%;
 }
-.tile-2,
-.tile-3,
-.tile-5,
-.tile-6{
-	margin-left:20px;
-}
-.tile-1,
-.tile-2,
-.tile-3{
-	margin-bottom: 20px;
-}
+
+
 
 
 /******************** END GATEWAY.PHP ***************/
@@ -505,7 +484,7 @@ footer {
     margin-top: 20px;
 }
 
-footer .donate-button {
+.donate-button.footer {
     float:left;
     position:relative;
     top:0px;

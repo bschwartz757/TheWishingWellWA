@@ -57,12 +57,13 @@
             <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
             <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
         </ul>  
-    </div>
-<div class="clear"></div>
-    <div class="donate-button">
-        <a href="#">Donate</a>
-    </div>   
     
+        <div class="clear"></div>
+        <div class="donate-button header">
+            <a href="#">Donate</a>
+        </div>  
+    </div> <!--end social-icons-->
+    <div class="clear"></div>
 <!-- Begin new Navigation -->
 <?php wp_nav_menu(array('theme_location' => 'main-menu','container' => 'nav','container_id' => 'nav-main')); ?>
 <!-- End new Navigation -->

@@ -81,7 +81,8 @@
     </div> <!-- END blog-excerpts, END DEV -->
 
     </div> <!-- END social-excerpts blog -->
-    <div class="social-excerpts fb"><!--facebook posts go here-->    
+    <div class="social-excerpts fb"><!--facebook posts go here--> 
+    <h1>latest from facebook</h1>   
 <!-- Experimental FB plugin code, requires JS script -->    
 <div class="fb-page" data-href="https://www.facebook.com/The-Wishing-Well-Foundation-WA-272971612747453/" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
     <div class="fb-xfbml-parse-ignore">

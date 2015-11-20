@@ -14,7 +14,7 @@
             <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
         </ul>  
     </div>
-<div class="donate-button">
+<div class="donate-button footer">
     <button type="submit" class="btn-success">Donate</button>
 </div>  
 <div class="clear"></div>  

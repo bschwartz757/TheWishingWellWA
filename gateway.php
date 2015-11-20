@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 
 <div class="spotlight">
-    
+   <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/placeimg_940_300_grayscale_animals.jpg" alt="gateway featured image"/>
 <a href="<?php echo home_url(); ?>/?page_id=64"><h1>Our Mission &gt;&gt;</h1></a>
 </div>
 
@@ -23,33 +23,38 @@
 <div class="clear"></div>
 <div class="section-tiles">
     
-        <div class="tile-1">
-            
+        <div class="tile first">
+           <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/kitty_300_300.jpg" alt="tile image"/>
             <div class="caption">
               <a href="<?php echo home_url(); ?>/?page_id=64"><h1>Mission &gt;&gt;</h1></a>
             </div>
         </div>
-        <div class="tile-2"> 
+        <div class="tile second"> 
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="tile image"/>
             <div class="caption">
                 <a href="<?php echo home_url(); ?>/?page_id=66"><h1>History &gt;&gt;</h1></a>
             </div>            
         </div>
-        <div class="tile-3">
+        <div class="tile third">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/kitty_300_300.jpg" alt="tile image"/>
             <div class="caption">
                 <a href="<?php echo home_url(); ?>/?page_id=68"><h1>Staff &gt;&gt;</h1></a>
             </div>            
         </div>        
-        <div class="tile-4">
+        <div class="tile first">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="tile image"/>
             <div class="caption">
                 <a href="<?php echo home_url(); ?>/?page_id=20"><h1>Testimonials &gt;&gt;</h1></a>
             </div>            
         </div>
-        <div class="tile-5">
+        <div class="tile second">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/kitty_300_300.jpg" alt="tile image"/>
             <div class="caption">
                 <a href="<?php echo home_url(); ?>/?page_id=22"><h1>Funding &gt;&gt;</h1></a>
             </div>            
         </div>
-        <div class="tile-6">
+        <div class="tile third">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="tile image"/>
             <div class="caption">
                 <a href="<?php echo home_url(); ?>/?page_id=24"><h1>Partners &gt;&gt;</h1></a>
             </div>            
@@ -58,7 +63,5 @@
 </div> <!--end section-tiles-->
 <div class="clear"></div>
 </div> <!--close content-->    
-    
-<p class="top-link"><a href="#nav-main">Back to top</a></p>
 
 <?php get_footer(); ?>
