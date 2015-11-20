@@ -23,6 +23,18 @@
 <!-- End WP Head -->
   
 </head>
+  
+<!-- FB plugin JavaScript -->    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+<!-- End FB plugin JavaScript -->     
+    
 <body <?php body_class(); ?> class="home">
 
 <div class="wrapper">
@@ -31,14 +43,21 @@
     <div class="logo">
         <a href="<?php echo home_url(); ?>"><img class="logo-desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/wwflogo.jpg" alt="Wishing Well logo" width="350px"/><img class="logo-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/WWFLogoSmall.jpg" alt="Wishing Well logo" width="0px"/></a>
     </div>
-    <div class="social-icons">
+    
+              
+<!-- Start Social Nav Menu -->
+<?php// wp_nav_menu( array('theme_location' => 'social-menu','container' => 'div','container_class' => 'social-icons')); ?>
+<!-- End Social Nav Menu -->      
+        
+    
+    <div class="social-icons">    
         <ul class="social-icons-ul">
             <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
             <li class="icon"><a class="flaticon-twitter" href="#"></a></li>
             <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
             <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
         </ul>  
-    </div> 
+    </div>
 <div class="clear"></div>
     <div class="donate-button">
         <a href="#">Donate</a>

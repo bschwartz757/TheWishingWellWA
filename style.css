@@ -320,7 +320,9 @@ header .menu li:hover ul {
 	font-size: 30px;
 	text-align: center;
 }
+
 .social-excerpts.fb{
+    height:auto;
 	margin-left: 2%
 }
 

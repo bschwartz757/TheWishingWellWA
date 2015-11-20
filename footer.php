@@ -1,15 +1,19 @@
 
 <!-- Start footer -->
 <footer>
- 
-<div class="social-icons">
-    <ul class="social-icons-ul">
-        <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
-        <li class="icon"><a class="flaticon-twitter" href="#"></a></li>
-        <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
-        <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
-    </ul>  
-</div> 
+   
+    <!-- Start Social Nav Menu -->
+<?php// wp_nav_menu( array('theme_location' => 'social-menu','container' => 'div','container_class' => 'social-icons')); ?>
+<!-- End Social Nav Menu -->             
+    
+    <div class="social-icons">    
+        <ul class="social-icons-ul">
+            <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
+            <li class="icon"><a class="flaticon-twitter" href="#"></a></li>
+            <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
+            <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
+        </ul>  
+    </div>
 <div class="donate-button">
     <button type="submit" class="btn-success">Donate</button>
 </div>  
