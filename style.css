@@ -139,7 +139,13 @@ header{
 	margin-top:40%;
 	padding:15px;
 	background-color:#aaa;
+}
+.donate-button.header a{
 	text-decoration: none;
+	color:#000;
+}
+.donate-button.header a:hover{
+	color:#333;
 }
 
 /******************** START NAV ***************/
@@ -149,6 +155,7 @@ header{
 }
 #menu-main{
 	background-color: #ddd;
+
 
 }
 .menu a{
@@ -187,6 +194,7 @@ header .menu li:hover {
  	background: #666;
   	color: #fff;
   	margin-right:-4px;
+  	z-index: 999;
 }
 header .menu li ul{
 	padding: 0;
@@ -253,7 +261,6 @@ header .menu li:hover ul {
 .home-slider{
 	width:100%;
 	position: relative;
-	z-index: -1;
 	}
 
 .home-slider blockquote{
@@ -268,10 +275,15 @@ header .menu li:hover ul {
 }
 .home-slider a{
 	position: absolute;
-	bottom: 8%;
-	right:5%;
+	bottom:1%;
+	right:0;
+	padding:20px;
 	color:#fff;
 	font-size: 200%;
+	background-color: #000;
+	opacity:.8;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 .home-thumbnails{
 	width:100%;
@@ -300,6 +312,12 @@ header .menu li:hover ul {
 	position: absolute;
 	bottom:10%;
 	right:8%;
+	font-size:130%;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #ddd;
+	opacity: .8;
+	padding:3%;
 }
 
 .front-page-excerpts{
@@ -322,9 +340,12 @@ header .menu li:hover ul {
 	font-size: 30px;
 	text-align: center;
 }
-
+.social-excerpts.blog{
+	float:left;
+}
 .social-excerpts.fb{
     height:auto;
+    float:left;
 	margin-left: 2%
 }
 
@@ -370,26 +391,34 @@ header .menu li:hover ul {
 	padding-top: 15px;
 	line-height: 22px;
 }
+.section-tiles{
+	margin-right:-20px;
+
+}
+
 .tile{
 	float:left;
+	width:31.2%;
 	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+
 }
 .tile a{
 	position: absolute;
-	bottom:5%;
-	right:8%;
 	font-size: 130%;
 	background-color: #ddd;
 	color:#000;
 	text-decoration: none;
 	padding:10px;
+	bottom:5%;
+	right:5%;
+	text-transform: uppercase;
 }
+.caption{
+	display: none;
 
-.tile.second{
-	margin:0 2.1%;
 }
-
-
 
 
 /******************** END GATEWAY.PHP ***************/
@@ -481,7 +510,6 @@ footer {
     height:240px;
     background-color:#ddd;
     padding:20px;
-    margin-top: 20px;
 }
 
 .donate-button.footer {
@@ -562,8 +590,8 @@ body{
 
 }
 .wrapper{
-	margin-left:30px;
-	margin-right:30px;
+	margin-left:0;
+	margin-right:0;
 }
 /************* START MOBILE HEADER ************/
 .logo-desktop{
@@ -571,20 +599,16 @@ body{
 }
 .logo-mobile{
 	width:48%;
+	margin-left: 30px;
+	min-width:55%;
 }
-.social-icons{
+.social-icons-ul{
 	display: none;
 }
-.donate-button{
-	top:-70px;
-	height: 40px;
-	width: 150px;
+.donate-button.header{
+	margin-top:-50px;
 }
 
-.btn-success{
-	height: 40px;
-	width:150px;
-}
 /************* END MOBILE HEADER ************/
 /************* START NAVIGATION ************/
 
@@ -602,7 +626,7 @@ body{
 	
 	header .menu a {
 		display: block;
-		padding: 5px 5px 5px 32px;
+		padding:0;
 		text-align: left;
 	}
 
@@ -612,7 +636,8 @@ body{
 	}
 	header .menu ul:hover li {
 		display: block;
-		margin: 0 0 5px;
+		margin: 0;
+		padding:0;
 	}
 
 #sidebar{
@@ -622,176 +647,101 @@ body{
 /************* START FRONT-PAGE ************/
 
 .home-slider{
-	width:100%;
-	height:300px;
-	background-image: url(imgs/placeimg_940_300_grayscale_animals.jpg);
+	overflow: hidden;
 	text-align: center;
+	min-width: 320px;
 
 }
 .home-slider blockquote{
-	font-style: italic;
-	font-weight: bold;
-	width:100%;
-	font-size: 160%;
-	padding-top:40px;
-	padding-left: 25px;
-	background-color: #ddd;
-	opacity: .7;
+	width:80%;
+	padding:10px;
+	top:30%;
 }
-.home-slider h1 {
-	
-	background-color:#ddd;
-	padding:15px;
-	right:25%;
-	top:75px;
-	color:#000;
-	opacity:.7;
+.home-slider a {
+	background-color:#000;
+	color:#fff;
+	opacity:.8;
 }
 .home-thumbnails{
-	
-	margin-bottom: 20px;
+width:100%;
+text-align: center;
+margin-bottom: 0;
 }
+
+.home-thmb.second,
+.home-thmb.third{
+	margin-left: 0;
+}
+
 .home-thmb{
-	float:none;
-	font-size: 130%;
-	padding:30px;
-	color: #fff;
+	width: 100%;
+	clear:both;
+	text-align: center;
 	margin:0 auto;
-	margin-bottom:20px;
-	
+	margin-bottom: 20px;
+
+}
+.home-thmb h4{
+	position: absolute;
+	padding:0;
+	margin:0 24%;	
 }
 .home-thmb a{
-	position: relative;
-	top:160px;
-	float: right;
 	color: #000;
-}
-.social-excerpts{
-	float:none;
-	width:100%;
-	background-color: #fff;
+	position: absolute;
+	font-size: 120%;
+	background-color: #ddd;
+	opacity: .8;
+	padding:3%;
+	bottom:5%;
+	margin-right: 17%;
 }
 .front-page-excerpts{
-	clear:both;
+	width:90%;
+	margin: 0 auto;
+
+}
+
+.social-excerpts {
+	width:100%;
+	float:none;
+	background-color: #ddd;
+
 }
 .social-excerpts h1{
 	width:100%;
-	padding:15px;
-	background-color: #fff;
+	padding:25px;
+	background-color: #ccc;
 	text-transform: uppercase;
-	font-size: 120%;
+	font-size: 30px;
 	text-align: center;
-	border-top:solid 1px #000;
+}
+.social-excerpts.blog{
+	float:none;
+	margin-bottom: 20px;
 }
 .social-excerpts.fb{
 	margin-left: 0;
-	
-}
-
-.social-excerpt.first,
-.social-excerpt.second{
-	border:solid 1px #000;
-	height:150px;
-	margin:0;
 	margin-bottom: 20px;
-	border-collapse: separate;
-	background-color: #ddd;
 }
-.social-excerpt.third{
-	border:solid 1px #000;
-	height:150px;
-	margin:0;
-	margin-bottom:20px;
-	border-collapse: separate;
-	background-color: #ddd;
+.fb-page{
 }
-.front-page-excerpts hr{
+.social-excerpt{
 	clear:both;
+	margin:20px 20px 0 20px;
 }
 .front-page-excerpts img{
-	display:none;
+	float:left;
+	margin:0 20px 0 0;
+	padding-bottom:20px;
 }
 .front-page-excerpts h2{
-	float: none;
-	padding:20px 0 0 20px;
+	font-size:120%;
 }
-.front-page-excerpts p{
-	float:left;
-	padding:20px;
-}
-.front-page-excerpts a{
-	float:right;
-}
-
 
 
 /************* END FRONT-PAGE ************/
 /************* START GATEWAY ************/
-.spotlight {
-	width: 100%;
-	height: 300px;
-	background-image:url(imgs/placeimg_940_300_grayscale_animals.jpg);
-
-}
-.spotlight h1 {
-	
-	background-color:#ddd;
-	padding:15px;
-	left:0;
-	top:60%;
-	color:#000;
-	opacity:.7;
-}
-.gateway-main-tile{
-	width:100%;
-	height:300px;
-	background-color:gray;
-	float:left;
-	margin: 20px 0;
-	padding:30px;
-}
-
-.gateway-main-tile h2{
-	font-size: 250%;
-	text-transform: uppercase;
-}
-.gateway-main-tile p{
-	font-size: 115%;
-	padding-top: 15px;
-	line-height: 22px;
-}
-.section-tiles a{
-	position: relative;
-	top:200px;
-	padding:15px;
-	float: right;
-	font-size: 130%;
-	background-color: #ddd;
-	color:#000;
-}
-.tile-1,
-.tile-2,
-.tile-3,
-.tile-4,
-.tile-5,
-.tile-6{
-	width: 260px;
-	height: 260px;
-	background-image: url(imgs/placeimg_260_260_grayscale_animals.jpg);
-	float:left;
-}
-.tile-1,
-.tile-3,
-.tile-5{
-	margin-right: 20px;
-}
-
-.tile-2,
-.tile-3,
-.tile-5,
-.tile-6{
-	margin-left:0;
-}
 
 
 /************* END GATEWAY ************/
@@ -831,7 +781,6 @@ body{
 
 .destination-content {
 	width:100%;
-	height:200px;
 	background-color:#ddd;	
 	margin-top:20px;
 	margin-bottom:20px;

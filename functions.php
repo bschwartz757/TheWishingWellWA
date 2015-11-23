@@ -88,4 +88,52 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 //Create Custom Image Sizes
 add_image_size('gateway-spotlight', 940, 450, array('center', 'center')); //Creates the 940x450 hard crop mode (from center)
 
+//Get Child Pages
+function get_child_pages(){
+
+	global $post;
+
+	rewind_posts(); //stops any previous loops
+	query_posts(array('post_type' => 'page', 'posts_per_page'=> -1, 'post_status' => publish, 'post_parent' => $post->ID,'order'=> 'ASC','orderby' =>'menu_order'));//query and order child pages
+	while (have_posts()) : the_post();
+
+		$childPermalink = get_permalink($post->ID); //post permalink
+		$childID = $post->ID; //post it
+		$childTitle = $post->post_title; //post title
+		$childExcerpt = $post->post_excerpt; //post excerpt
+		$childImage = get_the_post_thumbnail($page->ID, 'medium') ; //post thumbnail
+
+		echo '<div class="tile">';
+		echo $childImage;
+		echo '<h1><a href="'.$childPermalink.'">' .$childTitle.'</a></h1>';
+		echo '<p class="caption">'. $childExcerpt . '</p>';
+		echo '</div>';
+
+endwhile;
+wp_reset_query();// reset query
+}
+
+function get_featured_image() {
+	
+	global $post;
+	
+	$theImage = get_the_post_thumbnail($page->ID, 'medium');
+	$theLink = get_post_meta($post->ID, 'featured-image-link', true);
+		
+	echo '<figure class="featured-image">';
+	
+	if ($theLink) { 
+	
+		echo '<a href="'.$theLink.'" target="_blank" title="View: '.$theLink.'">'.$theImage.'</a>';
+		
+	} else {
+		
+		echo $theImage;
+		
+	}
+		
+	echo '</figure>';
+	
+}
+
 ?>

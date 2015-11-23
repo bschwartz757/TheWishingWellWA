@@ -11,25 +11,25 @@
 
 <div class="home-slider">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/placeimg_940_300_grayscale_animals.jpg" alt="front page slider"/>
-    <blockquote>We give foster care children confidence by providing for their basic material needs."</blockquote>
-    <a href="<?php echo home_url(); ?>/?page_id=6"><h1>Learn More &gt;&gt;</h1></a>
+    <blockquote>"We give foster care children confidence by providing for their basic material needs."</blockquote>
+    <h1><a href="<?php echo home_url(); ?>/?page_id=6">Learn More</a></h1>
 </div>
 
 <div class="home-thumbnails">
         <div class="home-thmb first"> 
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="volunteer"/>
                 <h4>Making a lasting difference in the life of a foster child</h4>
-                <a href="<?php echo home_url(); ?>/?page_id=10"><h1>Volunteer &gt;&gt;</h1></a>
+                <a href="<?php echo home_url(); ?>/?page_id=10"><h1>Volunteer</h1></a>
         </div>
         <div class="home-thmb second">             
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/kitty_300_300.jpg" alt="donate"/>
                 <h4>Provide hope by donating new or gently used clothing and supplies</h4>
-                <a href="<?php echo home_url(); ?>/?page_id=12"><h1>Donate &gt;&gt;</h1></a>     
+                <a href="<?php echo home_url(); ?>/?page_id=12"><h1>Donate</h1></a>     
         </div>
         <div class="home-thmb third">            
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="events"/>
                 <h4>Connect through our family-oriented experiences</h4>
-                <a href="<?php echo home_url(); ?>/?page_id=14"><h1>Events &gt;&gt;</h1></a>     
+                <a href="<?php echo home_url(); ?>/?page_id=14"><h1>Events</h1></a>     
         </div>   
         <div class="clear"></div>
 </div> <!-- end home-thumbnails-->
@@ -49,13 +49,14 @@
     <div class="excerpt-image"><?php the_post_thumbnail('thumbnail'); ?>
     </div>    
     <h2><?php the_title() ?></h2><hr width="0"/>
-    <p><?= the_excerpt(); ?><br/><a href="<?= the_permalink(); ?>"> Read More &gt;&gt;</a></p>
+    <p><?= the_excerpt(); ?><br/><a href="<?= the_permalink(); ?>"> Read More</a></p>
+
 </div>
 <?php 
     endwhile;
     wp_reset_postdata();
 ?>
-</div>
+
         
 <!--    
     <article class="blog-excerpt">
@@ -72,10 +73,6 @@
        
 </div> <!-- END blog-excerpts-->    
       
-
-    </div> <!-- END blog-excerpts, END DEV -->
-
-    </div> <!-- END social-excerpts blog -->
     <div class="social-excerpts fb"><!--facebook posts go here--> 
     <h1>latest from facebook</h1>   
 <!-- Experimental FB plugin code, requires JS script -->    
