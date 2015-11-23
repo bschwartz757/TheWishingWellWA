@@ -265,12 +265,15 @@ header .menu li:hover ul {
 
 .home-slider blockquote{
 	position: absolute;
-	top:45%;
-	left:5%;
+	top:5%;
+	left:0;
 	font-style: italic;
-	font-weight: bold;
-	width:38%;
+	padding:10px;
+	width:55%;
 	font-size: 160%;
+	color:#fff;
+	background-color:#000;
+	opacity: .7;
 	
 }
 .home-slider a{
@@ -281,9 +284,12 @@ header .menu li:hover ul {
 	color:#fff;
 	font-size: 200%;
 	background-color: #000;
-	opacity:.8;
+	opacity:.7;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+.home-slider a:hover{
+	color:#0bf;
 }
 .home-thumbnails{
 	width:100%;
@@ -308,18 +314,21 @@ header .menu li:hover ul {
 	padding:25px;
 }
 .home-thmb a{
-	color: #000;
+	background-color: #000;
 	position: absolute;
-	bottom:10%;
-	right:8%;
+	bottom:1%;
+	text-align: right;
 	font-size:130%;
 	text-decoration: none;
 	text-transform: uppercase;
-	background-color: #ddd;
-	opacity: .8;
+	color: #fff;
+	opacity: .7;
 	padding:3%;
+	width:100%;
 }
-
+.home-thmb a:hover{
+	color:#0bf;
+}
 .front-page-excerpts{
 	width:100%;
 	margin-top: 20px;
@@ -329,7 +338,7 @@ header .menu li:hover ul {
 .social-excerpts {
 	width:49%;
 	float:left;
-	background-color: #ddd;
+	
 
 }
 .social-excerpts h1{
@@ -339,27 +348,52 @@ header .menu li:hover ul {
 	text-transform: uppercase;
 	font-size: 30px;
 	text-align: center;
+	margin-bottom: 20px;
 }
-.social-excerpts.blog{
+.social-excerpt.blog{
 	float:left;
+	background-color: #ddd;
+	margin-bottom: 20px;
+	padding-top:20px;
+	padding-bottom: 20px;
 }
 .social-excerpts.fb{
     height:auto;
     float:left;
 	margin-left: 2%
+
 }
 
 .social-excerpt{
 	clear:both;
-	margin:20px 20px 0 20px;
 }
 .front-page-excerpts img{
 	float:left;
-	margin:0 20px 0 0;
-	padding-bottom:20px;
+	margin-left:20px;
+	margin-right:20px;
 }
 .front-page-excerpts h2{
 	font-size:120%;
+	text-decoration: none;
+}
+.front-page-excerpts h2 a{
+	text-decoration: none;
+	color:#000;
+	font-weight: bold;
+}
+.front-page-excerpts h2 a:hover{
+	color: #0bf;
+}
+.front-page-excerpts p{
+	padding-right:20px;
+	padding-left:20px;
+}
+.read-more{
+	text-decoration: none;
+	color:#000;
+}
+.read-more:hover{
+	color:#0bf;
 }
 
 /******************** END FRONT-PAGE.PHP ***************/
@@ -370,9 +404,18 @@ header .menu li:hover ul {
 .spotlight h1{
 	font-size: 200%;
 	position: absolute;
-	color: #fff;
-	bottom:5%;
-	right:10%;
+	bottom:1%;
+	right:5%;
+	background-color:#000;
+	
+}
+.spotlight a{
+	color:#fff;
+	text-transform: uppercase;
+
+}
+.spotlight a:hover{
+	color:#0bf;
 }
 .gateway-main-tile{
 	width:66%;
@@ -407,13 +450,18 @@ header .menu li:hover ul {
 .tile a{
 	position: absolute;
 	font-size: 130%;
-	background-color: #ddd;
-	color:#000;
+	background-color: #000;
+	color:#fff;
 	text-decoration: none;
 	padding:10px;
-	bottom:5%;
-	right:5%;
+	bottom:1%;
+	width: 100%;
+	opacity: .7;
+	text-align: right;
 	text-transform: uppercase;
+}
+.tile a:hover{
+	color:#0bf;
 }
 .caption{
 	display: none;

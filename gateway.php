@@ -11,7 +11,7 @@
 
 <div class="spotlight">
    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/placeimg_940_300_grayscale_animals.jpg" alt="gateway featured image"/>
-<a href="<?php echo home_url(); ?>/?page_id=64"><h1>Our Mission &gt;&gt;</h1></a>
+<a href="<?php echo home_url(); ?>/?page_id=64"><h1>Our Mission</h1></a>
 </div>
 
 <div class="gateway-main-tile">
