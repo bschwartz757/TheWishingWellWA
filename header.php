@@ -44,12 +44,6 @@
         <a href="<?php echo home_url(); ?>"><img class="logo-desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/wwflogo.jpg" alt="Wishing Well logo" width="350px"/><img class="logo-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/WWFLogoSmall.jpg" alt="Wishing Well logo" width="0px"/></a>
     </div>
     
-              
-<!-- Start Social Nav Menu -->
-<?php// wp_nav_menu( array('theme_location' => 'social-menu','container' => 'div','container_class' => 'social-icons')); ?>
-<!-- End Social Nav Menu -->      
-        
-    
     <div class="social-icons">    
         <ul class="social-icons-ul">
             <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
