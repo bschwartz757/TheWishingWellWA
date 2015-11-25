@@ -137,7 +137,7 @@ function get_featured_image() {
 }
 
 function custom_excerpt_length( $length ) {
-	return 20;
+	return 25;
 		}
 		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

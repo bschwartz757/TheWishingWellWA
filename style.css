@@ -656,7 +656,7 @@ header .menu li:hover ul {
 /******************** START PLUGIN.PHP ********************/
 
 .plugin-content{
-	width: 620px;
+	width: 66%;
 	height:300px;
 	float: left;
 	background-color: #ddd;
@@ -668,7 +668,46 @@ header .menu li:hover ul {
 	text-align: center;
 }
 /******************** END PLUGIN.PHP ***************/
+/******************** START INDEX.PHP ***************/
+.blog-page-content{
+	margin-top: 20px;
+	width:66%;
+	float:left;
+}
+.single-blog{
+	padding:20px;
+	background-color: #ddd;
+	margin-bottom:20px;
+}
+.blog-image{
+float:left;
+margin-right:20px;
+}
+.single-blog h2 {
+	text-decoration: none;
+	color: #000;
+	font-size: 130%;
+	padding-bottom:4%;
+}
+.single-blog h2 a{
+	text-decoration: none;
+	color: #000;
+}
+.single-blog h2 a:hover{
+	color: #0bf;
+}
+.meta{
+	padding-top: 5%;
+}
+
+
+
+
+
+
+/******************** END INDEX.PHP ***************/
 /******************** END BODY ***************/
+
 
 /******************** START FOOTER ***************/
 
