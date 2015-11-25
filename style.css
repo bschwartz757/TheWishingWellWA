@@ -107,28 +107,21 @@ body {
 }
 /*
 
-header {
-
+header, footer {
+	width:100%;
+	margin:.75em 0;
+	padding:1.25em 1.25em;
 }
 
-footer {
-
-}
-
-div {
-
+div, article, aside {
+	margin:.75em 0;
+	padding:1.25em 1.25em;
 }
 
 section {
-
-}
-
-article {
-
-}
-
-aside {
-
+	margin:.75em 0;
+	padding:1.25em 1.25em;
+	clear:both;
 }
 
 p {
@@ -160,15 +153,16 @@ h3,h4 {
 }
 
 li {
-
+	list-style:none;
+	margin:.75em 0;
 }
 
 a {
-
+	text-decoration:none;
 }
 
 .icon {
-
+	
 }
 
 .button {
