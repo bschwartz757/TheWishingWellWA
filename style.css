@@ -115,13 +115,18 @@ div, article, aside, section {
 
 header {
 	width:100%;
+    max-width: 940px;	
+	height:300px;
+	clear:both;
     margin: 1.25em auto 0 auto;	
 	padding:1.25em;
 }
 
 footer {
 	width:100%;
-	margin-top:0;
+    max-width: 940px;	
+	height:auto;	
+	clear:both;
     margin: 0 auto 1.25em auto;	
 	padding:1.25em;
 }
@@ -187,7 +192,6 @@ a {
 
 .donate-button {
 	float:right;
-	margin-top:40%;
 	padding:1em;
 	background-color:#aaa;
     border: 1px solid gray;
@@ -233,7 +237,10 @@ img.logo {
 
 .donate-button.header{
 	float:right;
-	margin-top:40%;
+	position:relative;
+	margin-top:10%;
+	margin-right:0;
+	clear:right;
 	padding:1em;
 }
 
@@ -692,12 +699,6 @@ margin-right:20px;
 /******************** START FOOTER ***************/
 
 footer {
-    width:100%;
-    max-width: 940px;
-
-    padding:1.25em;    
-    clear: both;
-    height:auto;
     background-color: #e2e1cf;
 }
 
