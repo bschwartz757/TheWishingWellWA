@@ -57,9 +57,8 @@
             <a href="#">Donate</a>
         </div>  
     </div> <!--end social-icons-->
-    <div class="clear"></div>
+</header>    
 <!-- Begin new Navigation -->
-<?php wp_nav_menu(array('theme_location' => 'main-menu','container' => 'nav','container_id' => 'nav-main')); ?>
+<?php wp_nav_menu(array('theme_location' => 'main-menu','container' => 'nav','container_class' => 'nav-main')); ?>
 <!-- End new Navigation -->
-</header> 
 <div class="content">    

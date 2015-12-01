@@ -31,9 +31,9 @@
                 <h4>Connect through our family-oriented experiences</h4>
                 <a href="<?php echo home_url(); ?>/?page_id=14"><h1>Events</h1></a>     
         </div>   
-        <div class="clear"></div>
+       <!-- <div class="clear"></div>-->
 </div> <!-- end home-thumbnails-->
-<div class="clear"></div>
+<!--<div class="clear"></div>-->
 <div class="front-page-excerpts">
 <!--This section will have two columns, blog posts on the left and facebook posts on the right. 3 of each will be shown-->
 
@@ -50,7 +50,7 @@
     </div>    
     <h2><a href="<?= the_permalink(); ?>"><?php the_title() ?></a></h2>
     <p><?= the_excerpt(); ?></p>
-<div class="clear"></div>
+<!--<div class="clear"></div>-->
 </div>
 <?php 
     endwhile;

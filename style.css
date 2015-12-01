@@ -1,7 +1,5 @@
 /*
 
-PLACEHOLDER TEXT, JUST HERE SO I COULD CREATE THE CSS FILE ON GITHUB
-
 Theme Name: TheWishingWellWA
 Theme URI: 
 Author: 
@@ -89,8 +87,7 @@ html{
 	font-size: 16px;        /* Sets relative sizes: 1em = 16px */
 
 }
-.clear
-{clear:both;}
+
 /********************* END RESETS *****************/
 
 /******************** START GLOBAL ***************/
@@ -103,24 +100,38 @@ body {
 .wrapper {
 	max-width:940px;
 	margin:0 auto;
-	margin-top:3%;
 }
-/*
 
-header, footer {
+div, article, aside, section {
+    margin-top: 0;
+    margin-bottom: .75em;
+}
+
+.clear
+{clear:both;}
+
+header {
 	width:100%;
-	margin:.75em 0;
-	padding:1.25em 1.25em;
+	margin-top: .75em;
+	padding:1.25em;
 }
 
-div, article, aside {
+footer {
+	width:100%;
+	
+	padding:1.25em;
+}
+
+
+/*
+article, aside {
 	margin:.75em 0;
 	padding:1.25em 1.25em;
 }
 
 section {
 	margin:.75em 0;
-	padding:1.25em 1.25em;
+	padding:1.25em;
 	clear:both;
 }
 
@@ -159,14 +170,37 @@ li {
 
 a {
 	text-decoration:none;
+} */
+
+.icon{
+	float:left;
 }
 
-.icon {
-	
+.icon a{
+	color:#000;
+	text-decoration: none;
+	font-size: 26pt;
+	margin-left:20px;
 }
 
-.button {
+.social-icons{
+	position: relative;
+	float:right;	
+}
 
+.donate-button {
+	float:right;
+	margin-top:40%;
+	padding:1em;
+	background-color:#aaa;
+    border: 1px solid gray;
+}
+.donate-button a{
+	text-decoration: none;
+	color:#000;
+}
+.donate-button a:hover{
+	color:#333;
 }
 
 /******************** END LAYOUT STYLES ***************/
@@ -190,39 +224,17 @@ img.logo {
 
 }
 
-.menu {
-
-}
-
 */
 /******************** END IMAGE STYLES ***************/
-
-
-.donate-button {
-	float:right;
-	margin-top:40%;
-	padding:1em;
-	background-color:#aaa;
-    border: 1px solid gray;
-}
-.donate-button a{
-	text-decoration: none;
-	color:#000;
-}
-.donate-button a:hover{
-	color:#333;
-}
 
 /******************** END GLOBAL ***************/
 
 /******************** START HEADER ***************/
-header{
 
-}
 .logo{
 	float:left;
 }
-.social-icons{
+/*.social-icons{
 	position: relative;
 	float:right;	
 }
@@ -236,7 +248,7 @@ header{
 	text-decoration: none;
 	font-size: 26pt;
 	margin-left:20px;
-}
+}*/
 
 .donate-button.header{
 	float:right;
@@ -254,31 +266,28 @@ header{
 
 /******************** START NAV ***************/
 /******************** MAIN NAV ****************/
-#nav-main{
 
-}
-#menu-main{
+.nav-main{
 	background-color: #ddd;
-
-
+    margin-bottom: 0;
 }
-.menu a{
+.nav-main a{
 	text-decoration: none;
 	text-transform: uppercase;
 	color:#000;
 }
 
-.menu a:hover{
+.nav-main a:hover{
 
 }
-header .menu {
+.nav-main {
   display: inline-block;
   margin: 0 auto;
   list-style: none;
   width:100%;
 
 }
-header .menu li{
+.nav-main li{
 	font: bold 15px/18px sans-serif;
 	display: inline-block;
   	position: relative;
@@ -294,13 +303,13 @@ header .menu li{
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
 	}
-header .menu li:hover {
+.nav-main li:hover {
  	background: #666;
   	color: #fff;
   	margin-right:-4px;
   	z-index: 999;
 }
-header .menu li ul{
+.nav-main li ul{
 	padding: 0;
 	position: absolute;
 	top: 48px;
@@ -318,7 +327,7 @@ header .menu li ul{
 	-o-transition: opacity 0.2s;
 	-transition: opacity 0.2s;
 }
-header .menu  li ul li{ 
+.nav-main  li ul li{ 
 	background: #666; 
 	display: block; 
 	text-align: left;
@@ -328,9 +337,9 @@ header .menu  li ul li{
 	margin-top: -1px;
   
 }
-header .menu li ul li:hover { 
+.nav-main li ul li:hover { 
 	background: #ddd; }
-header .menu li:hover ul {
+.nav-main li:hover ul {
 	display: block;
 	opacity: 1;
  	visibility: visible;
@@ -349,8 +358,7 @@ header .menu li:hover ul {
 	background-color: #ddd;
 	font-size: 130%;
 	width:32%;
-	margin-top:20px;
-	padding:20px;
+	padding:1.25em;
 }
 
 
@@ -397,9 +405,8 @@ header .menu li:hover ul {
 }
 .home-thumbnails{
 	width:100%;
-	margin-top:20px;
-	
 }
+
 .home-thmb.second,
 .home-thmb.third{
 	margin-left: 2.1%;
@@ -412,11 +419,13 @@ header .menu li:hover ul {
 	color: #fff;
 	position: relative;
 }
+
 .home-thmb h4{
 	position: absolute;
 	top:5%;
 	padding:25px;
 }
+
 .home-thmb a{
 	background-color: #000;
 	position: absolute;
@@ -433,18 +442,17 @@ header .menu li:hover ul {
 .home-thmb a:hover{
 	color:#0bf;
 }
+
 .front-page-excerpts{
 	width:100%;
-	margin-top: 20px;
-
 }
 
 .social-excerpts {
-	width:49%;
+	width:50%;
+    max-width: 460px;
 	float:left;
-	
-
 }
+
 .social-excerpts h1{
 	width:100%;
 	padding:25px;
@@ -454,32 +462,30 @@ header .menu li:hover ul {
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 .social-excerpt.blog{
 	float:left;
 	background-color: #ddd;
-	margin-bottom: 20px;
-	padding-top:20px;
-	padding-bottom: 20px;
+	padding:1.25em;
 }
+
 .social-excerpts.fb{
     height:auto;
     float:left;
-	margin-left: 2%
-
+    margin-left: 1.25em;
 }
 
-.social-excerpt{
-	clear:both;
-}
+
+
 .front-page-excerpts img{
 	float:left;
-	margin-left:20px;
-	margin-right:20px;
 }
+
 .front-page-excerpts h2{
 	font-size:120%;
 	text-decoration: none;
 }
+
 .front-page-excerpts h2 a{
 	text-decoration: none;
 	color:#000;
@@ -492,10 +498,12 @@ header .menu li:hover ul {
 	padding-right:20px;
 	padding-left:20px;
 }
+
 .read-more{
 	text-decoration: none;
 	color:#000;
 }
+
 .read-more:hover{
 	color:#0bf;
 }
@@ -525,8 +533,7 @@ header .menu li:hover ul {
 	width:66%;
 	background-color:gray;
 	float:left;
-	margin: 20px 0;
-	padding:30px;
+	padding:1.25em;
 }
 
 .gateway-main-tile h2{
@@ -583,7 +590,6 @@ header .menu li:hover ul {
 	height:340px;
 	background-color: #e2e1cf;	
 	padding:1.25em;
-    margin-top:1.25em;
 }
 
 .destination-title-img {
@@ -619,10 +625,9 @@ header .menu li:hover ul {
 
 .destination-content {
     width:66%;
-	max-width:600px;
+	max-width:620px;
 	height:auto;
 	background-color:#e2e1cf;	
-	margin:1.25em 0;
 	padding:1.25em;
 	float:left;		
 }
@@ -732,7 +737,7 @@ footer > p {
 
 /******************** START FOOTER MENU ***************/
 
-#nav-footer {
+.nav-footer {
     display:inline-block;
     width:90%;
     margin-top: 100px;
@@ -741,7 +746,7 @@ footer > p {
     padding: 0;
 }
 
-#nav-footer li {
+.nav-footer li {
     font-size: .9em;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -758,7 +763,7 @@ footer > p {
     transition: all 0.2s;    
 }
 
-#nav-footer a {
+.nav-footer a {
     display: block;
     border-right: 1px solid;
     color: black;
@@ -766,11 +771,11 @@ footer > p {
     text-decoration: none;
 }
 
-#nav-footer li:last-of-type a {
+.nav-footer li:last-of-type a {
     border-right: none;
 }
 
-#nav-footer a:hover {
+.nav-footer a:hover {
     color:#fff;
     border-right: 1px solid black;    
 }

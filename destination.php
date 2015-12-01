@@ -18,7 +18,6 @@
         <span class="destination-title-text"><?php the_excerpt(); ?></span>
     </div>  
 </div> 
-<div class="clear"></div>
 <article class="destination-content">
 <!-- Need to use The Loop to get page content -->    
 <?php if(have_posts()) : the_post(); ?>

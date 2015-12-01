@@ -20,7 +20,7 @@
 </div> <!--end gateway-main-tile-->
 
 <?php get_sidebar(); ?>
-<div class="clear"></div>
+<!--<div class="clear"></div>-->
 <div class="section-tiles">
 <?php get_child_pages(); ?>
 
@@ -62,7 +62,7 @@
         </div> -->        
  
 </div> <!--end section-tiles-->
-<div class="clear"></div>
+<!--<div class="clear"></div>-->
 </div> <!--close content-->    
 
 <?php get_footer(); ?>
