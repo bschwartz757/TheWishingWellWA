@@ -97,14 +97,17 @@ html{
 body {	
 	font-family: sans-serif;    
 }
-.wrapper {
+
+.wrapper, .content {
+	width:100%;
 	max-width:940px;
+	height:auto;
 	margin:0 auto;
 }
 
 div, article, aside, section {
     margin-top: 0;
-    margin-bottom: .75em;
+    margin-bottom: 1.25em;
 }
 
 .clear
@@ -112,55 +115,43 @@ div, article, aside, section {
 
 header {
 	width:100%;
-	margin-top: .75em;
+    margin: 1.25em auto 0 auto;	
 	padding:1.25em;
 }
 
 footer {
 	width:100%;
-	
+	margin-top:0;
+    margin: 0 auto 1.25em auto;	
 	padding:1.25em;
-}
-
-
-/*
-article, aside {
-	margin:.75em 0;
-	padding:1.25em 1.25em;
-}
-
-section {
-	margin:.75em 0;
-	padding:1.25em;
-	clear:both;
-}
-
-p {
-	margin-bottom:.25em;
-    font-size: .75em;
-    line-height: 1em;
-    text-align: left;
 }
 
 h1 {
-    margin-bottom: .75em;
-    font-size: 2em;
-    line-height: 2em;
-    text-align: center;
+    font-size: 3em;
+	font-weight:700;
+    line-height: 1.25em;
+    text-align: left;
 }
 
 h2 {
-    margin-bottom: .75em;
-    font-size: 1.25em;
+    font-size: 2em;
+	font-weight:500;
     line-height: 1.25em;
     text-align: center;    
 }
 
 h3,h4 {
-    margin-bottom: .5em;
-    font-size: 1em;
-    line-height: 1.25em;
+    font-size: 1.5em;
+	font-weight:400;
+    line-height: 1.125em;
     text-align: center;    
+}
+
+p {
+	margin-bottom:.25em;
+    font-size: 1em;
+    line-height: 1.125em;
+    text-align: left;
 }
 
 li {
@@ -168,9 +159,15 @@ li {
 	margin:.75em 0;
 }
 
+/** PREVENTS AWKWARD MARGINS IN NAV-MAIN **/
+.nav-main li {
+	margin:0;	
+}
+/****/
+
 a {
 	text-decoration:none;
-} */
+}
 
 .icon{
 	float:left;
@@ -179,8 +176,8 @@ a {
 .icon a{
 	color:#000;
 	text-decoration: none;
-	font-size: 26pt;
-	margin-left:20px;
+	font-size: 2.25em;
+	margin-left:1em;
 }
 
 .social-icons{
@@ -195,25 +192,25 @@ a {
 	background-color:#aaa;
     border: 1px solid gray;
 }
+
 .donate-button a{
-	text-decoration: none;
-	color:#000;
-}
-.donate-button a:hover{
 	color:#333;
+}
+
+.donate-button a:hover{
+	color:#fff;
 }
 
 /******************** END LAYOUT STYLES ***************/
 
 /******************** IMAGE STYLES ***************/
-/*
 
 img {
 
 }
 
 img.featured {
-
+	width:100%;
 }
 
 img.thmb {
@@ -224,7 +221,6 @@ img.logo {
 
 }
 
-*/
 /******************** END IMAGE STYLES ***************/
 
 /******************** END GLOBAL ***************/
@@ -234,34 +230,15 @@ img.logo {
 .logo{
 	float:left;
 }
-/*.social-icons{
-	position: relative;
-	float:right;	
-}
-
-.icon{
-	float:left;
-}
-
-.icon a{
-	color:#000;
-	text-decoration: none;
-	font-size: 26pt;
-	margin-left:20px;
-}*/
 
 .donate-button.header{
 	float:right;
 	margin-top:40%;
-	padding:15px;
-	background-color:#aaa;
+	padding:1em;
 }
+
 .donate-button.header a{
 	text-decoration: none;
-	color:#000;
-}
-.donate-button.header a:hover{
-	color:#333;
 }
 
 /******************** START NAV ***************/
@@ -277,9 +254,6 @@ img.logo {
 	color:#000;
 }
 
-.nav-main a:hover{
-
-}
 .nav-main {
   display: inline-block;
   margin: 0 auto;
@@ -287,12 +261,13 @@ img.logo {
   width:100%;
 
 }
+
 .nav-main li{
 	font: bold 15px/18px sans-serif;
 	display: inline-block;
   	position: relative;
- 	padding-top: 15px;
- 	padding-bottom:15px;
+ 	padding-top: 1em;
+ 	padding-bottom:1em;
   	cursor: pointer;
   	margin-right:-4px;
   	width:12.5%;
@@ -302,15 +277,16 @@ img.logo {
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
-	}
+}
+	
 .nav-main li:hover {
  	background: #666;
   	color: #fff;
   	margin-right:-4px;
   	z-index: 999;
 }
+
 .nav-main li ul{
-	padding: 0;
 	position: absolute;
 	top: 48px;
 	left: 0;
@@ -327,18 +303,21 @@ img.logo {
 	-o-transition: opacity 0.2s;
 	-transition: opacity 0.2s;
 }
+
 .nav-main  li ul li{ 
 	background: #666; 
 	display: block; 
 	text-align: left;
 	color: #fff;
 	width:100%;
-	padding-left:20px;
+	padding-left:1.25em;
 	margin-top: -1px;
-  
 }
+
 .nav-main li ul li:hover { 
-	background: #ddd; }
+	background: #ddd; 
+}
+	
 .nav-main li:hover ul {
 	display: block;
 	opacity: 1;
@@ -348,19 +327,13 @@ img.logo {
 /******************** END MAIN NAV **********/
 /******************** START SIDEBAR *********/
 
-#sidebar h1{
-	font-size: 150%;
-	text-decoration: underline;
-	margin-bottom: 20px;
-}
 #sidebar{
 	float:right;
-	background-color: #ddd;
-	font-size: 130%;
 	width:32%;
+	max-width:300px;	
+	background-color: #ddd;
 	padding:1.25em;
 }
-
 
 /******************** END SIDEBAR *********/
 
@@ -370,29 +343,30 @@ img.logo {
 /******************** START BODY ************/
 
 /******************** START FRONT-PAGE.PHP **/
+
 .home-slider{
 	width:100%;
 	position: relative;
-	}
+}
 
 .home-slider blockquote{
 	position: absolute;
 	top:5%;
 	left:0;
 	font-style: italic;
-	padding:10px;
+	padding:.625em;
 	width:55%;
 	font-size: 160%;
 	color:#fff;
 	background-color:#000;
 	opacity: .7;
-	
 }
+
 .home-slider a{
 	position: absolute;
 	bottom:1%;
 	right:0;
-	padding:20px;
+	padding:1.25em;
 	color:#fff;
 	font-size: 200%;
 	background-color: #000;
@@ -400,9 +374,11 @@ img.logo {
 	text-transform: uppercase;
 	text-decoration: none;
 }
+
 .home-slider a:hover{
 	color:#0bf;
 }
+
 .home-thumbnails{
 	width:100%;
 }
@@ -423,7 +399,7 @@ img.logo {
 .home-thmb h4{
 	position: absolute;
 	top:5%;
-	padding:25px;
+	padding:1.625em;
 }
 
 .home-thmb a{
@@ -439,6 +415,7 @@ img.logo {
 	padding:3%;
 	width:100%;
 }
+
 .home-thmb a:hover{
 	color:#0bf;
 }
@@ -455,12 +432,12 @@ img.logo {
 
 .social-excerpts h1{
 	width:100%;
-	padding:25px;
+	padding:1.625em;
 	background-color: #ccc;
 	text-transform: uppercase;
 	font-size: 30px;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 1.25em;
 }
 
 .social-excerpt.blog{
@@ -491,9 +468,11 @@ img.logo {
 	color:#000;
 	font-weight: bold;
 }
+
 .front-page-excerpts h2 a:hover{
 	color: #0bf;
 }
+
 .front-page-excerpts p{
 	padding-right:20px;
 	padding-left:20px;
@@ -513,22 +492,24 @@ img.logo {
 .spotlight{
 	position: relative;
 }
+
 .spotlight h1{
 	font-size: 200%;
 	position: absolute;
 	bottom:1%;
 	right:5%;
 	background-color:#000;
-	
 }
+
 .spotlight a{
 	color:#fff;
 	text-transform: uppercase;
-
 }
+
 .spotlight a:hover{
 	color:#0bf;
 }
+
 .gateway-main-tile{
 	width:66%;
 	background-color:gray;
@@ -540,14 +521,15 @@ img.logo {
 	font-size: 250%;
 	text-transform: uppercase;
 }
+
 .gateway-main-tile p{
 	font-size: 115%;
 	padding-top: 15px;
 	line-height: 22px;
 }
+
 .section-tiles{
 	margin-right:-20px;
-
 }
 
 .tile{
@@ -556,8 +538,8 @@ img.logo {
 	position: relative;
 	margin-right: 20px;
 	margin-bottom: 20px;
-
 }
+
 .tile a{
 	position: absolute;
 	font-size: 130%;
@@ -571,9 +553,11 @@ img.logo {
 	text-align: right;
 	text-transform: uppercase;
 }
+
 .tile a:hover{
 	color:#0bf;
 }
+
 .caption{
 	display: none;
 
@@ -587,38 +571,31 @@ img.logo {
 .destination-page-title {
 	width: 100%;
     max-width: 940px;
-	height:340px;
-	background-color: #e2e1cf;	
+	height:300px;
 	padding:1.25em;
+	background-color: #e2e1cf;	
 }
 
 .destination-title-img {
-	width:31%;
+	width:33%;
     max-width: 300px;
-	height:300px;
+	height:260px;
 	float:left;	
-	margin:auto;
+	margin-bottom:0;
+	border:1px solid white;
 }
 
 .destination-title-excerpt {
-	width:66%;
-    max-width: 600px;
+	width:64%;
+    max-width: 580px;
 	height:auto;
 	float:right;
-	margin:0 auto;	
-}
-
-.destination-title {    
-	font-size:2.5em;
-	font-weight:700;
-    line-height: 1.5em;
-	text-align:center;    	
+	margin-left:1.25em;
+	margin-bottom:0;	
 }
 
 .destination-title-text {
 	width:100%;
-    font-size: 1.25em;
-    line-height: 1.25em;
     padding: 0;
 	margin:0 auto;	
 }
@@ -644,13 +621,16 @@ img.logo {
 	margin-top:20px;
 	padding:20px;
 }
+
 .blog-content h3{
 	font-size: 120%;
 }
+
 .blog-content img,
 .blog-content p{
 	float: left;
 }
+
 /******************** END BLOG.PHP ***************/
 /******************** START PLUGIN.PHP ********************/
 
@@ -661,11 +641,13 @@ img.logo {
 	background-color: #ddd;
 	margin-top:20px;
 }
+
 .plugin-content h3{
 	font-size: 130%;
 	padding:20px;
 	text-align: center;
 }
+
 /******************** END PLUGIN.PHP ***************/
 /******************** START INDEX.PHP ***************/
 .blog-page-content{
@@ -673,47 +655,46 @@ img.logo {
 	width:66%;
 	float:left;
 }
+
 .single-blog{
 	padding:20px;
 	background-color: #ddd;
 	margin-bottom:20px;
 }
+
 .blog-image{
 float:left;
 margin-right:20px;
 }
+
 .single-blog h2 {
 	text-decoration: none;
 	color: #000;
 	font-size: 130%;
 	padding-bottom:4%;
 }
+
 .single-blog h2 a{
 	text-decoration: none;
 	color: #000;
 }
+
 .single-blog h2 a:hover{
 	color: #0bf;
 }
+
 .meta{
 	padding-top: 5%;
 }
 
-
-
-
-
-
 /******************** END INDEX.PHP ***************/
-/******************** END BODY ***************/
-
 
 /******************** START FOOTER ***************/
 
 footer {
     width:100%;
     max-width: 940px;
-    margin: 0 auto 1.25em auto;
+
     padding:1.25em;    
     clear: both;
     height:auto;
@@ -755,12 +736,7 @@ footer > p {
     line-height: 1.5em;
     width:12.5%;
     float: left;
-    list-style-type: none;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;    
+    list-style-type: none;   
 }
 
 .nav-footer a {
@@ -771,13 +747,13 @@ footer > p {
     text-decoration: none;
 }
 
-.nav-footer li:last-of-type a {
-    border-right: none;
-}
-
 .nav-footer a:hover {
     color:#fff;
     border-right: 1px solid black;    
+}
+
+.nav-footer li:last-of-type a {
+    border-right: none;
 }
 
 /******************** END FOOTER MENU ***************/
@@ -1012,3 +988,5 @@ margin-bottom: 0;
 
 /******************** END MEDIA QUERIES***************/
 }
+
+/******************** END BODY ***************/

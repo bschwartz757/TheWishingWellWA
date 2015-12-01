@@ -17,7 +17,7 @@
         <h1 class="destination-title"><?php the_title(); ?></h1>
         <span class="destination-title-text"><?php the_excerpt(); ?></span>
     </div>  
-</div> 
+</section> 
 <article class="destination-content">
 <!-- Need to use The Loop to get page content -->    
 <?php if(have_posts()) : the_post(); ?>

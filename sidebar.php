@@ -3,14 +3,12 @@
 <!-- Begin Sidebar -->
 
 <div id="sidebar">
-<h1>Sidebar</h1>
-<nav id="nav-sub" class="one-third right">
 
 		<?php if (is_page()) : ;?>
         
-        <h3><?php echo get_the_title($post->post_parent); // get the gateway page title 
+        <h2><?php echo get_the_title($post->post_parent); // get the gateway page title 
 		
-		?></h3>
+		?></h2>
         
         <ul>
 
