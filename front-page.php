@@ -12,17 +12,17 @@
 <div class="home-slider">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/placeimg_940_300_grayscale_animals.jpg" alt="front page slider"/>
     <blockquote>"We give foster care children confidence by providing for their basic material needs."</blockquote>
-    <h1><a href="<?php echo home_url(); ?>/?page_id=6">More Info</a></h1>
+    <span class="home-slider-caption"><h1><a href="<?php echo home_url(); ?>/?page_id=6">More Info</a></h1></span>
 </div>
 
-<div class="home-thumbnails">
-        <div class="home-thmb first"> 
+<div class="home-thumbnails clear-fix">
+        <div class="home-thmb clear-fix"> 
         <?php front_page_CTA("volunteer"); ?>
         </div>
-        <div class="home-thmb second">  
+        <div class="home-thmb clear-fix">  
         <?php front_page_CTA("donate"); ?> 
         </div>
-        <div class="home-thmb third">  
+        <div class="home-thmb clear-fix">  
         <?php front_page_CTA("events"); ?>
         </div>   
        <!-- <div class="clear"></div>-->

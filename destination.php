@@ -9,8 +9,8 @@
 ?>
 <?php get_header(); ?>
     
-<section class="destination-page-title">
-    <div class="destination-title-img">
+<section class="destination-page-title clear-fix">
+    <div class="destination-title-img clear-fix">
             <?php get_featured_image(); ?>
     </div>
     <div class="destination-title-excerpt">

@@ -39,7 +39,7 @@
 
 <div class="wrapper">
 
-<header> 
+<header class="clear-fix"> 
     <div class="logo">
         <a href="<?php echo home_url(); ?>"><img class="logo-desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/logo.png" alt="Wishing Well logo" width="350px"/><img class="logo-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/logo-small.png" alt="Wishing Well logo" width="0px"/></a>
     </div>
