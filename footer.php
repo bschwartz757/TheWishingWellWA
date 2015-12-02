@@ -1,10 +1,6 @@
 
 <!-- Start footer -->
-<footer>
-   
-    <!-- Start Social Nav Menu -->
-<?php// wp_nav_menu( array('theme_location' => 'social-menu','container' => 'div','container_class' => 'social-icons')); ?>
-<!-- End Social Nav Menu -->             
+<footer>            
     
     <div class="social-icons">    
         <ul class="social-icons-ul">
@@ -14,14 +10,14 @@
             <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
         </ul>  
     </div>
-<div class="donate-button footer">
-    <button type="submit" class="btn-success">Donate</button>
-</div>  
+        <div class="donate-button footer">
+            <a href="#">Donate</a>
+        </div>  
 <div class="clear"></div>  
     
 <!-- Start wp Footer Menu -->
 
-<?php wp_nav_menu( array('theme_location' => 'footer-menu','container' => 'nav','container_id' => 'nav-footer')); ?>
+<?php wp_nav_menu( array('theme_location' => 'footer-menu','container' => 'nav','container_class' => 'nav-footer')); ?>
 <!-- End wp Footer Menu -->
 
     <p>&copy; The Wishing Well 2015 - <?php print("" . date('Y') . ""); ?></p>

@@ -25,6 +25,4 @@
 
 </div>		<!--close content-->
 
-<p class="top-link"><a href="#nav-main">Back to top</a></p>
-
 <?php get_footer(); ?>

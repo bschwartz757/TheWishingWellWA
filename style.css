@@ -1,7 +1,5 @@
 /*
 
-PLACEHOLDER TEXT, JUST HERE SO I COULD CREATE THE CSS FILE ON GITHUB
-
 Theme Name: TheWishingWellWA
 Theme URI: 
 Author: 
@@ -86,41 +84,94 @@ table {
 	border-spacing: 0;
 }
 html{
-	font-size: 16px;
+	font-size: 16px;        /* Sets relative sizes: 1em = 16px */
 
 }
-.clear
-{clear:both;}
+
 /********************* END RESETS *****************/
 
 /******************** START GLOBAL ***************/
 
+/******************** LAYOUT STYLES ***************/
+
 body {	
 	font-family: sans-serif;    
 }
-.wrapper {
+
+.wrapper, .content {
+	width:100%;
 	max-width:940px;
+	height:auto;
 	margin:0 auto;
-	margin-top:3%;
 }
 
+div, article, aside, section {
+    margin-top: 0;
+    margin-bottom: 1.25em;
+}
+
+.clear
+{clear:both;}
+
+header {
+	width:100%;
+    max-width: 940px;	
+	height:300px;
+	clear:both;
+    margin: 1.25em auto 0 auto;	
+	padding:1.25em;
+}
+
+footer {
+	width:100%;
+    max-width: 940px;	
+	height:auto;	
+	clear:both;
+    margin: 0 auto 1.25em auto;	
+	padding:1.25em;
+}
+
+h1 {
+    font-size: 3em;
+	font-weight:700;
+    line-height: 1.25em;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2em;
+	font-weight:500;
+    line-height: 1.25em;
+    text-align: center;    
+}
+
+h3,h4 {
+    font-size: 1.5em;
+	font-weight:400;
+    line-height: 1.125em;
+    text-align: center;    
+}
 
 p {
-	margin-bottom:8px;	
+	margin-bottom:.25em;
+    font-size: 1em;
+    line-height: 1.125em;
+    text-align: left;
 }
 
-/******************** END GLOBAL ***************/
-
-/******************** START HEADER ***************/
-header{
-
+li {
+	list-style:none;
+	margin:.75em 0;
 }
-.logo{
-	float:left;
+
+/** PREVENTS AWKWARD MARGINS IN NAV-MAIN **/
+.nav-main li {
+	margin:0;	
 }
-.social-icons{
-	position: relative;
-	float:right;	
+/****/
+
+a {
+	text-decoration:none;
 }
 
 .icon{
@@ -130,49 +181,100 @@ header{
 .icon a{
 	color:#000;
 	text-decoration: none;
-	font-size: 26pt;
-	margin-left:20px;
+	font-size: 2.25em;
+	margin-left:1em;
+}
+
+.social-icons{
+	position: relative;
+	float:right;	
+}
+
+.donate-button {
+	float:right;
+	padding:1em;
+	background-color:#aaa;
+    border: 1px solid gray;
+}
+
+.donate-button a{
+	color:#333;
+}
+
+.donate-button a:hover{
+	color:#fff;
+}
+
+/******************** END LAYOUT STYLES ***************/
+
+/******************** IMAGE STYLES ***************/
+
+img {
+
+}
+
+img.featured {
+	width:100%;
+}
+
+img.thmb {
+
+}
+
+img.logo {
+
+}
+
+/******************** END IMAGE STYLES ***************/
+
+/******************** END GLOBAL ***************/
+
+/******************** START HEADER ***************/
+
+.logo{
+	float:left;
 }
 
 .donate-button.header{
 	float:right;
-	margin-top:40%;
-	padding:15px;
-	background-color:#aaa;
+	position:relative;
+	margin-top:10%;
+	margin-right:0;
+	clear:right;
+	padding:1em;
+}
+
+.donate-button.header a{
 	text-decoration: none;
 }
 
 /******************** START NAV ***************/
 /******************** MAIN NAV ****************/
-#nav-main{
 
-}
-#menu-main{
+.nav-main{
 	background-color: #ddd;
-
+    margin-bottom: 0;
 }
-.menu a{
+.nav-main a{
 	text-decoration: none;
 	text-transform: uppercase;
 	color:#000;
 }
 
-.menu a:hover{
-
-}
-header .menu {
+.nav-main {
   display: inline-block;
   margin: 0 auto;
   list-style: none;
   width:100%;
 
 }
-header .menu li{
+
+.nav-main li{
 	font: bold 15px/18px sans-serif;
 	display: inline-block;
   	position: relative;
- 	padding-top: 15px;
- 	padding-bottom:15px;
+ 	padding-top: 1em;
+ 	padding-bottom:1em;
   	cursor: pointer;
   	margin-right:-4px;
   	width:12.5%;
@@ -182,14 +284,16 @@ header .menu li{
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
-	}
-header .menu li:hover {
+}
+	
+.nav-main li:hover {
  	background: #666;
   	color: #fff;
   	margin-right:-4px;
+  	z-index: 999;
 }
-header .menu li ul{
-	padding: 0;
+
+.nav-main li ul{
 	position: absolute;
 	top: 48px;
 	left: 0;
@@ -206,19 +310,22 @@ header .menu li ul{
 	-o-transition: opacity 0.2s;
 	-transition: opacity 0.2s;
 }
-header .menu  li ul li{ 
+
+.nav-main  li ul li{ 
 	background: #666; 
 	display: block; 
 	text-align: left;
 	color: #fff;
 	width:100%;
-	padding-left:20px;
+	padding-left:1.25em;
 	margin-top: -1px;
-  
 }
-header .menu li ul li:hover { 
-	background: #ddd; }
-header .menu li:hover ul {
+
+.nav-main li ul li:hover { 
+	background: #ddd; 
+}
+	
+.nav-main li:hover ul {
 	display: block;
 	opacity: 1;
  	visibility: visible;
@@ -227,20 +334,13 @@ header .menu li:hover ul {
 /******************** END MAIN NAV **********/
 /******************** START SIDEBAR *********/
 
-#sidebar h1{
-	font-size: 150%;
-	text-decoration: underline;
-	margin-bottom: 20px;
-}
 #sidebar{
 	float:right;
-	background-color: #ddd;
-	font-size: 130%;
 	width:32%;
-	margin-top:20px;
-	padding:20px;
+	max-width:300px;	
+	background-color: #ddd;
+	padding:1.25em;
 }
-
 
 /******************** END SIDEBAR *********/
 
@@ -250,34 +350,46 @@ header .menu li:hover ul {
 /******************** START BODY ************/
 
 /******************** START FRONT-PAGE.PHP **/
+
 .home-slider{
 	width:100%;
 	position: relative;
-	z-index: -1;
-	}
+}
 
 .home-slider blockquote{
 	position: absolute;
-	top:45%;
-	left:5%;
+	top:5%;
+	left:0;
 	font-style: italic;
-	font-weight: bold;
-	width:38%;
+	padding:.625em;
+	width:55%;
 	font-size: 160%;
-	
+	color:#fff;
+	background-color:#000;
+	opacity: .7;
 }
+
 .home-slider a{
 	position: absolute;
-	bottom: 8%;
-	right:5%;
+	bottom:1%;
+	right:0;
+	padding:1.25em;
 	color:#fff;
 	font-size: 200%;
+	background-color: #000;
+	opacity:.7;
+	text-transform: uppercase;
+	text-decoration: none;
 }
+
+.home-slider a:hover{
+	color:#0bf;
+}
+
 .home-thumbnails{
 	width:100%;
-	margin-top:20px;
-	
 }
+
 .home-thmb.second,
 .home-thmb.third{
 	margin-left: 2.1%;
@@ -290,55 +402,96 @@ header .menu li:hover ul {
 	color: #fff;
 	position: relative;
 }
+
 .home-thmb h4{
 	position: absolute;
 	top:5%;
-	padding:25px;
+	padding:1.625em;
 }
+
 .home-thmb a{
-	color: #000;
+	background-color: #000;
 	position: absolute;
-	bottom:10%;
-	right:8%;
+	bottom:1%;
+	text-align: right;
+	font-size:130%;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	opacity: .7;
+	padding:3%;
+	width:100%;
+}
+
+.home-thmb a:hover{
+	color:#0bf;
 }
 
 .front-page-excerpts{
 	width:100%;
-	margin-top: 20px;
-
 }
 
 .social-excerpts {
-	width:49%;
+	width:50%;
+    max-width: 460px;
 	float:left;
-	background-color: #ddd;
-
 }
+
 .social-excerpts h1{
 	width:100%;
-	padding:25px;
+	padding:1.625em;
 	background-color: #ccc;
 	text-transform: uppercase;
 	font-size: 30px;
 	text-align: center;
+	margin-bottom: 1.25em;
+}
+
+.social-excerpt.blog{
+	float:left;
+	background-color: #ddd;
+	padding:1.25em;
 }
 
 .social-excerpts.fb{
     height:auto;
-	margin-left: 2%
+    float:left;
+    margin-left: 1.25em;
 }
 
-.social-excerpt{
-	clear:both;
-	margin:20px 20px 0 20px;
-}
+
+
 .front-page-excerpts img{
 	float:left;
-	margin:0 20px 0 0;
-	padding-bottom:20px;
 }
+
 .front-page-excerpts h2{
 	font-size:120%;
+	text-decoration: none;
+}
+
+.front-page-excerpts h2 a{
+	text-decoration: none;
+	color:#000;
+	font-weight: bold;
+}
+
+.front-page-excerpts h2 a:hover{
+	color: #0bf;
+}
+
+.front-page-excerpts p{
+	padding-right:20px;
+	padding-left:20px;
+}
+
+.read-more{
+	text-decoration: none;
+	color:#000;
+}
+
+.read-more:hover{
+	color:#0bf;
 }
 
 /******************** END FRONT-PAGE.PHP ***************/
@@ -346,50 +499,76 @@ header .menu li:hover ul {
 .spotlight{
 	position: relative;
 }
+
 .spotlight h1{
 	font-size: 200%;
 	position: absolute;
-	color: #fff;
-	bottom:5%;
-	right:10%;
+	bottom:1%;
+	right:5%;
+	background-color:#000;
 }
+
+.spotlight a{
+	color:#fff;
+	text-transform: uppercase;
+}
+
+.spotlight a:hover{
+	color:#0bf;
+}
+
 .gateway-main-tile{
 	width:66%;
 	background-color:gray;
 	float:left;
-	margin: 20px 0;
-	padding:30px;
+	padding:1.25em;
 }
 
 .gateway-main-tile h2{
 	font-size: 250%;
 	text-transform: uppercase;
 }
+
 .gateway-main-tile p{
 	font-size: 115%;
 	padding-top: 15px;
 	line-height: 22px;
 }
+
+.section-tiles{
+	margin-right:-20px;
+}
+
 .tile{
 	float:left;
+	width:31.2%;
 	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
+
 .tile a{
 	position: absolute;
-	bottom:5%;
-	right:8%;
 	font-size: 130%;
-	background-color: #ddd;
-	color:#000;
+	background-color: #000;
+	color:#fff;
 	text-decoration: none;
 	padding:10px;
+	bottom:1%;
+	width: 100%;
+	opacity: .7;
+	text-align: right;
+	text-transform: uppercase;
 }
 
-.tile.second{
-	margin:0 2.1%;
+.tile a:hover{
+	color:#0bf;
 }
 
+.caption{
+	display: none;
 
+}
 
 
 /******************** END GATEWAY.PHP ***************/
@@ -397,42 +576,43 @@ header .menu li:hover ul {
 /******************** START DESTINATION.PHP ***************/
 
 .destination-page-title {
-	
-	height:340px;
-	background-color:#ddd;	
-	padding:20px;
+	width: 100%;
+    max-width: 940px;
+	height:300px;
+	padding:1.25em;
+	background-color: #e2e1cf;	
 }
 
 .destination-title-img {
-	width:300px;
-	height:300px;
-	border:2px solid white;
+	width:33%;
+    max-width: 300px;
+	height:260px;
 	float:left;	
-	margin:auto;
+	margin-bottom:0;
+	border:1px solid white;
 }
 
-.title {    
-	font-size:2.5em;
-	font-weight:700;
-    line-height: 1.5em;
-	text-align:left;    	
-}
-
-.title-text {
-	width:580px;
-    font-size: 1.25em;
-    line-height: 1.25em;
+.destination-title-excerpt {
+	width:64%;
+    max-width: 580px;
 	height:auto;
 	float:right;
+	margin-left:1.25em;
+	margin-bottom:0;	
+}
+
+.destination-title-text {
+	width:100%;
+    padding: 0;
 	margin:0 auto;	
 }
 
 .destination-content {
-	width:620px;
-	height:300px;
-	background-color:#ddd;	
-	margin-top:20px;
-	padding:20px;
+    width:66%;
+	max-width:620px;
+	height:auto;
+	background-color:#e2e1cf;	
+	padding:1.25em;
 	float:left;		
 }
 
@@ -448,59 +628,98 @@ header .menu li:hover ul {
 	margin-top:20px;
 	padding:20px;
 }
+
 .blog-content h3{
 	font-size: 120%;
 }
+
 .blog-content img,
 .blog-content p{
 	float: left;
 }
+
 /******************** END BLOG.PHP ***************/
 /******************** START PLUGIN.PHP ********************/
 
 .plugin-content{
-	width: 620px;
+	width: 66%;
 	height:300px;
 	float: left;
 	background-color: #ddd;
 	margin-top:20px;
 }
+
 .plugin-content h3{
 	font-size: 130%;
 	padding:20px;
 	text-align: center;
 }
+
 /******************** END PLUGIN.PHP ***************/
-/******************** END BODY ***************/
+/******************** START INDEX.PHP ***************/
+.blog-page-content{
+	margin-top: 20px;
+	width:66%;
+	float:left;
+}
+
+.single-blog{
+	padding:20px;
+	background-color: #ddd;
+	margin-bottom:20px;
+}
+
+.blog-image{
+float:left;
+margin-right:20px;
+}
+
+.single-blog h2 {
+	text-decoration: none;
+	color: #000;
+	font-size: 130%;
+	padding-bottom:4%;
+}
+
+.single-blog h2 a{
+	text-decoration: none;
+	color: #000;
+}
+
+.single-blog h2 a:hover{
+	color: #0bf;
+}
+
+.meta{
+	padding-top: 5%;
+}
+
+/******************** END INDEX.PHP ***************/
 
 /******************** START FOOTER ***************/
 
 footer {
-    width:100%;
-    clear: both;
-    height:240px;
-    background-color:#ddd;
-    padding:20px;
-    margin-top: 20px;
+    background-color: #e2e1cf;
 }
 
 .donate-button.footer {
     float:left;
     position:relative;
+    margin-top: 0;
     top:0px;
+}
+
+footer > p {
+    font-size: .9em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1.25em;
 }
 
 /******************** START FOOTER MENU ***************/
 
-/*#links {
-    width:940px;
-    height:32px;
-    margin:16px auto;
-    overflow:hidden;
-    display:inline-block;
-}*/
-
-#nav-footer {
+.nav-footer {
     display:inline-block;
     width:90%;
     margin-top: 100px;
@@ -509,7 +728,7 @@ footer {
     padding: 0;
 }
 
-#nav-footer li {
+.nav-footer li {
     font-size: .9em;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -518,37 +737,24 @@ footer {
     line-height: 1.5em;
     width:12.5%;
     float: left;
-    list-style-type: none;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;    
+    list-style-type: none;   
 }
 
-#nav-footer a {
+.nav-footer a {
     display: block;
     border-right: 1px solid;
     color: black;
-    background-color: #ddd;
+    background-color: #e2e1cf;
     text-decoration: none;
 }
 
-#nav-footer li:last-of-type a {
-    border-right: none;
-}
-
-#nav-footer a:hover {
-    background: #666;
+.nav-footer a:hover {
     color:#fff;
+    border-right: 1px solid black;    
 }
 
-footer p {
-    font-size: .7em;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 20px;
+.nav-footer li:last-of-type a {
+    border-right: none;
 }
 
 /******************** END FOOTER MENU ***************/
@@ -562,8 +768,8 @@ body{
 
 }
 .wrapper{
-	margin-left:30px;
-	margin-right:30px;
+	margin-left:0;
+	margin-right:0;
 }
 /************* START MOBILE HEADER ************/
 .logo-desktop{
@@ -571,20 +777,16 @@ body{
 }
 .logo-mobile{
 	width:48%;
+	margin-left: 30px;
+	min-width:55%;
 }
-.social-icons{
+.social-icons-ul{
 	display: none;
 }
-.donate-button{
-	top:-70px;
-	height: 40px;
-	width: 150px;
+.donate-button.header{
+	margin-top:-50px;
 }
 
-.btn-success{
-	height: 40px;
-	width:150px;
-}
 /************* END MOBILE HEADER ************/
 /************* START NAVIGATION ************/
 
@@ -602,7 +804,7 @@ body{
 	
 	header .menu a {
 		display: block;
-		padding: 5px 5px 5px 32px;
+		padding:0;
 		text-align: left;
 	}
 
@@ -612,7 +814,8 @@ body{
 	}
 	header .menu ul:hover li {
 		display: block;
-		margin: 0 0 5px;
+		margin: 0;
+		padding:0;
 	}
 
 #sidebar{
@@ -622,176 +825,101 @@ body{
 /************* START FRONT-PAGE ************/
 
 .home-slider{
-	width:100%;
-	height:300px;
-	background-image: url(imgs/placeimg_940_300_grayscale_animals.jpg);
+	overflow: hidden;
 	text-align: center;
+	min-width: 320px;
 
 }
 .home-slider blockquote{
-	font-style: italic;
-	font-weight: bold;
-	width:100%;
-	font-size: 160%;
-	padding-top:40px;
-	padding-left: 25px;
-	background-color: #ddd;
-	opacity: .7;
+	width:80%;
+	padding:10px;
+	top:30%;
 }
-.home-slider h1 {
-	
-	background-color:#ddd;
-	padding:15px;
-	right:25%;
-	top:75px;
-	color:#000;
-	opacity:.7;
+.home-slider a {
+	background-color:#000;
+	color:#fff;
+	opacity:.8;
 }
 .home-thumbnails{
-	
-	margin-bottom: 20px;
+width:100%;
+text-align: center;
+margin-bottom: 0;
 }
+
+.home-thmb.second,
+.home-thmb.third{
+	margin-left: 0;
+}
+
 .home-thmb{
-	float:none;
-	font-size: 130%;
-	padding:30px;
-	color: #fff;
+	width: 100%;
+	clear:both;
+	text-align: center;
 	margin:0 auto;
-	margin-bottom:20px;
-	
+	margin-bottom: 20px;
+
+}
+.home-thmb h4{
+	position: absolute;
+	padding:0;
+	margin:0 24%;	
 }
 .home-thmb a{
-	position: relative;
-	top:160px;
-	float: right;
 	color: #000;
-}
-.social-excerpts{
-	float:none;
-	width:100%;
-	background-color: #fff;
+	position: absolute;
+	font-size: 120%;
+	background-color: #ddd;
+	opacity: .8;
+	padding:3%;
+	bottom:5%;
+	margin-right: 17%;
 }
 .front-page-excerpts{
-	clear:both;
+	width:90%;
+	margin: 0 auto;
+
+}
+
+.social-excerpts {
+	width:100%;
+	float:none;
+	background-color: #ddd;
+
 }
 .social-excerpts h1{
 	width:100%;
-	padding:15px;
-	background-color: #fff;
+	padding:25px;
+	background-color: #ccc;
 	text-transform: uppercase;
-	font-size: 120%;
+	font-size: 30px;
 	text-align: center;
-	border-top:solid 1px #000;
+}
+.social-excerpts.blog{
+	float:none;
+	margin-bottom: 20px;
 }
 .social-excerpts.fb{
 	margin-left: 0;
-	
-}
-
-.social-excerpt.first,
-.social-excerpt.second{
-	border:solid 1px #000;
-	height:150px;
-	margin:0;
 	margin-bottom: 20px;
-	border-collapse: separate;
-	background-color: #ddd;
 }
-.social-excerpt.third{
-	border:solid 1px #000;
-	height:150px;
-	margin:0;
-	margin-bottom:20px;
-	border-collapse: separate;
-	background-color: #ddd;
+.fb-page{
 }
-.front-page-excerpts hr{
+.social-excerpt{
 	clear:both;
+	margin:20px 20px 0 20px;
 }
 .front-page-excerpts img{
-	display:none;
+	float:left;
+	margin:0 20px 0 0;
+	padding-bottom:20px;
 }
 .front-page-excerpts h2{
-	float: none;
-	padding:20px 0 0 20px;
+	font-size:120%;
 }
-.front-page-excerpts p{
-	float:left;
-	padding:20px;
-}
-.front-page-excerpts a{
-	float:right;
-}
-
 
 
 /************* END FRONT-PAGE ************/
 /************* START GATEWAY ************/
-.spotlight {
-	width: 100%;
-	height: 300px;
-	background-image:url(imgs/placeimg_940_300_grayscale_animals.jpg);
-
-}
-.spotlight h1 {
-	
-	background-color:#ddd;
-	padding:15px;
-	left:0;
-	top:60%;
-	color:#000;
-	opacity:.7;
-}
-.gateway-main-tile{
-	width:100%;
-	height:300px;
-	background-color:gray;
-	float:left;
-	margin: 20px 0;
-	padding:30px;
-}
-
-.gateway-main-tile h2{
-	font-size: 250%;
-	text-transform: uppercase;
-}
-.gateway-main-tile p{
-	font-size: 115%;
-	padding-top: 15px;
-	line-height: 22px;
-}
-.section-tiles a{
-	position: relative;
-	top:200px;
-	padding:15px;
-	float: right;
-	font-size: 130%;
-	background-color: #ddd;
-	color:#000;
-}
-.tile-1,
-.tile-2,
-.tile-3,
-.tile-4,
-.tile-5,
-.tile-6{
-	width: 260px;
-	height: 260px;
-	background-image: url(imgs/placeimg_260_260_grayscale_animals.jpg);
-	float:left;
-}
-.tile-1,
-.tile-3,
-.tile-5{
-	margin-right: 20px;
-}
-
-.tile-2,
-.tile-3,
-.tile-5,
-.tile-6{
-	margin-left:0;
-}
 
 
 /************* END GATEWAY ************/
@@ -816,9 +944,7 @@ body{
 	float:none;	
 	text-align: center; 	
 }
-.title-text p{
-	text-align: lef
-}
+
 .title {    
 	font-size:2.5em;
 	font-weight:700;
@@ -827,11 +953,8 @@ body{
      	
 }
 
-
-
 .destination-content {
 	width:100%;
-	height:200px;
 	background-color:#ddd;	
 	margin-top:20px;
 	margin-bottom:20px;
@@ -866,3 +989,5 @@ body{
 
 /******************** END MEDIA QUERIES***************/
 }
+
+/******************** END BODY ***************/
