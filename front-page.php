@@ -17,19 +17,22 @@
 
 <div class="home-thumbnails">
         <div class="home-thmb first"> 
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="volunteer"/>
+        <?php front_page_CTA_1(); ?>
+                <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="volunteer"/>
                 <h4>Making a lasting difference in the life of a foster child</h4>
-                <a href="<?php echo home_url(); ?>/?page_id=10"><h1>Volunteer</h1></a>
+                <a href="<?php echo home_url(); ?>/?page_id=10"><h1>Volunteer</h1></a> -->
         </div>
-        <div class="home-thmb second">             
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/kitty_300_300.jpg" alt="donate"/>
+        <div class="home-thmb second">  
+        <?php front_page_CTA_2(); ?>           
+                 <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/kitty_300_300.jpg" alt="donate"/>
                 <h4>Provide hope by donating new or gently used clothing and supplies</h4>
-                <a href="<?php echo home_url(); ?>/?page_id=12"><h1>Donate</h1></a>     
+                <a href="<?php echo home_url(); ?>/?page_id=12"><h1>Donate</h1></a>   -->   
         </div>
-        <div class="home-thmb third">            
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="events"/>
+        <div class="home-thmb third">  
+        <?php front_page_CTA_3(); ?>        
+                 <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/puppy_300_300.jpg" alt="events"/>
                 <h4>Connect through our family-oriented experiences</h4>
-                <a href="<?php echo home_url(); ?>/?page_id=14"><h1>Events</h1></a>     
+                <a href="<?php echo home_url(); ?>/?page_id=14"><h1>Events</h1></a>  -->    
         </div>   
        <!-- <div class="clear"></div>-->
 </div> <!-- end home-thumbnails-->
