@@ -94,9 +94,9 @@ html{
 
 /* COLOR CODES */
 /*	#E2E1D0;	/*khaki*/
-/*	#BADDBD;	/*light aqua*/
-/*	#80CBA9;	/*aqua*/
-/*	#59AA83;	/*dark aqua*/
+/*	#BADDBD;	/*light green*/
+/*	#80CBA9;	/*main green*/
+/*	#59AA83;	/*dark green*/
 
 /*html {
 	font-size: 16px;	
@@ -218,6 +218,7 @@ header {
 	clear:both;
     margin: 1.25em auto 0 auto;	
 	padding:1.25em;
+    background-color: #E2E1D0;
 }
 
 footer {
@@ -227,6 +228,7 @@ footer {
 	clear:both;
     margin: 0 auto 1.25em auto;	
 	padding:1.25em;
+    background-color: #E2E1D0;
 }
 
 h1 {
@@ -291,16 +293,20 @@ a {
 .donate-button {
 	float:right;
 	padding:1em;
-	background-color:#aaa;
-    border: 1px solid gray;
+	background-color:#BADDBD;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    border: none;
 }
 
 .donate-button a{
-	color:#333;
+	color:#000000;
+    display: block;
 }
 
-.donate-button a:hover{
-	color:#fff;
+.donate-button:hover{
+	background-color:#80CBA9;
 }
 
 /******************** END LAYOUT STYLES ***************/
@@ -350,7 +356,7 @@ img.logo {
 /******************** MAIN NAV ****************/
 
 .nav-main{
-	background-color: #ddd;
+	background-color: #80CBA9;
     margin-bottom: 0;
 }
 .nav-main a{
@@ -385,7 +391,7 @@ img.logo {
 }
 	
 .nav-main li:hover {
- 	background: #666;
+ 	background: #BADDBD;
   	color: #fff;
   	margin-right:-4px;
   	z-index: 999;
@@ -410,7 +416,7 @@ img.logo {
 }
 
 .nav-main  li ul li{ 
-	background: #666; 
+	background: #BADDBD; 
 	display: block; 
 	text-align: left;
 	color: #fff;
@@ -420,7 +426,7 @@ img.logo {
 }
 
 .nav-main li ul li:hover { 
-	background: #ddd; 
+	background: #80CBA9; 
 }
 	
 .nav-main li:hover ul {
