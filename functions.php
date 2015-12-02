@@ -146,5 +146,22 @@ function new_excerpt_more( $more ) {
 		}
 		add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+function front_page_CTA($slug) {
+
+	$page_data = new WP_Query(array( "name" => $slug, "post_type" => "page") );
+	$page_id = $page_data->post->ID;
+	$page_link = get_permalink($page_id);
+	$tagline = get_post_meta($page_id, 'Tagline','true');
+	$title = get_the_title($page_id);
+	$image = get_the_post_thumbnail($page_id,'medium');
+	echo $image;
+	?>
+	<h4> <?= $tagline ?></h4>
+	<a href="<?= $page_link ?>">
+		<h2><?= $title ?></h2>
+	</a>
+    <?php 
+}
+
 
 ?>
