@@ -146,50 +146,21 @@ function new_excerpt_more( $more ) {
 		}
 		add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-function front_page_CTA_1(){
-	global $post;
+function front_page_CTA($slug) {
 
-	$page_id = 10;
-	$page_data = get_page($page_id);
+	$page_data = new WP_Query(array( "name" => $slug, "post_type" => "page") );
+	$page_id = $page_data->post->ID;
 	$page_link = get_permalink($page_id);
 	$tagline = get_post_meta($page_id, 'Tagline','true');
-	$title = $page_data->post_title;
-	$image = get_the_post_thumbnail($page->ID,'medium');
-
+	$title = get_the_title($page_id);
+	$image = get_the_post_thumbnail($page_id,'medium');
 	echo $image;
-	echo '<h4> '. $tagline .'</h4>';
-    echo '<a href="'. $page_link . '"><h1>'.$title.'</h1></a>';
-
-}
-function front_page_CTA_2(){
-	global $post;
-
-	$page_id = 12;
-	$page_data = get_page($page_id);
-	$page_link = get_permalink($page_id);
-	$tagline = get_post_meta($page_id, 'Tagline','true');
-	$title = $page_data->post_title;
-	$image = get_the_post_thumbnail($page->ID,'medium');
-
-	echo $image;
-	echo '<h4> '. $tagline .'</h4>';
-    echo '<a href="'. $page_link . '"><h1>'.$title.'</h1></a>';
-    
-}
-function front_page_CTA_3(){
-	global $post;
-
-	$page_id = 14;
-	$page_data = get_page($page_id);
-	$page_link = get_permalink($page_id);
-	$tagline = get_post_meta($page_id, 'Tagline','true');
-	$title = $page_data->post_title;
-	$image = get_the_post_thumbnail($page->ID,'medium');
-
-	echo $image;
-	echo '<h4> '. $tagline .'</h4>';
-    echo '<a href="'. $page_link . '"><h1>'.$title.'</h1></a>';
-    
+	?>
+	<h4> <?= $tagline ?></h4>
+	<a href="<?= $page_link ?>">
+		<h2><?= $title ?></h2>
+	</a>
+    <?php 
 }
 
 
