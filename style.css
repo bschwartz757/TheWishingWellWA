@@ -726,6 +726,7 @@ img.logo {
 }
 
 .section-tiles{
+	clear:both;
 	margin-right:-20px;
 }
 
