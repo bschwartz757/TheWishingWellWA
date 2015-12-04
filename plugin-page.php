@@ -11,7 +11,9 @@
        
 <article class="plugin-content">
     <h3><?php the_title(); ?> Template</h3>
-
+<?php if(have_posts()) : the_post(); ?>
+ <?php the_content(); ?>
+    <?php endif; ?>
 </article>    
 
 <?php get_sidebar(); ?>
