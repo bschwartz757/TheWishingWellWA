@@ -289,7 +289,7 @@ h1 {
 	font-size: 2.25em;
 	font-weight:700;
     text-align: left;
-    font-family: dk mango smoothie;
+    font-family: 'DK Mango Smoothie';
 }
 
 h2 {
@@ -325,7 +325,27 @@ a:focus {
 	color: #000000;	
 }
 
-.nav-main a:link,
+
+/*.nav-main a:link,
+.nav-main a:visited {	
+	display:block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#000;
+}
+
+
+.nav-main li a:hover,
+.nav-main li a:focus {
+ 	background: #BADDBD;
+  	color: #fff;
+	line-height:1.5em;	
+  	margin-right:-4px;
+  	z-index: 999;
+}*/
+
+
+/*.nav-main a:link,
 .nav-main a:visited {
 	color: #000000;	
 }
@@ -333,7 +353,7 @@ a:focus {
 .nav-main a:hover,
 .nav-main a:focus {
 	color: #FFFFFF;	
-}
+}*/
 
 footer a:link,
 footer a:visited {
@@ -347,16 +367,7 @@ footer a:focus {
 
 /******************** END LINK STYLES ***************/
 
-
-/** PREVENTS AWKWARD MARGINS IN NAV-MAIN **/
-.nav-main li {
-	margin:0;	
-}
-/****/
-
-a {
-	text-decoration:none;
-}
+/******************** MISC. ELEMENT STYLES ***************/
 
 .icon{
 	float:left;
@@ -393,7 +404,7 @@ a {
 	background-color:#80CBA9;
 }
 
-/******************** END LAYOUT STYLES ***************/
+/******************** END MISC. ELEMENT STYLES ***************/
 
 /******************** IMAGE STYLES ***************/
 
@@ -441,31 +452,27 @@ img.logo {
 
 .nav-main{
 	background-color: #7DCCA8;
-    margin-bottom: 0;
+    margin: 0 auto o auto;
+	list-style: none;
+	width:100%;	
 }
-.nav-main a{
+
+.nav-main a{	
+	display:block;
 	text-decoration: none;
 	text-transform: uppercase;
 	color:#000;
 }
 
-.nav-main {
-  display: inline-block;
-  margin: 0 auto;
-  list-style: none;
-  width:100%;
-
-}
-
 .nav-main li{
-	font: bold 1em sans-serif;
-	font-family: dk mango smoothie;
-	font-size: 1.25em;
 	display: inline-block;
+	font-size: 1.15em;
+	font-family:'DK Mango Smoothie';
+	font-weight:600;
+	line-height:1.5em;		
   	position: relative;
- 	padding-top: .75em;
- 	padding-bottom: .25em;
   	cursor: pointer;
+	padding:.75em 0;	
   	margin-right:-4px;
   	width:12.5%;
   	text-align: center;
@@ -485,9 +492,9 @@ img.logo {
 
 .nav-main li ul{
 	position: absolute;
-	top: 42px;
-	left: 0;
-	width: 150px;
+	top: 54px;
+	left: -5px;
+	width: 200px;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
@@ -504,11 +511,21 @@ img.logo {
 .nav-main  li ul li{ 
 	background: #BADDBD; 
 	display: block; 
+	font-size:1em;	
 	text-align: left;
 	color: #fff;
 	width:100%;
 	padding-left:1.25em;
 	margin-top: -1px;
+}
+
+.nav-main .menu {
+	margin-left:0;
+	margin-bottom:0;	
+}
+
+.nav-main .menu-item {
+	margin-bottom:0;	
 }
 
 .nav-main li ul li:hover { 
