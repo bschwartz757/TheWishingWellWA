@@ -156,7 +156,7 @@ li {
 }
 
 h1, h2, h3 {
-	font-family: 'DK Mango Smoothie', Helvetica, Arial, Verdana, sans-serif;
+	font-family: 'dk_mango_smoothieregular', Helvetica, Arial, Verdana, sans-serif;
 	margin-bottom: 0.25em;
 	color: #000000;	
 	}
@@ -280,7 +280,7 @@ li {
 /******************** TEXT STYLES ***************/
 
 h1, h2, h3, h4 {
-	font-family: dk_mango_smoothieregular, Helvetica, Arial, Verdana, sans-serif;
+	font-family: 'dk_mango_smoothieregular', Helvetica, Arial, Verdana, sans-serif;
 	margin-bottom: .25em;
 	color: #000000;	
 }
@@ -459,7 +459,7 @@ img.logo {
 
 .nav-main li{
 	font: bold 1em sans-serif;
-	font-family: dk mango smoothie;
+	font-family: dk_mango_smoothieregular;
 	font-size: 1.25em;
 	display: inline-block;
   	position: relative;
