@@ -437,7 +437,7 @@ img.logo {
 	list-style:none;		
   	position: relative;
   	cursor: pointer;
-	padding:.75em 0;	
+	/*padding:.75em 0;*/	
   	margin-right:-4px;
   	width:12.5%;
   	text-align: center;
@@ -450,6 +450,7 @@ img.logo {
 
 .nav-main a {
 	display:block;	
+	padding:.75em 0;	
 	text-decoration: none;
 	text-transform: uppercase;
 	color:#000;		
@@ -504,8 +505,12 @@ img.logo {
 	text-align: left;
 	color: #fff;
 	width:100%;
-	padding-left:1.25em;
 	margin-top: -1px;
+}
+
+.nav-main li ul li a {
+	padding-left:1.25em;
+	margin:0;			
 }
 
 .nav-main .menu {
