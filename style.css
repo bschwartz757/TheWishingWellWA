@@ -326,36 +326,6 @@ a:focus {
 	color: #000000;	
 }
 
-
-/*.nav-main a:link,
-.nav-main a:visited {	
-	display:block;
-	text-decoration: none;
-	text-transform: uppercase;
-	color:#000;
-}
-
-
-.nav-main li a:hover,
-.nav-main li a:focus {
- 	background: #BADDBD;
-  	color: #fff;
-	line-height:1.5em;	
-  	margin-right:-4px;
-  	z-index: 999;
-}*/
-
-
-/*.nav-main a:link,
-.nav-main a:visited {
-	color: #000000;	
-}
-
-.nav-main a:hover,
-.nav-main a:focus {
-	color: #FFFFFF;	
-}*/
-
 footer a:link,
 footer a:visited {
 	color: #000000;	
@@ -452,17 +422,9 @@ img.logo {
 /******************** MAIN NAV ****************/
 
 .nav-main{
+	width:100%;		
+    margin: 0 auto o auto;			
 	background-color: #7DCCA8;
-    margin: 0 auto o auto;
-	list-style: none;
-	width:100%;	
-}
-
-.nav-main a{	
-	display:block;
-	text-decoration: none;
-	text-transform: uppercase;
-	color:#000;
 }
 
 .nav-main li{
@@ -471,7 +433,8 @@ img.logo {
 	font-size: 1.25em;
 	font-family:'dk_mango_smoothieregular';
 	font-weight:600;
-	line-height:1.5em;		
+	line-height:1.5em;
+	list-style:none;		
   	position: relative;
   	cursor: pointer;
 	padding:.75em 0;	
@@ -483,6 +446,31 @@ img.logo {
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
+}
+
+.nav-main a {
+	display:block;	
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#000;		
+}
+
+.nav-main a:link,
+.nav-main a:visited {	
+	display:block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#000;
+}
+
+.nav-main a:hover,
+.nav-main a:focus {
+	display:block;
+	line-height:1.5em;		
+ 	background: #BADDBD;
+  	color: #fff;
+	line-height:1.5em;	
+  	z-index: 999;
 }
 	
 .nav-main li:hover {
@@ -500,7 +488,6 @@ img.logo {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	display: none;
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transiton: opacity 0.2s;
@@ -531,11 +518,12 @@ img.logo {
 }
 
 .nav-main li ul li:hover { 
+	display:block;
 	background: #80CBA9; 
 }
 	
 .nav-main li:hover ul {
-	display: block;
+	display:block;
 	opacity: 1;
  	visibility: visible;
 }
