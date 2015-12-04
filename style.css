@@ -440,7 +440,7 @@ img.logo {
 /******************** MAIN NAV ****************/
 
 .nav-main{
-	background-color: #7dcca8;
+	background-color: #7DCCA8;
     margin-bottom: 0;
 }
 .nav-main a{
@@ -459,10 +459,12 @@ img.logo {
 
 .nav-main li{
 	font: bold 1em sans-serif;
+	font-family: dk mango smoothie;
+	font-size: 1.25em;
 	display: inline-block;
   	position: relative;
- 	padding-top: 1em;
- 	padding-bottom:1em;
+ 	padding-top: .75em;
+ 	padding-bottom: .25em;
   	cursor: pointer;
   	margin-right:-4px;
   	width:12.5%;
@@ -483,7 +485,7 @@ img.logo {
 
 .nav-main li ul{
 	position: absolute;
-	top: 48px;
+	top: 42px;
 	left: 0;
 	width: 150px;
 	-webkit-box-shadow: none;
@@ -629,10 +631,10 @@ img.logo {
 
 .social-excerpts h1{
 	width:100%;
-	padding:1.625em;
+	padding: .35em;
 	background-color: #7dcca8;
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 35px;
 	text-align: center;
 	margin-bottom: 1.25em;
 }
