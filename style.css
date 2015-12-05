@@ -436,8 +436,7 @@ img.logo {
 	line-height:1.5em;
 	list-style:none;		
   	position: relative;
-  	cursor: pointer;
-	/*padding:.75em 0;*/	
+  	cursor: pointer;	
   	margin-right:-4px;
   	width:12.5%;
   	text-align: center;
@@ -483,7 +482,7 @@ img.logo {
 
 .nav-main li ul{
 	position: absolute;
-	top: 54px;
+	top: 60px;
 	left: -5px;
 	width: 200px;
 	-webkit-box-shadow: none;
@@ -499,7 +498,7 @@ img.logo {
 }
 
 .nav-main  li ul li{ 
-	background: #BADDBD; 
+	background: #7DCCA8; 
 	display: block; 
 	font-size:1em;	
 	text-align: left;
@@ -534,6 +533,101 @@ img.logo {
 }
 
 /******************** END MAIN NAV **********/
+
+/******************** START TOGGLE (MOBILE) NAV **********/
+
+#nav-mobile {
+	min-height:3em;
+	line-height:3em;
+	background-color:#7DCCA8;
+	color: #000;	
+}
+
+#nav-mobile a {
+	padding:0 .75em;	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;		
+}
+
+#nav-mobile ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav-mobile ul.expanded {
+    display: block;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;		
+}
+
+#nav-mobile li a:link,
+#nav-mobile li a:visited {
+	display: block;
+	padding: 0.6250rem; 	
+	border-top: 1px solid #666;
+	color: #000;
+	text-decoration: none;
+}
+
+#nav-mobile a:hover,
+#nav-mobile a:focus {
+	color:#fff;
+ 	background: #BADDBD;	
+	text-decoration:none;		
+}
+
+#nav-mobile li a:hover,
+#nav-mobile li a:focus {
+	color:#fff;
+	text-decoration:none;	
+}
+
+#nav-mobile ul li ul.fallback {
+	display:none;	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+}
+
+#nav-mobile ul li:hover ul.fallback {
+	display:block;
+	padding-left:1.25em;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;					
+}
+
+.menu-button {
+	display: block;
+	text-align: right;
+	color: #000;
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;		
+}
+
+.menu-button:hover,
+.menu-button:focus {
+	color: #fff;
+}
+
+/******************** END TOGGLE (MOBILE) NAV **********/
+
 /******************** START SIDEBAR *********/
 
 #sidebar{
@@ -964,8 +1058,26 @@ footer > p {
 /******************** END FOOTER ***************/
 
 /******************** START MEDIA QUERIES***************/
-@media all and (max-width: 600px){
+
+@media all and (min-width: 600px){
+	
+	.nav-main {
+		display:block;	
+	}
+	
+	#nav-mobile {
+		display:none;	
+	}
+	
+	
+}
+
+
+
 /***********GLOBAL MOBILE STYLES **********/
+
+@media all and (max-width: 600px){
+
 body{
 
 }
@@ -973,6 +1085,15 @@ body{
 	margin-left:0;
 	margin-right:0;
 }
+
+.nav-main {
+	display:none;	
+}
+
+#nav-mobile {
+	display:block;	
+}
+
 /************* START MOBILE HEADER ************/
 .logo-desktop{
 	display: none;

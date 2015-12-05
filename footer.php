@@ -31,5 +31,15 @@
 
 </div><!--  close wrapper  -->
 
+<script>
+<!--Toggle Nav Menu (mobile) - USES JQUERY-->
+$(window).load(function() { // enable function upon window load
+$(".menu-button").click(function() { // when toggle is clicked...
+$("#nav-toggle").toggle(); // ... open or close the navigation
+});
+});
+<!--End Toggle Nav Menu (mobile)-->
+</script>
+
 </body>
 </html>
