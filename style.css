@@ -215,6 +215,7 @@ footer a:focus {
 }
 */
 
+
 /******************** LAYOUT STYLES ***************/
 
 body {
@@ -237,21 +238,18 @@ div, article, aside, section {
 }
 
 header {
-	width:100%;
-    max-width: 940px;	
-	height:auto;
+	width:100%;	
 	clear:both;
-    margin: 1.25em auto 0 auto;	
-	padding:1.25em;
+    margin: 0 auto 0 auto;	
+    padding-top: 1.25em;
     background-color: #E2E1D0;
 }
 
 footer {
-	width:100%;
-    max-width: 940px;	
+	width:100%;	
 	height:auto;	
 	clear:both;
-    margin: 0 auto 1.25em auto;	
+    margin: 0 auto 0 auto;	
 	padding:1.25em;
     background-color: #E2E1D0;
 }
@@ -358,13 +356,18 @@ footer a:focus {
 
 .donate-button {
 	float:right;
-	padding:1em;
+	padding:.15em;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: helvetica;
+	width: 150px;
 	background-color:#BADDBD;
     -moz-border-radius: 8px 8px 8px 8px;
     -webkit-border-radius: 8px 8px 8px 8px;
     border-radius: 8px 8px 8px 8px;	
     border: none;
 }
+
 
 .donate-button a{
 	color:#000000;
@@ -408,18 +411,35 @@ img.logo {
 .donate-button.header{
 	float:right;
 	position:relative;
-	margin-top:10%;
+	margin-top:2%;
 	margin-right:0;
 	clear:right;
-	padding:1em;
 }
 
 .donate-button.header a{
 	text-decoration: none;
 }
 
+.inside-header {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
 /******************** START NAV ***************/
 /******************** MAIN NAV ****************/
+
+.inside-nav {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+nav.color {
+	width:100%;		
+    margin: 0 auto o auto;			
+	background-color: #7DCCA8;
+}
 
 .nav-main{
 	width:100%;		
@@ -430,7 +450,7 @@ img.logo {
 .nav-main li{
 	display: inline-block;
 	font: bold 1em sans-serif;	
-	font-size: 1.25em;
+	font-size: 1.65em;
 	font-family:'dk_mango_smoothieregular';
 	font-weight:600;
 	line-height:1.5em;
@@ -449,7 +469,7 @@ img.logo {
 
 .nav-main a {
 	display:block;	
-	padding:.75em 0;	
+	padding: .15em 0;	
 	text-decoration: none;
 	text-transform: uppercase;
 	color:#000;		
@@ -481,8 +501,8 @@ img.logo {
 
 .nav-main li ul{
 	position: absolute;
-	top: 60px;
-	left: -5px;
+	top: 47px;
+	left: -19px;
 	width: 200px;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -999,6 +1019,12 @@ footer {
     background-color: #e2e1cf;
 }
 
+.inside-footer {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
 .donate-button.footer {
     float:left;
     position:relative;
@@ -1019,7 +1045,6 @@ footer > p {
 .nav-footer {
     display:inline-block;
     width:90%;
-    margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
     padding: 0;

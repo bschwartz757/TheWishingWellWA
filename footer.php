@@ -1,6 +1,8 @@
 
 <!-- Start footer -->
-<footer>            
+<footer>
+    
+    <div class="inside-footer">          
     
     <div class="social-icons">    
         <ul class="social-icons-ul">
@@ -13,12 +15,15 @@
         <div class="donate-button footer">
             <a href="#">Donate</a>
         </div>  
+
 <div class="clear"></div>  
     
 <!-- Start wp Footer Menu -->
 
 <?php wp_nav_menu( array('theme_location' => 'footer-menu','container' => 'nav','container_class' => 'nav-footer')); ?>
 <!-- End wp Footer Menu -->
+
+</div> <!--- Closes Inside Footer -->
 
     <p>&copy; The Wishing Well 2015 - <?php print("" . date('Y') . ""); ?></p>
 </footer>
