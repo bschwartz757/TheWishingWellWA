@@ -86,7 +86,7 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 }
 //
 //Create Custom Image Sizes
-add_image_size('gateway-spotlight', 940, 450, array('center', 'center')); //Creates the 940x450 hard crop mode (from center)
+add_image_size('featured-spotlight', 300, 300, array("left", "top")); //300 x 300, hard crop
 
 //Get Child Pages
 function get_child_pages(){
@@ -101,7 +101,7 @@ function get_child_pages(){
 		$childID = $post->ID; //post it
 		$childTitle = $post->post_title; //post title
 		$childExcerpt = $post->post_excerpt; //post excerpt
-		$childImage = get_the_post_thumbnail($page->ID, 'medium') ; //post thumbnail
+		$childImage = get_the_post_thumbnail($page->ID, 'featured-spotlight') ; //post thumbnail
 
 		echo '<div class="tile">';
 		echo $childImage;
@@ -153,7 +153,7 @@ function front_page_CTA($slug) {
 	$page_link = get_permalink($page_id);
 	$tagline = get_post_meta($page_id, 'Tagline','true');
 	$title = get_the_title($page_id);
-	$image = get_the_post_thumbnail($page_id,'medium');
+	$image = get_the_post_thumbnail($page_id,'featured-spotlight');
 	echo $image;
 	?>
 	<h4> <?= $tagline ?></h4>
