@@ -40,10 +40,10 @@
 ?>
         
 <div class="social-excerpt blog">
-    <div class="excerpt-image"><?php the_post_thumbnail('thumbnail'); ?>
-    </div>    
     <h2><a href="<?= the_permalink(); ?>"><?php the_title() ?></a></h2>
-    <p><?= the_excerpt(); ?></p>
+    <div class="excerpt-image clear-fix"><?php the_post_thumbnail('thumbnail'); ?>
+    </div>    
+    <?= the_excerpt(); ?>
 <!--<div class="clear"></div>-->
 </div>
 <?php 
