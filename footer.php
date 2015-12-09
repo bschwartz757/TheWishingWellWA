@@ -29,7 +29,6 @@
 
 <!-- End WP Footer -->
 
-</div><!--  close wrapper  -->
 
 <script>
 <!--Toggle Nav Menu (mobile) - USES JQUERY-->

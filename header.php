@@ -40,7 +40,6 @@
     
 <body <?php body_class(); ?> class="home">
 
-<div class="wrapper">
 
 <header class="clear-fix"> 
     <div class="logo">
