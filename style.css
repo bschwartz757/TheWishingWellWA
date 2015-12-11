@@ -234,7 +234,6 @@ body {
 
 div, article, aside, section {
     margin-top: 0;
-    margin-bottom: 1.25em;
 }
 
 header {
@@ -656,6 +655,7 @@ nav.color {
 	max-width:300px;	
 	background-color: #e2e1cf;
 	padding:1.25em;
+    margin: 1.25em 0;
 }
 
 /******************** END SIDEBAR *********/
@@ -757,25 +757,25 @@ nav.color {
 
 .social-excerpts h1{
 	width:100%;
-	padding: .35em;
 	background-color: #7dcca8;
 	text-transform: uppercase;
 	font-size: 35px;
 	text-align: center;
-	margin-bottom: 1.25em;
+    margin-bottom: .5em;
 }
 
 .social-excerpt.blog{
 	width: 91.3%;
-    margin: 0 auto;
+    margin: 0 auto 1.25em;
     overflow: hidden;
-	padding:1.25em;
+	
 }
 
 .social-excerpts.fb{
     height:auto;
     float:left;
     margin-left: 1.25em;
+    margin-bottom: 1.25em;
 }
 
 .front-page-excerpts .excerpt-image{
@@ -840,6 +840,7 @@ nav.color {
 	background-color: #e2e1cf;
 	float:left;
 	padding:1.25em;
+    margin-top: 1.25em;
 }
 
 .gateway-main-tile h2{
@@ -937,6 +938,7 @@ nav.color {
 	height:auto;
 	background-color:#e2e1cf;	
 	padding:1.25em;
+    margin: 1.25em 0;
 	float:left;		
 }
 
@@ -970,7 +972,7 @@ nav.color {
 	height:300px;
 	float: left;
 	background-color: #ddd;
-	margin-top:20px;
+    margin: 1.25em 0;
 }
 
 .plugin-content h3{
