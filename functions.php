@@ -88,6 +88,7 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 //Create Custom Image Sizes
 add_image_size('featured-spotlight', 300, 300, array("left", "top")); //300 x 300, hard crop
 add_image_size('blog-spotlight', 220, 175, array("left", "top")); //220 x 175, hard crop
+add_image_size('gateway-feature', 940, 330, array("left", "top")); // 940 x 330, hard crop
 
 //Get Child Pages
 function get_child_pages(){

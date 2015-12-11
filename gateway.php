@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 
 <div class="spotlight">
-   <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/placeimg_940_300_grayscale_animals.jpg" alt="gateway featured image"/>
+   <?php the_post_thumbnail('gateway-feature'); ?>
 <a href="<?php echo home_url(); ?>/?page_id=64"><h1>Our Mission</h1></a>
 </div>
 
