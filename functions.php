@@ -105,7 +105,7 @@ function get_child_pages(){
 		$childImage = get_the_post_thumbnail($page->ID, 'featured-spotlight') ; //post thumbnail
 
 		echo '<div class="tile">';
-		echo $childImage;
+		echo '<div class="tile-image">' . $childImage . '</div>';
 		echo '<h1><a href="'.$childPermalink.'">' .$childTitle.'</a></h1>';
 		echo '<p class="caption">'. $childExcerpt . '</p>';
 		echo '</div>';
@@ -155,12 +155,12 @@ function front_page_CTA($slug) {
 	$tagline = get_post_meta($page_id, 'Tagline','true');
 	$title = get_the_title($page_id);
 	$image = get_the_post_thumbnail($page_id,'featured-spotlight');
-	echo $image;
+	echo '<div class="tile-image">' . $image . '</div>';
 	?>
-	<h4> <?= $tagline ?></h4>
-	<a href="<?= $page_link ?>">
-		<h2><?= $title ?></h2>
-	</a>
+	<p class="caption"> <?= $tagline ?></p>
+	<h1><a href="<?= $page_link ?>">
+		<?= $title ?>
+	</a></h1>
     <?php 
 }
 

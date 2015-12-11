@@ -398,6 +398,7 @@ img.logo {
 
 }
 
+
 /******************** END IMAGE STYLES ***************/
 
 /******************** END GLOBAL ***************/
@@ -700,7 +701,7 @@ nav.color {
 	color:#0bf;
 }
 
-.home-thumbnails{
+/*.home-thumbnails{
 	width:100%;
 	max-width:940px;
 	height:auto;
@@ -742,7 +743,7 @@ nav.color {
 
 .home-thmb:first-child {
 	margin-left:0;
-}
+}*/
 
 .front-page-excerpts{
 	width:100%;
@@ -865,9 +866,12 @@ nav.color {
 	margin-bottom: 20px;
 }
 
+.tile-image{
+	position: relative;
+}
+
 .tile a{
 	position: absolute;
-	font-size: 130%;
 	background-color: #000;
 	color:#fff;
 	text-decoration: none;
@@ -883,10 +887,13 @@ nav.color {
 	color:#0bf;
 }
 
-.caption{
+
+
+
+/*.caption{
 	display: none;
 
-}
+}*/
 
 
 /******************** END GATEWAY.PHP ***************/

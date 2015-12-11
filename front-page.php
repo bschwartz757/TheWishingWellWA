@@ -15,14 +15,14 @@
     <span class="home-slider-caption"><h1><a href="<?php echo home_url(); ?>/?page_id=6">More Info</a></h1></span>
 </div>
 
-<div class="home-thumbnails clear-fix">
-        <div class="home-thmb clear-fix"> 
+<div class="section-tiles clear-fix">
+        <div class="tile clear-fix"> 
         <?php front_page_CTA("volunteer"); ?>
         </div>
-        <div class="home-thmb clear-fix">  
+        <div class="tile clear-fix">  
         <?php front_page_CTA("donate"); ?> 
         </div>
-        <div class="home-thmb clear-fix">  
+        <div class="tile clear-fix">  
         <?php front_page_CTA("events"); ?>
         </div>   
        <!-- <div class="clear"></div>-->
