@@ -765,10 +765,9 @@ nav.color {
 }
 
 .social-excerpt.blog{
-	width: 91.3%;
+	width: 100%;
     margin: 0 auto 1.25em;
     overflow: hidden;
-	
 }
 
 .social-excerpts.fb{

@@ -41,9 +41,10 @@
         
 <div class="social-excerpt blog">
 
-    <h2><a href="<?= the_permalink(); ?>"><?php the_title() ?></a></h2>
+    
     <div class="excerpt-image clear-fix"><?php the_post_thumbnail('blog-spotlight'); ?>
-    </div>    
+    </div>   
+    <h2><a href="<?= the_permalink(); ?>"><?php the_title() ?></a></h2>
     <?= the_excerpt(); ?>
 <!--<div class="clear"></div>-->
 </div>
