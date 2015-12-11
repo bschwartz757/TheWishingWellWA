@@ -668,6 +668,59 @@ nav.color {
 
 /******************** START BODY ************/
 
+/************* Start Contact Form ************/
+
+
+/* Contact 7 Forms
+--------------------------------------------- */
+
+form.wpcf7-form {
+	background-color: #333;
+	opacity: .9;
+	text-align: center;
+	margin-left: 100px;
+	padding: 20px;
+	-moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;	
+    border: none;
+    text-align: center;
+}
+
+input#formname, #emailform, #subject, #message {
+	width:75%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+input#formname {
+	margin-top: 20px;
+	text-align: center;
+}
+
+input.wpcf7-form-control.wpcf7-submit{
+	margin-left: 20px;
+	background-color: #7dcca8;
+	width: 45%;
+	height: 30px;
+	font-size: 20px;
+	-moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;	
+    border: none;
+    text-align: center;
+
+}
+
+input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover, .entry-content .button:hover {
+	background-color: #f15123;
+}
+
+
+
+/************* End Contact Form ************/
+
 /******************** START FRONT-PAGE.PHP **/
 
 .home-slider{
