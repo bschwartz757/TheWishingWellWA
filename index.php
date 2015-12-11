@@ -16,7 +16,7 @@
     
     <div class="blog-image"><?php the_post_thumbnail('medium');// gets the post thumbnail ?></div>   
     <h2><a href="<?php the_permalink();// links to the post ?>"><?php the_title();// gets the post title ?></a></h2>
-    <p><?php the_excerpt();// gets the post excerpt ?></p>
+    <p><?= the_excerpt(); ?></p>
     <p class="meta">Posted on <?php the_time('F j, Y');// gets the time ?> by <?php the_author();// gets the author ?> in <?php the_category(', ');// gets the category - comma separates if multiple ?></p>
     <div class="clear"></div>
      </div>
