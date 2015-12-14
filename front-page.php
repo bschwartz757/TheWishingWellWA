@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 
 <div class="home-slider">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/placeimg_940_300_grayscale_animals.jpg" alt="front page slider"/>
+<?php the_post_thumbnail('gateway-feature'); ?>
     <blockquote>"We give foster care children confidence by providing for their basic material needs."</blockquote>
     <span class="home-slider-caption"><h1><a href="<?php echo home_url(); ?>/?page_id=6">More Info</a></h1></span>
 </div>

@@ -89,8 +89,8 @@ table {
 html{
 	font-size: 16px;        /* Sets relative sizes: 1em = 16px */
 	background-color: #FFFFFF;
-}
 
+}
 .clear-fix::after {
 	content: "";
 	display: block;
@@ -743,7 +743,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 
 .home-slider-caption {
 	position: absolute;
-	bottom:1%;
+	bottom:2%;
 	right:0;
 	padding:1.25em;
 	color:#fff;
@@ -920,6 +920,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	position: relative;
 	margin-right: 20px;
 	margin-bottom: 20px;
+	margin-top:20px;
 }
 
 .tile-image{
@@ -931,8 +932,8 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	background-color: #000;
 	color:#fff;
 	text-decoration: none;
-	padding:10px;
-	bottom:1%;
+	bottom:5%;
+	padding-right: 15px;
 	width: 100%;
 	opacity: .7;
 	text-align: right;
@@ -943,13 +944,35 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	color:#0bf;
 }
 
+p.caption{
+	position:absolute;
+	background-color: rgba(0,0,0,0.5);	
+	top:0;
+	display: table;
+	cursor: pointer;
+	height:300px;
+	width: 300px;
+	left:0;
+	color:#fff;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+p.caption span{
+	 display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  padding:10px;
+}
+ p.caption:hover {
+  opacity: 1;
+}
 
 
-
-/*.caption{
-	display: none;
-
-}*/
 
 
 /******************** END GATEWAY.PHP ***************/
@@ -999,27 +1022,6 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 
 /******************** END DESTINATION.PHP ***************/
 
-/******************** START BLOG.PHP ********************/
-
-.blog-content{
-	width: 620px;
-	height:300px;
-	float: left;
-	background-color: #ddd;
-	margin-top:20px;
-	padding:20px;
-}
-
-.blog-content h3{
-	font-size: 120%;
-}
-
-.blog-content img,
-.blog-content p{
-	float: left;
-}
-
-/******************** END BLOG.PHP ***************/
 /******************** START PLUGIN.PHP ********************/
 
 .plugin-content{
@@ -1037,7 +1039,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 }
 
 /******************** END PLUGIN.PHP ***************/
-/******************** START INDEX.PHP ***************/
+/******************** START INDEX.PHP and SINGLE.PHP ***************/
 .blog-page-content{
 	margin-top: 20px;
 	width:66%;
@@ -1046,7 +1048,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 
 .single-blog{
 	padding:20px;
-	background-color: #ddd;
+	background-color: #e2e1cf;
 	margin-bottom:20px;
 }
 
