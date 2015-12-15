@@ -368,6 +368,7 @@ footer a:focus {
     -webkit-border-radius: 8px 8px 8px 8px;
     border-radius: 8px 8px 8px 8px;	
     border: none;
+    margin-bottom: 20px;
 }
 
 
@@ -674,11 +675,13 @@ nav.color {
 /* Contact 7 Forms
 --------------------------------------------- */
 
+#contact-form {
+	width: 300px;
+	margin: 0 auto;
+}
+
 form.wpcf7-form {
-	background-color: #333;
-	opacity: .9;
 	text-align: center;
-	margin-left: 100px;
 	padding: 20px;
 	-moz-border-radius: 8px 8px 8px 8px;
     -webkit-border-radius: 8px 8px 8px 8px;
@@ -700,9 +703,8 @@ input#formname {
 }
 
 input.wpcf7-form-control.wpcf7-submit{
-	margin-left: 20px;
 	background-color: #7dcca8;
-	width: 45%;
+	width: 100%;
 	height: 30px;
 	font-size: 20px;
 	-moz-border-radius: 8px 8px 8px 8px;
@@ -714,7 +716,7 @@ input.wpcf7-form-control.wpcf7-submit{
 }
 
 input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover, .entry-content .button:hover {
-	background-color: #f15123;
+	background-color: #BADDBD;
 }
 
 
@@ -1026,9 +1028,7 @@ p.caption span{
 
 .plugin-content{
 	width: 66%;
-	height:300px;
 	float: left;
-	background-color: #ddd;
     margin: 1.25em 0;
 }
 
@@ -1507,20 +1507,7 @@ footer > p {
 	}*/
 
 /************* END DESTINATION ************/
-/************* START PLUGIN-PAGE ************/
-	.plugin-content{
-		width: 100%;
-		height:300px;
-		float: left;
-		background-color: #ddd;
-		margin-top:20px;
-	}
-	.plugin-content h3{
-		font-size: 130%;
-		padding:20px;
-		text-align: center;
-	}
-/************* END PLUGIN-PAGE ************/
+
 /************* START BLOG-PAGE ************/
 
 /************* END BLOG-PAGE ************/
