@@ -881,14 +881,13 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	bottom:1%;
 	right:5%;
 	background-color:#000;
-}
-
-.spotlight a{
+	opacity: .7;
 	color:#fff;
+	padding:10px;
 	text-transform: uppercase;
 }
 
-.spotlight a:hover{
+.spotlight h1:hover{
 	color:#0bf;
 }
 
