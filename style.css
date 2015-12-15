@@ -295,7 +295,7 @@ h1 {
 
 h2 {
 	font-size: 1.688em;
-	font-weight:500;
+	font-weight:700;
     text-align: center;    
 }
 
@@ -704,7 +704,7 @@ input#formname {
 
 input.wpcf7-form-control.wpcf7-submit{
 	background-color: #7dcca8;
-	width: 100%;
+	width: 50%;
 	height: 30px;
 	font-size: 20px;
 	-moz-border-radius: 8px 8px 8px 8px;
@@ -806,7 +806,9 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 .front-page-excerpts{
 	width:100%;
 }
-
+.social-excerpt h2 a{
+font-size:1.2em;
+}
 .social-excerpts {
 	width:50%;
     max-width: 460px;
@@ -827,7 +829,12 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
     margin: 0 auto 1.25em;
     overflow: hidden;
 }
-
+.social-excerpts h1 a{
+	color:#000;
+}
+.social-excerpts h1 a:hover{
+	color:#fff;
+}
 .social-excerpts.fb{
     height:auto;
     float:left;
@@ -875,7 +882,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	position: relative;
 }
 
-.spotlight h1{
+.spotlight h1 {
 	font-size: 200%;
 	position: absolute;
 	bottom:1%;
@@ -887,7 +894,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	text-transform: uppercase;
 }
 
-.spotlight h1:hover{
+.spotlight h1:hover a{
 	color:#0bf;
 }
 
@@ -928,12 +935,12 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	position: relative;
 }
 
-.tile a{
+#cta-h1{
 	position: absolute;
 	background-color: #000;
 	color:#fff;
 	text-decoration: none;
-	bottom:5%;
+	bottom:3%;
 	padding-right: 15px;
 	width: 100%;
 	opacity: .7;
@@ -945,7 +952,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	color:#0bf;
 }
 
-p.caption{
+p.caption a{
 	position:absolute;
 	background-color: rgba(0,0,0,0.5);	
 	top:0;
@@ -961,15 +968,15 @@ p.caption{
 	-o-transition: opacity 500ms;
 	transition: opacity 500ms;
 }
-p.caption span{
+p.caption a span{
 	 display: table-cell;
   text-align: center;
   vertical-align: middle;
-  font-size: 1.4em;
-  line-height: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.3em;
   padding:10px;
 }
- p.caption:hover {
+ p.caption:hover a{
   opacity: 1;
 }
 
@@ -1074,6 +1081,12 @@ margin-right:20px;
 
 .meta{
 	padding-top: 5%;
+}
+#read-more{
+	color:#000;
+}
+#read-more:hover{
+	color:#0bf;
 }
 
 /******************** END INDEX.PHP ***************/

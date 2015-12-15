@@ -32,7 +32,7 @@
 <!--This section will have two columns, blog posts on the left and facebook posts on the right. 3 of each will be shown-->
 
     <div class="social-excerpts blog">
-    <h1>latest from the blog</h1>
+    <h1><a href="<?php echo home_url(); ?>/blog">latest from the blog</a></h1>
         
 <?php
     $query = new WP_Query( array( "posts_per_page" => 3 ) );

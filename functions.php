@@ -88,7 +88,7 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 //Create Custom Image Sizes
 add_image_size('featured-spotlight', 300, 300, array("left", "top")); //300 x 300, hard crop
 add_image_size('blog-spotlight', 220, 175, array("left", "top")); //220 x 175, hard crop
-add_image_size('gateway-feature', 940, 330, array("left", "top")); // 940 x 330, hard crop
+add_image_size('gateway-feature', 940, 330, array("center", "center")); // 940 x 330, hard crop
 
 //Get Child Pages
 function get_child_pages(){
@@ -108,7 +108,7 @@ function get_child_pages(){
 		echo '<div class="tile">';
 		echo '<div class="tile-image">' . $childImage . '</div>';
 		echo '<h1 id="cta-h1"><a href="'.$childPermalink.'">' .$childTitle.'</a></h1>';
-		echo '<p class="caption"><span>'. $childExcerpt . '</span></p>';
+		echo '<p class="caption"><a href="'.$childPermalink.'"><span>'. $childExcerpt . '</span></a></p>';
 		echo '</div>';
 
 endwhile;
@@ -144,7 +144,7 @@ function custom_excerpt_length( $length ) {
 		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 function new_excerpt_more( $more ) {
-	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) .'">' . __( ' [<i>Read More...</i>]', 'your-text-domain' ) . '</a>';
+	return ' <a id="read-more" href="' . get_permalink( get_the_ID() ) .'">' . __( ' [<i>Read More...</i>]', 'your-text-domain' ) . '</a>';
 		}
 		add_filter( 'excerpt_more', 'new_excerpt_more' );
 
@@ -158,10 +158,10 @@ function front_page_CTA($slug) {
 	$image = get_the_post_thumbnail($page_id,'featured-spotlight');
 	echo '<div class="tile-image">' . $image . '</div>';
 	?>
-	<p class="caption"><span> <?= $tagline ?></span></p>
 	<h1 id="cta-h1"><a href="<?= $page_link ?>">
-		<?= $title ?>
-	</a></h1>
+		<?= $title ?></a></h1>
+		<p class="caption"><a href="<?= $page_link ?>"><span><?= $tagline ?></span></a></p>
+	
     <?php 
 }
 

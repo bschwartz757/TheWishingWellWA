@@ -11,7 +11,7 @@
 
 <div class="spotlight">
    <?php the_post_thumbnail('gateway-feature'); ?>
-<a href="<?php echo home_url(); ?>/?page_id=64"><h1>Our Mission</h1></a>
+<h1><a href="<?php echo home_url(); ?>/?page_id=64">Our Mission</a></h1>
 </div>
 
 <div class="gateway-main-tile">

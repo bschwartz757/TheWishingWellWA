@@ -11,7 +11,7 @@
        
        <div class="clear-fix">
 <article class="plugin-content">
-    <h3><?php the_title(); ?> Template</h3>
+    <h3><?php the_title(); ?></h3>
 <?php if(have_posts()) : the_post(); ?>
  <?php the_content(); ?>
     <?php endif; ?> 
