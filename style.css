@@ -368,7 +368,7 @@ footer a:focus {
     -webkit-border-radius: 8px 8px 8px 8px;
     border-radius: 8px 8px 8px 8px;	
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 
@@ -1105,6 +1105,7 @@ footer {
 	margin: 0 auto;
 	max-width: 960px;
 	width: 100%;
+	padding-top: 20px;
 }
 
 .donate-button.footer {
