@@ -749,11 +749,11 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 	opacity: .7;
 }
 
-.home-slider-caption {
+.home-slider-caption a {
 	position: absolute;
 	bottom:2%;
 	right:0;
-	padding:1.25em;
+	padding:.7em;
 	color:#fff;
 	background-color: #000;
 	opacity:.7;
@@ -802,18 +802,19 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 }
 
 .home-thmb a:hover{
-	color:#80CBA9;	/*main green*/
-}
+	color:#80CBA9;	
+}*/
 
 .home-thmb:first-child {
 	margin-left:0;
-}*/
+}
 
 .front-page-excerpts{
 	width:100%;
 }
 .social-excerpt h2 a{
 font-size:1.2em;
+
 }
 .social-excerpts {
 	width:50%;
@@ -888,15 +889,15 @@ font-size:1.2em;
 	position: relative;
 }
 
-.spotlight h1 {
-	font-size: 200%;
+.spotlight h1 a{
+
 	position: absolute;
-	bottom:1%;
-	right:5%;
+	bottom:2%;
+	right:0;
 	background-color:#000;
 	opacity: .7;
 	color:#fff;
-	padding:10px;
+	padding:.7em;
 	text-transform: uppercase;
 }
 
@@ -908,7 +909,7 @@ font-size:1.2em;
 	width:66%;
 	background-color: #ffffff;
 	float:left;
-	padding:1.25em;
+	padding:1em;
     margin-top: 1.25em;
 }
 
@@ -941,12 +942,12 @@ font-size:1.2em;
 	position: relative;
 }
 
-#cta-h1{
+#cta-h1 a{
 	position: absolute;
 	background-color: #000;
 	color:#fff;
 	text-decoration: none;
-	bottom:3%;
+	bottom:5%;
 	padding-right: 15px;
 	width: 100%;
 	opacity: .7;

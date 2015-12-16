@@ -15,5 +15,5 @@
 </article>    
 
 </div><!--Close content-->        
-    <small>404.php</small>  
+ 
 <?php get_footer(); ?>    
