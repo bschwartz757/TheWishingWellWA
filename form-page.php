@@ -12,7 +12,6 @@
        <div class="clear-fix">
 <article class="plugin-content">
 	<div id="contact-form">
-    <h3><?php the_title(); ?> Template</h3>
 <?php if(have_posts()) : the_post(); ?>
  <?php the_content(); ?>
     <?php endif; ?>
