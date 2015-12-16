@@ -16,17 +16,17 @@ font-style: normal;
 /*margin-left: 20px;*/
 }.flaticon-facebook3:before {
 	content: "\e000";
-    color:darkblue;
+    color:#00008b;
 }
 .flaticon-socialnetwork348:before {
 	content: "\e001";
-    color:orangered;
+    color:#ff4500;
 }
 .flaticon-tumblr1:before {
 	content: "\e002";
-    color: darkgray;
+    color: #385774;
 }
 .flaticon-twitter:before {
 	content: "\e003";
-    color:dodgerblue;
+    color:#1e90ff;
 }
