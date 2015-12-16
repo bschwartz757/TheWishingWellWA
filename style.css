@@ -414,12 +414,13 @@ img.logo {
 
 .logo{
 	float:left;
+	margin-bottom: 15px;
 }
 
 .donate-button.header{
 	float:right;
 	position:relative;
-	margin-top:2%;
+	margin-top:40px;
 	margin-right:0;
 	clear:right;
 }
@@ -432,6 +433,7 @@ img.logo {
 	margin: 0 auto;
 	max-width: 960px;
 	width: 100%;
+	padding-top: 15px;
 }
 
 /******************** START NAV ***************/
