@@ -317,13 +317,13 @@ p, ul, ol, dl {
 
 a:link,
 a:visited {
-	color: #FFFFFF;	
+	color: #000000;	
 	text-decoration: none;
 }
 
 a:hover,
 a:focus {
-	color: #000000;	
+	color: #59AA83;	/*dark aqua*/
 }
 
 footer a:link,
@@ -375,6 +375,10 @@ footer a:focus {
 .donate-button a{
 	color:#000000;
     display: block;
+}
+
+.donate-button a:hover {
+    color:#000000;
 }
 
 .donate-button:hover{
@@ -756,7 +760,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 }
 
 .home-slider-caption a:hover{
-	color:#0bf;
+	color:#80CBA9;	/*main green*/
 }
 
 /*.home-thumbnails{
@@ -796,7 +800,7 @@ input.wpcf7-form-control.wpcf7-submit input:hover[type="button"], input:hover[ty
 }
 
 .home-thmb a:hover{
-	color:#0bf;
+	color:#80CBA9;	/*main green*/
 }
 
 .home-thmb:first-child {
@@ -859,7 +863,7 @@ font-size:1.2em;
 }
 
 .front-page-excerpts h2 a:hover{
-	color: #0bf;
+	color: #80CBA9;	/*main green*/
 }
 
 .front-page-excerpts p{
@@ -873,7 +877,7 @@ font-size:1.2em;
 }
 
 .read-more:hover{
-	color:#0bf;
+	color:#80CBA9;	/*main green*/
 }
 
 /******************** END FRONT-PAGE.PHP ***************/
@@ -895,7 +899,7 @@ font-size:1.2em;
 }
 
 .spotlight h1:hover a{
-	color:#0bf;
+	color:#80CBA9;	/*main green*/
 }
 
 .gateway-main-tile{
@@ -949,7 +953,7 @@ font-size:1.2em;
 }
 
 .tile a:hover{
-	color:#0bf;
+	color:#80CBA9;	/*main green*/
 }
 
 p.caption a{
@@ -1076,7 +1080,7 @@ margin-right:20px;
 }
 
 .single-blog h2 a:hover{
-	color: #0bf;
+	color: #80CBA9;	/*main green*/
 }
 
 .meta{
@@ -1086,7 +1090,7 @@ margin-right:20px;
 	color:#000;
 }
 #read-more:hover{
-	color:#0bf;
+	color:#80CBA9;	/*main green*/
 }
 
 /******************** END INDEX.PHP ***************/
@@ -1149,7 +1153,7 @@ footer > p {
 }
 
 .nav-footer a:hover {
-    color:#fff;
+    color: #59AA83;	/*dark aqua*/
     border-right: 1px solid black;    
 }
 
