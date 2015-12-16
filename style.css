@@ -661,7 +661,7 @@ nav.color {
 	float:right;
 	width:32%;
 	max-width:300px;	
-	background-color: #e2e1cf;
+	background-color: #ffffff;
 	padding:1.25em;
     margin: 1.25em 0;
 }
@@ -904,7 +904,7 @@ font-size:1.2em;
 
 .gateway-main-tile{
 	width:66%;
-	background-color: #e2e1cf;
+	background-color: #ffffff;
 	float:left;
 	padding:1.25em;
     margin-top: 1.25em;
@@ -996,7 +996,7 @@ p.caption a span{
     max-width: 940px;
 	height:auto;
 	padding:1.25em;
-	background-color: #e2e1cf;	
+	background-color: #ffffff;	
 }
 
 .destination-title-img {
@@ -1026,7 +1026,7 @@ p.caption a span{
     width:66%;
 	max-width:620px;
 	height:auto;
-	background-color:#e2e1cf;	
+	background-color:#ffffff;	
 	padding:1.25em;
     margin: 1.25em 0;
 	float:left;		
@@ -1058,7 +1058,7 @@ p.caption a span{
 
 .single-blog{
 	padding:20px;
-	background-color: #e2e1cf;
+	background-color: #ffffff;
 	margin-bottom:20px;
 }
 
@@ -1445,7 +1445,7 @@ footer > p {
     /*max-width: 940px;*/
 	height:auto;
 	padding:1.25em;
-	background-color: #e2e1cf;	
+	background-color: #ffffff;	
 }
 
 .destination-title-img {
@@ -1475,7 +1475,7 @@ footer > p {
     width:66%;
 	max-width:620px;
 	height:auto;
-	background-color:#e2e1cf;	
+	background-color:#ffffff;	
 	padding:1.25em;
 	float:left;		
 }
