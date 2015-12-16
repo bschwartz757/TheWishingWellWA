@@ -48,7 +48,9 @@
 
 <!--End Pullquote-->
 
-
+<!--Begin dynamic sidebar-->
+<?php dynamic_sidebar(); ?>
+<!--End dynamic sidebar-->
 
 
 </div>		<!--End sidebar-->
