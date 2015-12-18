@@ -9,17 +9,6 @@
 ?>
 <?php get_header(); ?>
     
-<!--<div class="page-title">
-    <div class="thumbnail-2">
-    </div>
-    <div class="page-text">
-        <h1 class="title">Blogs</h1>
-        
-    </div>  
-</div>    
-<article class="blog-content">
-    <h3>Latest Blog</h3>-->
-    
     <?php if(have_posts()) : while(have_posts()) : the_post();// start the loop ?>
 <article class="post-excerpt">
     <h2><a href="<?php the_permalink();// links to the post ?>"><?php the_title();// gets the post title ?></a></h2>

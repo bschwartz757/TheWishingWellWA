@@ -25,9 +25,9 @@
         <div class="tile clear-fix">  
         <?php front_page_CTA("events"); ?>
         </div>   
-       <!-- <div class="clear"></div>-->
+
 </div> <!-- end home-thumbnails-->
-<!--<div class="clear"></div>-->
+
 <div class="front-page-excerpts">
 <!--This section will have two columns, blog posts on the left and facebook posts on the right. 3 of each will be shown-->
 
@@ -46,26 +46,12 @@
     </div>   
     <h2><a href="<?= the_permalink(); ?>"><?php the_title() ?></a></h2>
     <?= the_excerpt(); ?>
-<!--<div class="clear"></div>-->
+
 </div>
 <?php 
     endwhile;
     wp_reset_postdata();
 ?>
-
-        
-<!--    
-    <article class="blog-excerpt">
-    <?php if(have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
-    <h2><a href="<?php the_permalink();// links to the post ?>"><?php the_title();// gets the post title ?></a></h2>
-    <p><?php the_excerpt();// gets the post excerpt ?></p>
-    <?php the_post_thumbnail('thumbnail');// gets the post thumbnail ?>
-    <small>Posted on <?php the_time('F j, Y');// gets the time ?> by <?php the_author();// gets the author ?> in <?php the_category(', ');// gets the category - comma separates if multiple ?></small>                         
-    <p class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></p>
-    <?php endwhile; else : ?>
-    <p><?= ('Sorry, no posts matched your criteria.'); ?></p>
-    <?php endif; ?>
-</article> -->
        
 </div> <!-- END blog-excerpts-->    
       
@@ -80,28 +66,6 @@
 </div>
 </div> <!-- end social-excerpts fb -->   
 <!-- End Experimental FB plugin code, requires JS script -->    
-
-    <!--<h1>latest from facebook</h1>
-
-<div class="social-excerpt fb first">
-    <img class="excerpt-image" src="<?php// get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>FB Post Title</h2><hr width="0"/>
-    <p>Post meta description<br/><a href="#">Read More &gt;&gt;</a></p>
-</div>
-
-<div class="fb-excerpt-2">
-    <img class="excerpt-image" src="<?php// echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>FB Post Title</h2><hr width="0">
-    <p>Post meta description<br/><a href="#">Read More &gt;&gt;</a></p>
-</div>
-
-<div class="fb-excerpt-3">
-    <img class="excerpt-image" src="<?php// echo get_stylesheet_directory_uri(); ?>/imgs/excerpt250by200.jpg" alt="featured image" width="250px"/>
-    <h2>FB Post Title</h2><hr width="0">
-    <p>Post meta description<br/><a href="#">Read More &gt;&gt;</a></p>
-</div>
-       
-    </div> end fb-excerpts -->
 
 </div>    <!--end front-page-excerpts-->
 

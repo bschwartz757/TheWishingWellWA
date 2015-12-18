@@ -26,8 +26,6 @@
 </article>    
 <?php get_sidebar(); ?>
 
-<!--<p class="top-link"><a href="#nav-main">Back to top</a></p>-->
-
 </div>		<!--close content-->
 
 <?php get_footer(); ?>

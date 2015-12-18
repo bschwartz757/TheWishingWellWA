@@ -54,13 +54,12 @@
             <li class="icon"><a class="flaticon-tumblr1" href="https://www.tumblr.com/" target="_blank"></a></li>
         </ul>  
     </div> <!--end social-icons-->    
-    <!--<div class="clear"></div>-->
+
     <div class="donate-button header">
         <a href="http://www.paypal.com" target="_blank">Donate</a>
     </div> 
     </div> <!---END inside-header--> 
 </header>    
-
 
 <nav id="nav-mobile">			<!--Responsive toggle nav-->
     </a><a class="menu-button">&#9776;  MENU</a>
