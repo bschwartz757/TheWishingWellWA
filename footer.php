@@ -6,14 +6,14 @@
     
     <div class="social-icons">    
         <ul class="social-icons-ul">
-            <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
-            <li class="icon"><a class="flaticon-twitter" href="#"></a></li>
-            <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
-            <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
+            <li class="icon"><a class="flaticon-facebook3" href="https://www.facebook.com/The-Wishing-Well-Foundation-WA-272971612747453/?fref=ts" target="_blank"></a></li>
+            <li class="icon"><a class="flaticon-twitter" href="https://twitter.com/" target="_blank"></a></li>
+            <li class="icon"><a class="flaticon-socialnetwork348" href="https://www.pinterest.com/" target="_blank"></a></li>
+            <li class="icon"><a class="flaticon-tumblr1" href="https://www.tumblr.com/" target="_blank"></a></li>
         </ul>  
     </div>
         <div class="donate-button footer">
-            <a href="#">Donate</a>
+            <a href="http://www.paypal.com" target="_blank">Donate</a>
         </div>  
 
 <div class="clear"></div>  

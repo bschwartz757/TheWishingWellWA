@@ -48,19 +48,18 @@
     </div>
     <div class="social-icons">    
         <ul class="social-icons-ul">
-            <li class="icon"><a class="flaticon-facebook3" href="#"></a></li>
-            <li class="icon"><a class="flaticon-twitter" href="#"></a></li>
-            <li class="icon"><a class="flaticon-socialnetwork348" href="#"></a></li>
-            <li class="icon"><a class="flaticon-tumblr1" href="#"></a></li>
+            <li class="icon"><a class="flaticon-facebook3" href="https://www.facebook.com/The-Wishing-Well-Foundation-WA-272971612747453/?fref=ts" target="_blank"></a></li>
+            <li class="icon"><a class="flaticon-twitter" href="https://twitter.com/" target="_blank"></a></li>
+            <li class="icon"><a class="flaticon-socialnetwork348" href="https://www.pinterest.com/" target="_blank"></a></li>
+            <li class="icon"><a class="flaticon-tumblr1" href="https://www.tumblr.com/" target="_blank"></a></li>
         </ul>  
     </div> <!--end social-icons-->    
     <!--<div class="clear"></div>-->
     <div class="donate-button header">
-        <a href="#">Donate</a>
+        <a href="http://www.paypal.com" target="_blank">Donate</a>
     </div> 
     </div> <!---END inside-header--> 
 </header>    
-
 
 
 <nav id="nav-mobile">			<!--Responsive toggle nav-->
@@ -68,26 +67,26 @@
     <ul id="nav-toggle">
     	<li><a href="#">About</a>
         	<ul class="fallback">
-            	<li><a href="#">Mission</a>
-                <li><a href="#">History</a>
-                <li><a href="#">Staff</a>
-                <li><a href="#">Testimonials</a>
-                <li><a href="#">Funding</a>
-                <li><a href="#">Partners</a>
+            	<li><a href="<?php echo home_url(); ?>/about/mission" >Mission</a>
+                <li><a href="<?php echo home_url(); ?>/about/history">History</a>
+                <li><a href="<?php echo home_url(); ?>/about/staff">Staff</a>
+                <li><a href="<?php echo home_url(); ?>/about/testimonials">Testimonials</a>
+                <li><a href="<?php echo home_url(); ?>/about/funding">Funding</a>
+                <li><a href="<?php echo home_url(); ?>/about/partners">Partners</a>
             </ul> 
         </li>           
-        <li><a href="#">Volunteer</a></li>
-        <li><a href="#">Donate</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Resources</a>                
+        <li><a href="<?php echo home_url(); ?>/volunteer">Volunteer</a></li>
+        <li><a href="<?php echo home_url(); ?>/donate">Donate</a></li>
+        <li><a href="<?php echo home_url(); ?>/">Events</a></li>
+        <li><a href="<?php echo home_url(); ?>/photos">Photos</a></li>
+        <li><a href="<?php echo home_url(); ?>/resources">Resources</a>                
         	<ul class="fallback">
-            	<li><a href="#">Forms</a>
-                <li><a href="#">Services</a>
+            	<li><a href="<?php echo home_url(); ?>/resources/forms">Inquiry Form</a>
+                <li><a href="<?php echo home_url(); ?>/resources/services">Services</a>
             </ul> 
         </li>            
-        <li><a href="#">Blog</a></li>  
-        <li><a href="#">Contact</a></li>                             
+        <li><a href="<?php echo home_url(); ?>/blog">Blog</a></li>  
+        <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>                             
     </ul>
 </nav>
 
