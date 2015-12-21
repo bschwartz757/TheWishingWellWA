@@ -4,7 +4,8 @@
 <title><?php get_my_title_tag(); ?></title>
 <meta charset="utf-8" />
 <meta name="robots" content="noindex, nofollow"/>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <!-- Remy Sharp Shim --> 
 <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
